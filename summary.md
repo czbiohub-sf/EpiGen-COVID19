@@ -1,0 +1,20 @@
+Estimating coronavirus infections using phylogenies and time series data
+================
+
+## Highlights
+
+  - The number of missing infectious is an important parameter to
+    estimate because it provides information about the scale of the
+    epidemic, which in turn affects resource allocation. Also, it
+    affects how controllable the epidemic is and for how long the
+    epidemic will go on.
+  - Incidence or prevalence time series are generally the lower bound of
+    the total number of infections due to under-reporting. Viral
+    phylogenies provide can fill in this knowledge gap because viruses
+    continue to evolve as they spread through asymptomatic human
+    populations.
+
+## Data
+
+Genomic data came from GISAID. The time-scaled phylogeny came from
+[Nextstrain](https://nextstrain.org/ncov).
