@@ -2,3 +2,6 @@ packrat/lib*/
 packrat/src
 .Rproj.user
 data/GISAID
+exploratory
+alignment
+tree
