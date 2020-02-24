@@ -3,6 +3,6 @@ packrat/src
 .Rproj.user
 data/GISAID
 exploratory
-alignment
+msa
 tree
 .Rhistory
