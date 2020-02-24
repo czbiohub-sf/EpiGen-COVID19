@@ -1,0 +1,22 @@
+name: covid19
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - beagle-lib=3.1.2=h04f5b5a_1
+  - iqtree=1.5.5=1
+  - libcxx=4.0.1=hcfea43d_1
+  - libcxxabi=4.0.1=hcfea43d_1
+  - libgcc=4.8.5=hdbeacc1_10
+  - libgfortran=3.0.1=h93005f0_2
+  - libtool=2.4.6=h1de35cc_5
+  - mpi=1.0=openmpi
+  - mrbayes=3.2.7=h0c20dfa_0
+  - muscle=3.8.1551=h770b8ee_5
+  - ncurses=6.1=h0a44026_1
+  - openjdk=8.0.152=h1de35cc_2
+  - openmpi=4.0.2=hfa1e0ec_1
+  - readline=8.0=h1de35cc_0
+  - zlib=1.2.11=h1de35cc_3
+prefix: /Users/lucy.li/anaconda3/envs/covid19
+
