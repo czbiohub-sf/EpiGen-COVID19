@@ -3,11 +3,13 @@
 library(ape)
 library(magrittr)
 
+data_dir <- "data/sequences"
+
 # read in GISAID fastas and outgroup MG772933.1
-filenames <- list.files("data/GISAID", ".fasta", full.names=TRUE)
+filenames <- list.files(file.path(data_dir, "GISAID"), ".fasta", full.names=TRUE)
 fastas <- lapply(filenames, read.dna, "fasta")
 outgroup_id <- "MG772933.1"
-outgroup_fasta <- read.dna(paste0("data/", outgroup_id, ".fasta"), "fasta")
+outgroup_fasta <- read.dna(paste0(data_dir, outgroup_id, ".fasta"), "fasta")
 
 # filter sequences with >10% ambiguous bases
 base_freq <- lapply(fastas, base.freq, all=TRUE)
