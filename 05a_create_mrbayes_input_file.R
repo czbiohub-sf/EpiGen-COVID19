@@ -22,7 +22,8 @@ write.dna(msa, mb_filename, "fasta", nbcol=1, colw=80)
 
 generate.MrBayes.input(mb_filename, output.fn=mb_nex, set.tip.date=TRUE, 
                        nt.subst.model=6, rates="gamma", mol.clock="uniform", 
-                       clockratepr="gamma(2, 0.1)", units="years", treeagepr="uniform(0.16, 1)",
+                       clockratepr=paste0("lognormal(", get_lognormal_params(1e-3, 1e-3)[1] %>% round(2), ", ", get_lognormal_params(1e-3, 1e-3)[2] %>% round(2), ")"), 
+                       units="years", treeagepr="uniform(0.16, 1)",
                        Ngen=1e7, Samplefreq=1e4, Printfreq = 1e4)
 
 if (sum(ambiguous_samples)>0) {
