@@ -1,0 +1,2867 @@
+province	country	lat	long	date	cumulative_cases
+Anhui	Mainland China	31.82571	117.2264	2020-01-22	1
+Anhui	Mainland China	31.82571	117.2264	2020-01-23	9
+Anhui	Mainland China	31.82571	117.2264	2020-01-24	15
+Anhui	Mainland China	31.82571	117.2264	2020-01-25	39
+Anhui	Mainland China	31.82571	117.2264	2020-01-26	60
+Anhui	Mainland China	31.82571	117.2264	2020-01-27	70
+Anhui	Mainland China	31.82571	117.2264	2020-01-28	106
+Anhui	Mainland China	31.82571	117.2264	2020-01-29	152
+Anhui	Mainland China	31.82571	117.2264	2020-01-30	200
+Anhui	Mainland China	31.82571	117.2264	2020-01-31	237
+Anhui	Mainland China	31.82571	117.2264	2020-02-01	297
+Anhui	Mainland China	31.82571	117.2264	2020-02-02	340
+Anhui	Mainland China	31.82571	117.2264	2020-02-03	408
+Anhui	Mainland China	31.82571	117.2264	2020-02-04	480
+Anhui	Mainland China	31.82571	117.2264	2020-02-05	530
+Anhui	Mainland China	31.82571	117.2264	2020-02-06	591
+Anhui	Mainland China	31.82571	117.2264	2020-02-07	665
+Anhui	Mainland China	31.82571	117.2264	2020-02-08	733
+Anhui	Mainland China	31.82571	117.2264	2020-02-09	779
+Anhui	Mainland China	31.82571	117.2264	2020-02-10	830
+Anhui	Mainland China	31.82571	117.2264	2020-02-11	860
+Anhui	Mainland China	31.82571	117.2264	2020-02-12	889
+Anhui	Mainland China	31.82571	117.2264	2020-02-13	910
+Anhui	Mainland China	31.82571	117.2264	2020-02-14	934
+Anhui	Mainland China	31.82571	117.2264	2020-02-15	950
+Anhui	Mainland China	31.82571	117.2264	2020-02-16	962
+Anhui	Mainland China	31.82571	117.2264	2020-02-17	973
+Anhui	Mainland China	31.82571	117.2264	2020-02-18	982
+Anhui	Mainland China	31.82571	117.2264	2020-02-19	986
+Anhui	Mainland China	31.82571	117.2264	2020-02-20	987
+Anhui	Mainland China	31.82571	117.2264	2020-02-21	988
+Anhui	Mainland China	31.82571	117.2264	2020-02-22	989
+Anhui	Mainland China	31.82571	117.2264	2020-02-23	989
+Beijing	Mainland China	40.18238	116.4142	2020-01-22	14
+Beijing	Mainland China	40.18238	116.4142	2020-01-23	22
+Beijing	Mainland China	40.18238	116.4142	2020-01-24	36
+Beijing	Mainland China	40.18238	116.4142	2020-01-25	41
+Beijing	Mainland China	40.18238	116.4142	2020-01-26	68
+Beijing	Mainland China	40.18238	116.4142	2020-01-27	80
+Beijing	Mainland China	40.18238	116.4142	2020-01-28	91
+Beijing	Mainland China	40.18238	116.4142	2020-01-29	111
+Beijing	Mainland China	40.18238	116.4142	2020-01-30	114
+Beijing	Mainland China	40.18238	116.4142	2020-01-31	139
+Beijing	Mainland China	40.18238	116.4142	2020-02-01	168
+Beijing	Mainland China	40.18238	116.4142	2020-02-02	191
+Beijing	Mainland China	40.18238	116.4142	2020-02-03	212
+Beijing	Mainland China	40.18238	116.4142	2020-02-04	228
+Beijing	Mainland China	40.18238	116.4142	2020-02-05	253
+Beijing	Mainland China	40.18238	116.4142	2020-02-06	274
+Beijing	Mainland China	40.18238	116.4142	2020-02-07	297
+Beijing	Mainland China	40.18238	116.4142	2020-02-08	315
+Beijing	Mainland China	40.18238	116.4142	2020-02-09	326
+Beijing	Mainland China	40.18238	116.4142	2020-02-10	337
+Beijing	Mainland China	40.18238	116.4142	2020-02-11	342
+Beijing	Mainland China	40.18238	116.4142	2020-02-12	352
+Beijing	Mainland China	40.18238	116.4142	2020-02-13	366
+Beijing	Mainland China	40.18238	116.4142	2020-02-14	372
+Beijing	Mainland China	40.18238	116.4142	2020-02-15	375
+Beijing	Mainland China	40.18238	116.4142	2020-02-16	380
+Beijing	Mainland China	40.18238	116.4142	2020-02-17	381
+Beijing	Mainland China	40.18238	116.4142	2020-02-18	387
+Beijing	Mainland China	40.18238	116.4142	2020-02-19	393
+Beijing	Mainland China	40.18238	116.4142	2020-02-20	395
+Beijing	Mainland China	40.18238	116.4142	2020-02-21	396
+Beijing	Mainland China	40.18238	116.4142	2020-02-22	399
+Beijing	Mainland China	40.18238	116.4142	2020-02-23	399
+Chongqing	Mainland China	30.05718	107.874	2020-01-22	6
+Chongqing	Mainland China	30.05718	107.874	2020-01-23	9
+Chongqing	Mainland China	30.05718	107.874	2020-01-24	27
+Chongqing	Mainland China	30.05718	107.874	2020-01-25	57
+Chongqing	Mainland China	30.05718	107.874	2020-01-26	75
+Chongqing	Mainland China	30.05718	107.874	2020-01-27	110
+Chongqing	Mainland China	30.05718	107.874	2020-01-28	132
+Chongqing	Mainland China	30.05718	107.874	2020-01-29	147
+Chongqing	Mainland China	30.05718	107.874	2020-01-30	182
+Chongqing	Mainland China	30.05718	107.874	2020-01-31	211
+Chongqing	Mainland China	30.05718	107.874	2020-02-01	247
+Chongqing	Mainland China	30.05718	107.874	2020-02-02	300
+Chongqing	Mainland China	30.05718	107.874	2020-02-03	337
+Chongqing	Mainland China	30.05718	107.874	2020-02-04	366
+Chongqing	Mainland China	30.05718	107.874	2020-02-05	389
+Chongqing	Mainland China	30.05718	107.874	2020-02-06	411
+Chongqing	Mainland China	30.05718	107.874	2020-02-07	426
+Chongqing	Mainland China	30.05718	107.874	2020-02-08	428
+Chongqing	Mainland China	30.05718	107.874	2020-02-09	468
+Chongqing	Mainland China	30.05718	107.874	2020-02-10	486
+Chongqing	Mainland China	30.05718	107.874	2020-02-11	505
+Chongqing	Mainland China	30.05718	107.874	2020-02-12	518
+Chongqing	Mainland China	30.05718	107.874	2020-02-13	529
+Chongqing	Mainland China	30.05718	107.874	2020-02-14	537
+Chongqing	Mainland China	30.05718	107.874	2020-02-15	544
+Chongqing	Mainland China	30.05718	107.874	2020-02-16	551
+Chongqing	Mainland China	30.05718	107.874	2020-02-17	553
+Chongqing	Mainland China	30.05718	107.874	2020-02-18	555
+Chongqing	Mainland China	30.05718	107.874	2020-02-19	560
+Chongqing	Mainland China	30.05718	107.874	2020-02-20	567
+Chongqing	Mainland China	30.05718	107.874	2020-02-21	572
+Chongqing	Mainland China	30.05718	107.874	2020-02-22	573
+Chongqing	Mainland China	30.05718	107.874	2020-02-23	575
+Fujian	Mainland China	26.07783	117.9895	2020-01-22	1
+Fujian	Mainland China	26.07783	117.9895	2020-01-23	5
+Fujian	Mainland China	26.07783	117.9895	2020-01-24	10
+Fujian	Mainland China	26.07783	117.9895	2020-01-25	18
+Fujian	Mainland China	26.07783	117.9895	2020-01-26	35
+Fujian	Mainland China	26.07783	117.9895	2020-01-27	59
+Fujian	Mainland China	26.07783	117.9895	2020-01-28	80
+Fujian	Mainland China	26.07783	117.9895	2020-01-29	84
+Fujian	Mainland China	26.07783	117.9895	2020-01-30	101
+Fujian	Mainland China	26.07783	117.9895	2020-01-31	120
+Fujian	Mainland China	26.07783	117.9895	2020-02-01	144
+Fujian	Mainland China	26.07783	117.9895	2020-02-02	159
+Fujian	Mainland China	26.07783	117.9895	2020-02-03	179
+Fujian	Mainland China	26.07783	117.9895	2020-02-04	194
+Fujian	Mainland China	26.07783	117.9895	2020-02-05	205
+Fujian	Mainland China	26.07783	117.9895	2020-02-06	215
+Fujian	Mainland China	26.07783	117.9895	2020-02-07	224
+Fujian	Mainland China	26.07783	117.9895	2020-02-08	239
+Fujian	Mainland China	26.07783	117.9895	2020-02-09	250
+Fujian	Mainland China	26.07783	117.9895	2020-02-10	261
+Fujian	Mainland China	26.07783	117.9895	2020-02-11	267
+Fujian	Mainland China	26.07783	117.9895	2020-02-12	272
+Fujian	Mainland China	26.07783	117.9895	2020-02-13	279
+Fujian	Mainland China	26.07783	117.9895	2020-02-14	281
+Fujian	Mainland China	26.07783	117.9895	2020-02-15	285
+Fujian	Mainland China	26.07783	117.9895	2020-02-16	287
+Fujian	Mainland China	26.07783	117.9895	2020-02-17	290
+Fujian	Mainland China	26.07783	117.9895	2020-02-18	292
+Fujian	Mainland China	26.07783	117.9895	2020-02-19	293
+Fujian	Mainland China	26.07783	117.9895	2020-02-20	293
+Fujian	Mainland China	26.07783	117.9895	2020-02-21	293
+Fujian	Mainland China	26.07783	117.9895	2020-02-22	293
+Fujian	Mainland China	26.07783	117.9895	2020-02-23	293
+Gansu	Mainland China	36.0611	103.8343	2020-01-22	0
+Gansu	Mainland China	36.0611	103.8343	2020-01-23	2
+Gansu	Mainland China	36.0611	103.8343	2020-01-24	2
+Gansu	Mainland China	36.0611	103.8343	2020-01-25	4
+Gansu	Mainland China	36.0611	103.8343	2020-01-26	7
+Gansu	Mainland China	36.0611	103.8343	2020-01-27	14
+Gansu	Mainland China	36.0611	103.8343	2020-01-28	19
+Gansu	Mainland China	36.0611	103.8343	2020-01-29	24
+Gansu	Mainland China	36.0611	103.8343	2020-01-30	26
+Gansu	Mainland China	36.0611	103.8343	2020-01-31	29
+Gansu	Mainland China	36.0611	103.8343	2020-02-01	40
+Gansu	Mainland China	36.0611	103.8343	2020-02-02	51
+Gansu	Mainland China	36.0611	103.8343	2020-02-03	55
+Gansu	Mainland China	36.0611	103.8343	2020-02-04	57
+Gansu	Mainland China	36.0611	103.8343	2020-02-05	62
+Gansu	Mainland China	36.0611	103.8343	2020-02-06	62
+Gansu	Mainland China	36.0611	103.8343	2020-02-07	67
+Gansu	Mainland China	36.0611	103.8343	2020-02-08	79
+Gansu	Mainland China	36.0611	103.8343	2020-02-09	83
+Gansu	Mainland China	36.0611	103.8343	2020-02-10	83
+Gansu	Mainland China	36.0611	103.8343	2020-02-11	86
+Gansu	Mainland China	36.0611	103.8343	2020-02-12	87
+Gansu	Mainland China	36.0611	103.8343	2020-02-13	90
+Gansu	Mainland China	36.0611	103.8343	2020-02-14	90
+Gansu	Mainland China	36.0611	103.8343	2020-02-15	90
+Gansu	Mainland China	36.0611	103.8343	2020-02-16	90
+Gansu	Mainland China	36.0611	103.8343	2020-02-17	91
+Gansu	Mainland China	36.0611	103.8343	2020-02-18	91
+Gansu	Mainland China	36.0611	103.8343	2020-02-19	91
+Gansu	Mainland China	36.0611	103.8343	2020-02-20	91
+Gansu	Mainland China	36.0611	103.8343	2020-02-21	91
+Gansu	Mainland China	36.0611	103.8343	2020-02-22	91
+Gansu	Mainland China	36.0611	103.8343	2020-02-23	91
+Guangdong	Mainland China	23.33841	113.422	2020-01-22	26
+Guangdong	Mainland China	23.33841	113.422	2020-01-23	32
+Guangdong	Mainland China	23.33841	113.422	2020-01-24	53
+Guangdong	Mainland China	23.33841	113.422	2020-01-25	78
+Guangdong	Mainland China	23.33841	113.422	2020-01-26	111
+Guangdong	Mainland China	23.33841	113.422	2020-01-27	151
+Guangdong	Mainland China	23.33841	113.422	2020-01-28	207
+Guangdong	Mainland China	23.33841	113.422	2020-01-29	277
+Guangdong	Mainland China	23.33841	113.422	2020-01-30	354
+Guangdong	Mainland China	23.33841	113.422	2020-01-31	436
+Guangdong	Mainland China	23.33841	113.422	2020-02-01	535
+Guangdong	Mainland China	23.33841	113.422	2020-02-02	632
+Guangdong	Mainland China	23.33841	113.422	2020-02-03	725
+Guangdong	Mainland China	23.33841	113.422	2020-02-04	813
+Guangdong	Mainland China	23.33841	113.422	2020-02-05	895
+Guangdong	Mainland China	23.33841	113.422	2020-02-06	970
+Guangdong	Mainland China	23.33841	113.422	2020-02-07	1034
+Guangdong	Mainland China	23.33841	113.422	2020-02-08	1095
+Guangdong	Mainland China	23.33841	113.422	2020-02-09	1131
+Guangdong	Mainland China	23.33841	113.422	2020-02-10	1159
+Guangdong	Mainland China	23.33841	113.422	2020-02-11	1177
+Guangdong	Mainland China	23.33841	113.422	2020-02-12	1219
+Guangdong	Mainland China	23.33841	113.422	2020-02-13	1241
+Guangdong	Mainland China	23.33841	113.422	2020-02-14	1261
+Guangdong	Mainland China	23.33841	113.422	2020-02-15	1294
+Guangdong	Mainland China	23.33841	113.422	2020-02-16	1316
+Guangdong	Mainland China	23.33841	113.422	2020-02-17	1322
+Guangdong	Mainland China	23.33841	113.422	2020-02-18	1328
+Guangdong	Mainland China	23.33841	113.422	2020-02-19	1331
+Guangdong	Mainland China	23.33841	113.422	2020-02-20	1332
+Guangdong	Mainland China	23.33841	113.422	2020-02-21	1333
+Guangdong	Mainland China	23.33841	113.422	2020-02-22	1339
+Guangdong	Mainland China	23.33841	113.422	2020-02-23	1342
+Guangxi	Mainland China	23.82908	108.7881	2020-01-22	2
+Guangxi	Mainland China	23.82908	108.7881	2020-01-23	5
+Guangxi	Mainland China	23.82908	108.7881	2020-01-24	23
+Guangxi	Mainland China	23.82908	108.7881	2020-01-25	23
+Guangxi	Mainland China	23.82908	108.7881	2020-01-26	36
+Guangxi	Mainland China	23.82908	108.7881	2020-01-27	46
+Guangxi	Mainland China	23.82908	108.7881	2020-01-28	51
+Guangxi	Mainland China	23.82908	108.7881	2020-01-29	58
+Guangxi	Mainland China	23.82908	108.7881	2020-01-30	78
+Guangxi	Mainland China	23.82908	108.7881	2020-01-31	87
+Guangxi	Mainland China	23.82908	108.7881	2020-02-01	100
+Guangxi	Mainland China	23.82908	108.7881	2020-02-02	111
+Guangxi	Mainland China	23.82908	108.7881	2020-02-03	127
+Guangxi	Mainland China	23.82908	108.7881	2020-02-04	139
+Guangxi	Mainland China	23.82908	108.7881	2020-02-05	150
+Guangxi	Mainland China	23.82908	108.7881	2020-02-06	168
+Guangxi	Mainland China	23.82908	108.7881	2020-02-07	172
+Guangxi	Mainland China	23.82908	108.7881	2020-02-08	183
+Guangxi	Mainland China	23.82908	108.7881	2020-02-09	195
+Guangxi	Mainland China	23.82908	108.7881	2020-02-10	210
+Guangxi	Mainland China	23.82908	108.7881	2020-02-11	215
+Guangxi	Mainland China	23.82908	108.7881	2020-02-12	222
+Guangxi	Mainland China	23.82908	108.7881	2020-02-13	222
+Guangxi	Mainland China	23.82908	108.7881	2020-02-14	226
+Guangxi	Mainland China	23.82908	108.7881	2020-02-15	235
+Guangxi	Mainland China	23.82908	108.7881	2020-02-16	237
+Guangxi	Mainland China	23.82908	108.7881	2020-02-17	238
+Guangxi	Mainland China	23.82908	108.7881	2020-02-18	242
+Guangxi	Mainland China	23.82908	108.7881	2020-02-19	244
+Guangxi	Mainland China	23.82908	108.7881	2020-02-20	245
+Guangxi	Mainland China	23.82908	108.7881	2020-02-21	246
+Guangxi	Mainland China	23.82908	108.7881	2020-02-22	249
+Guangxi	Mainland China	23.82908	108.7881	2020-02-23	249
+Guizhou	Mainland China	26.81536	106.8748	2020-01-22	1
+Guizhou	Mainland China	26.81536	106.8748	2020-01-23	3
+Guizhou	Mainland China	26.81536	106.8748	2020-01-24	3
+Guizhou	Mainland China	26.81536	106.8748	2020-01-25	4
+Guizhou	Mainland China	26.81536	106.8748	2020-01-26	5
+Guizhou	Mainland China	26.81536	106.8748	2020-01-27	7
+Guizhou	Mainland China	26.81536	106.8748	2020-01-28	9
+Guizhou	Mainland China	26.81536	106.8748	2020-01-29	9
+Guizhou	Mainland China	26.81536	106.8748	2020-01-30	12
+Guizhou	Mainland China	26.81536	106.8748	2020-01-31	29
+Guizhou	Mainland China	26.81536	106.8748	2020-02-01	29
+Guizhou	Mainland China	26.81536	106.8748	2020-02-02	38
+Guizhou	Mainland China	26.81536	106.8748	2020-02-03	46
+Guizhou	Mainland China	26.81536	106.8748	2020-02-04	58
+Guizhou	Mainland China	26.81536	106.8748	2020-02-05	64
+Guizhou	Mainland China	26.81536	106.8748	2020-02-06	71
+Guizhou	Mainland China	26.81536	106.8748	2020-02-07	81
+Guizhou	Mainland China	26.81536	106.8748	2020-02-08	89
+Guizhou	Mainland China	26.81536	106.8748	2020-02-09	99
+Guizhou	Mainland China	26.81536	106.8748	2020-02-10	109
+Guizhou	Mainland China	26.81536	106.8748	2020-02-11	127
+Guizhou	Mainland China	26.81536	106.8748	2020-02-12	133
+Guizhou	Mainland China	26.81536	106.8748	2020-02-13	135
+Guizhou	Mainland China	26.81536	106.8748	2020-02-14	140
+Guizhou	Mainland China	26.81536	106.8748	2020-02-15	143
+Guizhou	Mainland China	26.81536	106.8748	2020-02-16	144
+Guizhou	Mainland China	26.81536	106.8748	2020-02-17	146
+Guizhou	Mainland China	26.81536	106.8748	2020-02-18	146
+Guizhou	Mainland China	26.81536	106.8748	2020-02-19	146
+Guizhou	Mainland China	26.81536	106.8748	2020-02-20	146
+Guizhou	Mainland China	26.81536	106.8748	2020-02-21	146
+Guizhou	Mainland China	26.81536	106.8748	2020-02-22	146
+Guizhou	Mainland China	26.81536	106.8748	2020-02-23	146
+Hainan	Mainland China	19.19673	109.7455	2020-01-22	4
+Hainan	Mainland China	19.19673	109.7455	2020-01-23	5
+Hainan	Mainland China	19.19673	109.7455	2020-01-24	8
+Hainan	Mainland China	19.19673	109.7455	2020-01-25	19
+Hainan	Mainland China	19.19673	109.7455	2020-01-26	22
+Hainan	Mainland China	19.19673	109.7455	2020-01-27	33
+Hainan	Mainland China	19.19673	109.7455	2020-01-28	40
+Hainan	Mainland China	19.19673	109.7455	2020-01-29	43
+Hainan	Mainland China	19.19673	109.7455	2020-01-30	46
+Hainan	Mainland China	19.19673	109.7455	2020-01-31	52
+Hainan	Mainland China	19.19673	109.7455	2020-02-01	62
+Hainan	Mainland China	19.19673	109.7455	2020-02-02	64
+Hainan	Mainland China	19.19673	109.7455	2020-02-03	72
+Hainan	Mainland China	19.19673	109.7455	2020-02-04	80
+Hainan	Mainland China	19.19673	109.7455	2020-02-05	99
+Hainan	Mainland China	19.19673	109.7455	2020-02-06	106
+Hainan	Mainland China	19.19673	109.7455	2020-02-07	117
+Hainan	Mainland China	19.19673	109.7455	2020-02-08	124
+Hainan	Mainland China	19.19673	109.7455	2020-02-09	131
+Hainan	Mainland China	19.19673	109.7455	2020-02-10	138
+Hainan	Mainland China	19.19673	109.7455	2020-02-11	144
+Hainan	Mainland China	19.19673	109.7455	2020-02-12	157
+Hainan	Mainland China	19.19673	109.7455	2020-02-13	157
+Hainan	Mainland China	19.19673	109.7455	2020-02-14	159
+Hainan	Mainland China	19.19673	109.7455	2020-02-15	162
+Hainan	Mainland China	19.19673	109.7455	2020-02-16	162
+Hainan	Mainland China	19.19673	109.7455	2020-02-17	163
+Hainan	Mainland China	19.19673	109.7455	2020-02-18	163
+Hainan	Mainland China	19.19673	109.7455	2020-02-19	168
+Hainan	Mainland China	19.19673	109.7455	2020-02-20	168
+Hainan	Mainland China	19.19673	109.7455	2020-02-21	168
+Hainan	Mainland China	19.19673	109.7455	2020-02-22	168
+Hainan	Mainland China	19.19673	109.7455	2020-02-23	168
+Hebei	Mainland China	38.0428	114.5149	2020-01-22	1
+Hebei	Mainland China	38.0428	114.5149	2020-01-23	1
+Hebei	Mainland China	38.0428	114.5149	2020-01-24	2
+Hebei	Mainland China	38.0428	114.5149	2020-01-25	8
+Hebei	Mainland China	38.0428	114.5149	2020-01-26	13
+Hebei	Mainland China	38.0428	114.5149	2020-01-27	18
+Hebei	Mainland China	38.0428	114.5149	2020-01-28	33
+Hebei	Mainland China	38.0428	114.5149	2020-01-29	48
+Hebei	Mainland China	38.0428	114.5149	2020-01-30	65
+Hebei	Mainland China	38.0428	114.5149	2020-01-31	82
+Hebei	Mainland China	38.0428	114.5149	2020-02-01	96
+Hebei	Mainland China	38.0428	114.5149	2020-02-02	104
+Hebei	Mainland China	38.0428	114.5149	2020-02-03	113
+Hebei	Mainland China	38.0428	114.5149	2020-02-04	126
+Hebei	Mainland China	38.0428	114.5149	2020-02-05	135
+Hebei	Mainland China	38.0428	114.5149	2020-02-06	157
+Hebei	Mainland China	38.0428	114.5149	2020-02-07	172
+Hebei	Mainland China	38.0428	114.5149	2020-02-08	195
+Hebei	Mainland China	38.0428	114.5149	2020-02-09	206
+Hebei	Mainland China	38.0428	114.5149	2020-02-10	218
+Hebei	Mainland China	38.0428	114.5149	2020-02-11	239
+Hebei	Mainland China	38.0428	114.5149	2020-02-12	251
+Hebei	Mainland China	38.0428	114.5149	2020-02-13	265
+Hebei	Mainland China	38.0428	114.5149	2020-02-14	283
+Hebei	Mainland China	38.0428	114.5149	2020-02-15	291
+Hebei	Mainland China	38.0428	114.5149	2020-02-16	300
+Hebei	Mainland China	38.0428	114.5149	2020-02-17	301
+Hebei	Mainland China	38.0428	114.5149	2020-02-18	306
+Hebei	Mainland China	38.0428	114.5149	2020-02-19	306
+Hebei	Mainland China	38.0428	114.5149	2020-02-20	307
+Hebei	Mainland China	38.0428	114.5149	2020-02-21	308
+Hebei	Mainland China	38.0428	114.5149	2020-02-22	309
+Hebei	Mainland China	38.0428	114.5149	2020-02-23	311
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-01-22	0
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-01-23	2
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-01-24	4
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-01-25	9
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-01-26	15
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-01-27	21
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-01-28	33
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-01-29	38
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-01-30	44
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-01-31	59
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-01	80
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-02	95
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-03	121
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-04	155
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-05	190
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-06	227
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-07	277
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-08	295
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-09	307
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-10	331
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-11	360
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-12	378
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-13	395
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-14	419
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-15	425
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-16	445
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-17	457
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-18	464
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-19	470
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-20	476
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-21	479
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-22	479
+Heilongjiang	Mainland China	47.862	127.76220000000001	2020-02-23	480
+Henan	Mainland China	33.88202	113.614	2020-01-22	5
+Henan	Mainland China	33.88202	113.614	2020-01-23	5
+Henan	Mainland China	33.88202	113.614	2020-01-24	9
+Henan	Mainland China	33.88202	113.614	2020-01-25	32
+Henan	Mainland China	33.88202	113.614	2020-01-26	83
+Henan	Mainland China	33.88202	113.614	2020-01-27	128
+Henan	Mainland China	33.88202	113.614	2020-01-28	168
+Henan	Mainland China	33.88202	113.614	2020-01-29	206
+Henan	Mainland China	33.88202	113.614	2020-01-30	278
+Henan	Mainland China	33.88202	113.614	2020-01-31	352
+Henan	Mainland China	33.88202	113.614	2020-02-01	422
+Henan	Mainland China	33.88202	113.614	2020-02-02	493
+Henan	Mainland China	33.88202	113.614	2020-02-03	566
+Henan	Mainland China	33.88202	113.614	2020-02-04	675
+Henan	Mainland China	33.88202	113.614	2020-02-05	764
+Henan	Mainland China	33.88202	113.614	2020-02-06	851
+Henan	Mainland China	33.88202	113.614	2020-02-07	914
+Henan	Mainland China	33.88202	113.614	2020-02-08	981
+Henan	Mainland China	33.88202	113.614	2020-02-09	1033
+Henan	Mainland China	33.88202	113.614	2020-02-10	1073
+Henan	Mainland China	33.88202	113.614	2020-02-11	1105
+Henan	Mainland China	33.88202	113.614	2020-02-12	1135
+Henan	Mainland China	33.88202	113.614	2020-02-13	1169
+Henan	Mainland China	33.88202	113.614	2020-02-14	1184
+Henan	Mainland China	33.88202	113.614	2020-02-15	1212
+Henan	Mainland China	33.88202	113.614	2020-02-16	1231
+Henan	Mainland China	33.88202	113.614	2020-02-17	1246
+Henan	Mainland China	33.88202	113.614	2020-02-18	1257
+Henan	Mainland China	33.88202	113.614	2020-02-19	1262
+Henan	Mainland China	33.88202	113.614	2020-02-20	1265
+Henan	Mainland China	33.88202	113.614	2020-02-21	1267
+Henan	Mainland China	33.88202	113.614	2020-02-22	1270
+Henan	Mainland China	33.88202	113.614	2020-02-23	1271
+Hubei	Mainland China	30.97564	112.2707	2020-01-22	444
+Hubei	Mainland China	30.97564	112.2707	2020-01-23	444
+Hubei	Mainland China	30.97564	112.2707	2020-01-24	549
+Hubei	Mainland China	30.97564	112.2707	2020-01-25	761
+Hubei	Mainland China	30.97564	112.2707	2020-01-26	1058
+Hubei	Mainland China	30.97564	112.2707	2020-01-27	1423
+Hubei	Mainland China	30.97564	112.2707	2020-01-28	3554
+Hubei	Mainland China	30.97564	112.2707	2020-01-29	3554
+Hubei	Mainland China	30.97564	112.2707	2020-01-30	4903
+Hubei	Mainland China	30.97564	112.2707	2020-01-31	5806
+Hubei	Mainland China	30.97564	112.2707	2020-02-01	7153
+Hubei	Mainland China	30.97564	112.2707	2020-02-02	11177
+Hubei	Mainland China	30.97564	112.2707	2020-02-03	13522
+Hubei	Mainland China	30.97564	112.2707	2020-02-04	16678
+Hubei	Mainland China	30.97564	112.2707	2020-02-05	19665
+Hubei	Mainland China	30.97564	112.2707	2020-02-06	22112
+Hubei	Mainland China	30.97564	112.2707	2020-02-07	24953
+Hubei	Mainland China	30.97564	112.2707	2020-02-08	27100
+Hubei	Mainland China	30.97564	112.2707	2020-02-09	29631
+Hubei	Mainland China	30.97564	112.2707	2020-02-10	31728
+Hubei	Mainland China	30.97564	112.2707	2020-02-11	33366
+Hubei	Mainland China	30.97564	112.2707	2020-02-12	33366
+Hubei	Mainland China	30.97564	112.2707	2020-02-13	48206
+Hubei	Mainland China	30.97564	112.2707	2020-02-14	54406
+Hubei	Mainland China	30.97564	112.2707	2020-02-15	56249
+Hubei	Mainland China	30.97564	112.2707	2020-02-16	58182
+Hubei	Mainland China	30.97564	112.2707	2020-02-17	59989
+Hubei	Mainland China	30.97564	112.2707	2020-02-18	61682
+Hubei	Mainland China	30.97564	112.2707	2020-02-19	62031
+Hubei	Mainland China	30.97564	112.2707	2020-02-20	62442
+Hubei	Mainland China	30.97564	112.2707	2020-02-21	62662
+Hubei	Mainland China	30.97564	112.2707	2020-02-22	64084
+Hubei	Mainland China	30.97564	112.2707	2020-02-23	64084
+Hunan	Mainland China	27.61041	111.7088	2020-01-22	4
+Hunan	Mainland China	27.61041	111.7088	2020-01-23	9
+Hunan	Mainland China	27.61041	111.7088	2020-01-24	24
+Hunan	Mainland China	27.61041	111.7088	2020-01-25	43
+Hunan	Mainland China	27.61041	111.7088	2020-01-26	69
+Hunan	Mainland China	27.61041	111.7088	2020-01-27	100
+Hunan	Mainland China	27.61041	111.7088	2020-01-28	143
+Hunan	Mainland China	27.61041	111.7088	2020-01-29	221
+Hunan	Mainland China	27.61041	111.7088	2020-01-30	277
+Hunan	Mainland China	27.61041	111.7088	2020-01-31	332
+Hunan	Mainland China	27.61041	111.7088	2020-02-01	389
+Hunan	Mainland China	27.61041	111.7088	2020-02-02	463
+Hunan	Mainland China	27.61041	111.7088	2020-02-03	521
+Hunan	Mainland China	27.61041	111.7088	2020-02-04	593
+Hunan	Mainland China	27.61041	111.7088	2020-02-05	661
+Hunan	Mainland China	27.61041	111.7088	2020-02-06	711
+Hunan	Mainland China	27.61041	111.7088	2020-02-07	772
+Hunan	Mainland China	27.61041	111.7088	2020-02-08	803
+Hunan	Mainland China	27.61041	111.7088	2020-02-09	838
+Hunan	Mainland China	27.61041	111.7088	2020-02-10	879
+Hunan	Mainland China	27.61041	111.7088	2020-02-11	912
+Hunan	Mainland China	27.61041	111.7088	2020-02-12	946
+Hunan	Mainland China	27.61041	111.7088	2020-02-13	968
+Hunan	Mainland China	27.61041	111.7088	2020-02-14	988
+Hunan	Mainland China	27.61041	111.7088	2020-02-15	1001
+Hunan	Mainland China	27.61041	111.7088	2020-02-16	1004
+Hunan	Mainland China	27.61041	111.7088	2020-02-17	1006
+Hunan	Mainland China	27.61041	111.7088	2020-02-18	1007
+Hunan	Mainland China	27.61041	111.7088	2020-02-19	1008
+Hunan	Mainland China	27.61041	111.7088	2020-02-20	1010
+Hunan	Mainland China	27.61041	111.7088	2020-02-21	1011
+Hunan	Mainland China	27.61041	111.7088	2020-02-22	1013
+Hunan	Mainland China	27.61041	111.7088	2020-02-23	1016
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-01-22	0
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-01-23	0
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-01-24	1
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-01-25	7
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-01-26	7
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-01-27	11
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-01-28	15
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-01-29	16
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-01-30	19
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-01-31	20
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-01	23
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-02	27
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-03	34
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-04	35
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-05	42
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-06	46
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-07	50
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-08	52
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-09	54
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-10	58
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-11	58
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-12	60
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-13	61
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-14	65
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-15	68
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-16	70
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-17	72
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-18	73
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-19	75
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-20	75
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-21	75
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-22	75
+Inner Mongolia	Mainland China	44.09448	113.9456	2020-02-23	75
+Jiangsu	Mainland China	32.97027	119.464	2020-01-22	1
+Jiangsu	Mainland China	32.97027	119.464	2020-01-23	5
+Jiangsu	Mainland China	32.97027	119.464	2020-01-24	9
+Jiangsu	Mainland China	32.97027	119.464	2020-01-25	18
+Jiangsu	Mainland China	32.97027	119.464	2020-01-26	33
+Jiangsu	Mainland China	32.97027	119.464	2020-01-27	47
+Jiangsu	Mainland China	32.97027	119.464	2020-01-28	70
+Jiangsu	Mainland China	32.97027	119.464	2020-01-29	99
+Jiangsu	Mainland China	32.97027	119.464	2020-01-30	129
+Jiangsu	Mainland China	32.97027	119.464	2020-01-31	168
+Jiangsu	Mainland China	32.97027	119.464	2020-02-01	202
+Jiangsu	Mainland China	32.97027	119.464	2020-02-02	236
+Jiangsu	Mainland China	32.97027	119.464	2020-02-03	271
+Jiangsu	Mainland China	32.97027	119.464	2020-02-04	308
+Jiangsu	Mainland China	32.97027	119.464	2020-02-05	341
+Jiangsu	Mainland China	32.97027	119.464	2020-02-06	373
+Jiangsu	Mainland China	32.97027	119.464	2020-02-07	408
+Jiangsu	Mainland China	32.97027	119.464	2020-02-08	439
+Jiangsu	Mainland China	32.97027	119.464	2020-02-09	468
+Jiangsu	Mainland China	32.97027	119.464	2020-02-10	492
+Jiangsu	Mainland China	32.97027	119.464	2020-02-11	515
+Jiangsu	Mainland China	32.97027	119.464	2020-02-12	543
+Jiangsu	Mainland China	32.97027	119.464	2020-02-13	570
+Jiangsu	Mainland China	32.97027	119.464	2020-02-14	593
+Jiangsu	Mainland China	32.97027	119.464	2020-02-15	604
+Jiangsu	Mainland China	32.97027	119.464	2020-02-16	617
+Jiangsu	Mainland China	32.97027	119.464	2020-02-17	626
+Jiangsu	Mainland China	32.97027	119.464	2020-02-18	629
+Jiangsu	Mainland China	32.97027	119.464	2020-02-19	631
+Jiangsu	Mainland China	32.97027	119.464	2020-02-20	631
+Jiangsu	Mainland China	32.97027	119.464	2020-02-21	631
+Jiangsu	Mainland China	32.97027	119.464	2020-02-22	631
+Jiangsu	Mainland China	32.97027	119.464	2020-02-23	631
+Jiangxi	Mainland China	27.61401	115.7221	2020-01-22	2
+Jiangxi	Mainland China	27.61401	115.7221	2020-01-23	7
+Jiangxi	Mainland China	27.61401	115.7221	2020-01-24	18
+Jiangxi	Mainland China	27.61401	115.7221	2020-01-25	18
+Jiangxi	Mainland China	27.61401	115.7221	2020-01-26	36
+Jiangxi	Mainland China	27.61401	115.7221	2020-01-27	72
+Jiangxi	Mainland China	27.61401	115.7221	2020-01-28	109
+Jiangxi	Mainland China	27.61401	115.7221	2020-01-29	109
+Jiangxi	Mainland China	27.61401	115.7221	2020-01-30	162
+Jiangxi	Mainland China	27.61401	115.7221	2020-01-31	240
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-01	286
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-02	333
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-03	391
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-04	476
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-05	548
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-06	600
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-07	661
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-08	698
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-09	740
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-10	771
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-11	804
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-12	844
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-13	872
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-14	900
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-15	913
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-16	925
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-17	930
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-18	933
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-19	934
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-20	934
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-21	934
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-22	934
+Jiangxi	Mainland China	27.61401	115.7221	2020-02-23	934
+Jilin	Mainland China	43.66657	126.1917	2020-01-22	0
+Jilin	Mainland China	43.66657	126.1917	2020-01-23	1
+Jilin	Mainland China	43.66657	126.1917	2020-01-24	3
+Jilin	Mainland China	43.66657	126.1917	2020-01-25	4
+Jilin	Mainland China	43.66657	126.1917	2020-01-26	4
+Jilin	Mainland China	43.66657	126.1917	2020-01-27	6
+Jilin	Mainland China	43.66657	126.1917	2020-01-28	8
+Jilin	Mainland China	43.66657	126.1917	2020-01-29	9
+Jilin	Mainland China	43.66657	126.1917	2020-01-30	14
+Jilin	Mainland China	43.66657	126.1917	2020-01-31	14
+Jilin	Mainland China	43.66657	126.1917	2020-02-01	17
+Jilin	Mainland China	43.66657	126.1917	2020-02-02	23
+Jilin	Mainland China	43.66657	126.1917	2020-02-03	31
+Jilin	Mainland China	43.66657	126.1917	2020-02-04	42
+Jilin	Mainland China	43.66657	126.1917	2020-02-05	54
+Jilin	Mainland China	43.66657	126.1917	2020-02-06	59
+Jilin	Mainland China	43.66657	126.1917	2020-02-07	65
+Jilin	Mainland China	43.66657	126.1917	2020-02-08	69
+Jilin	Mainland China	43.66657	126.1917	2020-02-09	78
+Jilin	Mainland China	43.66657	126.1917	2020-02-10	80
+Jilin	Mainland China	43.66657	126.1917	2020-02-11	81
+Jilin	Mainland China	43.66657	126.1917	2020-02-12	83
+Jilin	Mainland China	43.66657	126.1917	2020-02-13	84
+Jilin	Mainland China	43.66657	126.1917	2020-02-14	86
+Jilin	Mainland China	43.66657	126.1917	2020-02-15	88
+Jilin	Mainland China	43.66657	126.1917	2020-02-16	89
+Jilin	Mainland China	43.66657	126.1917	2020-02-17	89
+Jilin	Mainland China	43.66657	126.1917	2020-02-18	89
+Jilin	Mainland China	43.66657	126.1917	2020-02-19	90
+Jilin	Mainland China	43.66657	126.1917	2020-02-20	91
+Jilin	Mainland China	43.66657	126.1917	2020-02-21	91
+Jilin	Mainland China	43.66657	126.1917	2020-02-22	91
+Jilin	Mainland China	43.66657	126.1917	2020-02-23	91
+Liaoning	Mainland China	41.29284	122.6086	2020-01-22	2
+Liaoning	Mainland China	41.29284	122.6086	2020-01-23	3
+Liaoning	Mainland China	41.29284	122.6086	2020-01-24	4
+Liaoning	Mainland China	41.29284	122.6086	2020-01-25	17
+Liaoning	Mainland China	41.29284	122.6086	2020-01-26	21
+Liaoning	Mainland China	41.29284	122.6086	2020-01-27	27
+Liaoning	Mainland China	41.29284	122.6086	2020-01-28	34
+Liaoning	Mainland China	41.29284	122.6086	2020-01-29	39
+Liaoning	Mainland China	41.29284	122.6086	2020-01-30	41
+Liaoning	Mainland China	41.29284	122.6086	2020-01-31	48
+Liaoning	Mainland China	41.29284	122.6086	2020-02-01	64
+Liaoning	Mainland China	41.29284	122.6086	2020-02-02	70
+Liaoning	Mainland China	41.29284	122.6086	2020-02-03	74
+Liaoning	Mainland China	41.29284	122.6086	2020-02-04	81
+Liaoning	Mainland China	41.29284	122.6086	2020-02-05	89
+Liaoning	Mainland China	41.29284	122.6086	2020-02-06	94
+Liaoning	Mainland China	41.29284	122.6086	2020-02-07	99
+Liaoning	Mainland China	41.29284	122.6086	2020-02-08	105
+Liaoning	Mainland China	41.29284	122.6086	2020-02-09	107
+Liaoning	Mainland China	41.29284	122.6086	2020-02-10	108
+Liaoning	Mainland China	41.29284	122.6086	2020-02-11	111
+Liaoning	Mainland China	41.29284	122.6086	2020-02-12	116
+Liaoning	Mainland China	41.29284	122.6086	2020-02-13	117
+Liaoning	Mainland China	41.29284	122.6086	2020-02-14	119
+Liaoning	Mainland China	41.29284	122.6086	2020-02-15	119
+Liaoning	Mainland China	41.29284	122.6086	2020-02-16	121
+Liaoning	Mainland China	41.29284	122.6086	2020-02-17	121
+Liaoning	Mainland China	41.29284	122.6086	2020-02-18	121
+Liaoning	Mainland China	41.29284	122.6086	2020-02-19	121
+Liaoning	Mainland China	41.29284	122.6086	2020-02-20	121
+Liaoning	Mainland China	41.29284	122.6086	2020-02-21	121
+Liaoning	Mainland China	41.29284	122.6086	2020-02-22	121
+Liaoning	Mainland China	41.29284	122.6086	2020-02-23	121
+Ningxia	Mainland China	37.26923	106.1655	2020-01-22	1
+Ningxia	Mainland China	37.26923	106.1655	2020-01-23	1
+Ningxia	Mainland China	37.26923	106.1655	2020-01-24	2
+Ningxia	Mainland China	37.26923	106.1655	2020-01-25	3
+Ningxia	Mainland China	37.26923	106.1655	2020-01-26	4
+Ningxia	Mainland China	37.26923	106.1655	2020-01-27	7
+Ningxia	Mainland China	37.26923	106.1655	2020-01-28	11
+Ningxia	Mainland China	37.26923	106.1655	2020-01-29	12
+Ningxia	Mainland China	37.26923	106.1655	2020-01-30	17
+Ningxia	Mainland China	37.26923	106.1655	2020-01-31	21
+Ningxia	Mainland China	37.26923	106.1655	2020-02-01	26
+Ningxia	Mainland China	37.26923	106.1655	2020-02-02	28
+Ningxia	Mainland China	37.26923	106.1655	2020-02-03	31
+Ningxia	Mainland China	37.26923	106.1655	2020-02-04	34
+Ningxia	Mainland China	37.26923	106.1655	2020-02-05	34
+Ningxia	Mainland China	37.26923	106.1655	2020-02-06	40
+Ningxia	Mainland China	37.26923	106.1655	2020-02-07	43
+Ningxia	Mainland China	37.26923	106.1655	2020-02-08	45
+Ningxia	Mainland China	37.26923	106.1655	2020-02-09	45
+Ningxia	Mainland China	37.26923	106.1655	2020-02-10	49
+Ningxia	Mainland China	37.26923	106.1655	2020-02-11	53
+Ningxia	Mainland China	37.26923	106.1655	2020-02-12	58
+Ningxia	Mainland China	37.26923	106.1655	2020-02-13	64
+Ningxia	Mainland China	37.26923	106.1655	2020-02-14	67
+Ningxia	Mainland China	37.26923	106.1655	2020-02-15	70
+Ningxia	Mainland China	37.26923	106.1655	2020-02-16	70
+Ningxia	Mainland China	37.26923	106.1655	2020-02-17	70
+Ningxia	Mainland China	37.26923	106.1655	2020-02-18	70
+Ningxia	Mainland China	37.26923	106.1655	2020-02-19	71
+Ningxia	Mainland China	37.26923	106.1655	2020-02-20	71
+Ningxia	Mainland China	37.26923	106.1655	2020-02-21	71
+Ningxia	Mainland China	37.26923	106.1655	2020-02-22	71
+Ningxia	Mainland China	37.26923	106.1655	2020-02-23	71
+Qinghai	Mainland China	35.65945	96.02564	2020-01-22	0
+Qinghai	Mainland China	35.65945	96.02564	2020-01-23	0
+Qinghai	Mainland China	35.65945	96.02564	2020-01-24	0
+Qinghai	Mainland China	35.65945	96.02564	2020-01-25	1
+Qinghai	Mainland China	35.65945	96.02564	2020-01-26	1
+Qinghai	Mainland China	35.65945	96.02564	2020-01-27	6
+Qinghai	Mainland China	35.65945	96.02564	2020-01-28	6
+Qinghai	Mainland China	35.65945	96.02564	2020-01-29	6
+Qinghai	Mainland China	35.65945	96.02564	2020-01-30	8
+Qinghai	Mainland China	35.65945	96.02564	2020-01-31	8
+Qinghai	Mainland China	35.65945	96.02564	2020-02-01	9
+Qinghai	Mainland China	35.65945	96.02564	2020-02-02	11
+Qinghai	Mainland China	35.65945	96.02564	2020-02-03	13
+Qinghai	Mainland China	35.65945	96.02564	2020-02-04	15
+Qinghai	Mainland China	35.65945	96.02564	2020-02-05	17
+Qinghai	Mainland China	35.65945	96.02564	2020-02-06	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-07	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-08	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-09	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-10	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-11	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-12	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-13	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-14	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-15	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-16	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-17	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-18	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-19	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-20	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-21	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-22	18
+Qinghai	Mainland China	35.65945	96.02564	2020-02-23	18
+Shaanxi	Mainland China	35.19165	108.8701	2020-01-22	0
+Shaanxi	Mainland China	35.19165	108.8701	2020-01-23	3
+Shaanxi	Mainland China	35.19165	108.8701	2020-01-24	5
+Shaanxi	Mainland China	35.19165	108.8701	2020-01-25	15
+Shaanxi	Mainland China	35.19165	108.8701	2020-01-26	22
+Shaanxi	Mainland China	35.19165	108.8701	2020-01-27	35
+Shaanxi	Mainland China	35.19165	108.8701	2020-01-28	46
+Shaanxi	Mainland China	35.19165	108.8701	2020-01-29	56
+Shaanxi	Mainland China	35.19165	108.8701	2020-01-30	63
+Shaanxi	Mainland China	35.19165	108.8701	2020-01-31	87
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-01	101
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-02	116
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-03	128
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-04	142
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-05	165
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-06	173
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-07	184
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-08	195
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-09	208
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-10	213
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-11	219
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-12	225
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-13	229
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-14	230
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-15	232
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-16	236
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-17	240
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-18	240
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-19	242
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-20	245
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-21	245
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-22	245
+Shaanxi	Mainland China	35.19165	108.8701	2020-02-23	245
+Shandong	Mainland China	36.34377	118.1529	2020-01-22	2
+Shandong	Mainland China	36.34377	118.1529	2020-01-23	6
+Shandong	Mainland China	36.34377	118.1529	2020-01-24	15
+Shandong	Mainland China	36.34377	118.1529	2020-01-25	27
+Shandong	Mainland China	36.34377	118.1529	2020-01-26	46
+Shandong	Mainland China	36.34377	118.1529	2020-01-27	75
+Shandong	Mainland China	36.34377	118.1529	2020-01-28	95
+Shandong	Mainland China	36.34377	118.1529	2020-01-29	130
+Shandong	Mainland China	36.34377	118.1529	2020-01-30	158
+Shandong	Mainland China	36.34377	118.1529	2020-01-31	184
+Shandong	Mainland China	36.34377	118.1529	2020-02-01	206
+Shandong	Mainland China	36.34377	118.1529	2020-02-02	230
+Shandong	Mainland China	36.34377	118.1529	2020-02-03	259
+Shandong	Mainland China	36.34377	118.1529	2020-02-04	275
+Shandong	Mainland China	36.34377	118.1529	2020-02-05	307
+Shandong	Mainland China	36.34377	118.1529	2020-02-06	347
+Shandong	Mainland China	36.34377	118.1529	2020-02-07	386
+Shandong	Mainland China	36.34377	118.1529	2020-02-08	416
+Shandong	Mainland China	36.34377	118.1529	2020-02-09	444
+Shandong	Mainland China	36.34377	118.1529	2020-02-10	466
+Shandong	Mainland China	36.34377	118.1529	2020-02-11	487
+Shandong	Mainland China	36.34377	118.1529	2020-02-12	497
+Shandong	Mainland China	36.34377	118.1529	2020-02-13	509
+Shandong	Mainland China	36.34377	118.1529	2020-02-14	523
+Shandong	Mainland China	36.34377	118.1529	2020-02-15	532
+Shandong	Mainland China	36.34377	118.1529	2020-02-16	537
+Shandong	Mainland China	36.34377	118.1529	2020-02-17	541
+Shandong	Mainland China	36.34377	118.1529	2020-02-18	543
+Shandong	Mainland China	36.34377	118.1529	2020-02-19	544
+Shandong	Mainland China	36.34377	118.1529	2020-02-20	546
+Shandong	Mainland China	36.34377	118.1529	2020-02-21	749
+Shandong	Mainland China	36.34377	118.1529	2020-02-22	750
+Shandong	Mainland China	36.34377	118.1529	2020-02-23	754
+Shanghai	Mainland China	31.20327	121.4554	2020-01-22	9
+Shanghai	Mainland China	31.20327	121.4554	2020-01-23	16
+Shanghai	Mainland China	31.20327	121.4554	2020-01-24	20
+Shanghai	Mainland China	31.20327	121.4554	2020-01-25	33
+Shanghai	Mainland China	31.20327	121.4554	2020-01-26	40
+Shanghai	Mainland China	31.20327	121.4554	2020-01-27	53
+Shanghai	Mainland China	31.20327	121.4554	2020-01-28	66
+Shanghai	Mainland China	31.20327	121.4554	2020-01-29	96
+Shanghai	Mainland China	31.20327	121.4554	2020-01-30	112
+Shanghai	Mainland China	31.20327	121.4554	2020-01-31	135
+Shanghai	Mainland China	31.20327	121.4554	2020-02-01	169
+Shanghai	Mainland China	31.20327	121.4554	2020-02-02	182
+Shanghai	Mainland China	31.20327	121.4554	2020-02-03	203
+Shanghai	Mainland China	31.20327	121.4554	2020-02-04	219
+Shanghai	Mainland China	31.20327	121.4554	2020-02-05	243
+Shanghai	Mainland China	31.20327	121.4554	2020-02-06	257
+Shanghai	Mainland China	31.20327	121.4554	2020-02-07	277
+Shanghai	Mainland China	31.20327	121.4554	2020-02-08	286
+Shanghai	Mainland China	31.20327	121.4554	2020-02-09	293
+Shanghai	Mainland China	31.20327	121.4554	2020-02-10	299
+Shanghai	Mainland China	31.20327	121.4554	2020-02-11	303
+Shanghai	Mainland China	31.20327	121.4554	2020-02-12	311
+Shanghai	Mainland China	31.20327	121.4554	2020-02-13	315
+Shanghai	Mainland China	31.20327	121.4554	2020-02-14	318
+Shanghai	Mainland China	31.20327	121.4554	2020-02-15	326
+Shanghai	Mainland China	31.20327	121.4554	2020-02-16	328
+Shanghai	Mainland China	31.20327	121.4554	2020-02-17	333
+Shanghai	Mainland China	31.20327	121.4554	2020-02-18	333
+Shanghai	Mainland China	31.20327	121.4554	2020-02-19	333
+Shanghai	Mainland China	31.20327	121.4554	2020-02-20	334
+Shanghai	Mainland China	31.20327	121.4554	2020-02-21	334
+Shanghai	Mainland China	31.20327	121.4554	2020-02-22	335
+Shanghai	Mainland China	31.20327	121.4554	2020-02-23	335
+Shanxi	Mainland China	37.57769	112.2922	2020-01-22	1
+Shanxi	Mainland China	37.57769	112.2922	2020-01-23	1
+Shanxi	Mainland China	37.57769	112.2922	2020-01-24	1
+Shanxi	Mainland China	37.57769	112.2922	2020-01-25	6
+Shanxi	Mainland China	37.57769	112.2922	2020-01-26	9
+Shanxi	Mainland China	37.57769	112.2922	2020-01-27	13
+Shanxi	Mainland China	37.57769	112.2922	2020-01-28	27
+Shanxi	Mainland China	37.57769	112.2922	2020-01-29	27
+Shanxi	Mainland China	37.57769	112.2922	2020-01-30	35
+Shanxi	Mainland China	37.57769	112.2922	2020-01-31	39
+Shanxi	Mainland China	37.57769	112.2922	2020-02-01	47
+Shanxi	Mainland China	37.57769	112.2922	2020-02-02	66
+Shanxi	Mainland China	37.57769	112.2922	2020-02-03	74
+Shanxi	Mainland China	37.57769	112.2922	2020-02-04	81
+Shanxi	Mainland China	37.57769	112.2922	2020-02-05	81
+Shanxi	Mainland China	37.57769	112.2922	2020-02-06	96
+Shanxi	Mainland China	37.57769	112.2922	2020-02-07	104
+Shanxi	Mainland China	37.57769	112.2922	2020-02-08	115
+Shanxi	Mainland China	37.57769	112.2922	2020-02-09	119
+Shanxi	Mainland China	37.57769	112.2922	2020-02-10	119
+Shanxi	Mainland China	37.57769	112.2922	2020-02-11	124
+Shanxi	Mainland China	37.57769	112.2922	2020-02-12	126
+Shanxi	Mainland China	37.57769	112.2922	2020-02-13	126
+Shanxi	Mainland China	37.57769	112.2922	2020-02-14	127
+Shanxi	Mainland China	37.57769	112.2922	2020-02-15	128
+Shanxi	Mainland China	37.57769	112.2922	2020-02-16	129
+Shanxi	Mainland China	37.57769	112.2922	2020-02-17	130
+Shanxi	Mainland China	37.57769	112.2922	2020-02-18	131
+Shanxi	Mainland China	37.57769	112.2922	2020-02-19	131
+Shanxi	Mainland China	37.57769	112.2922	2020-02-20	132
+Shanxi	Mainland China	37.57769	112.2922	2020-02-21	132
+Shanxi	Mainland China	37.57769	112.2922	2020-02-22	132
+Shanxi	Mainland China	37.57769	112.2922	2020-02-23	132
+Sichuan	Mainland China	30.61714	102.7103	2020-01-22	5
+Sichuan	Mainland China	30.61714	102.7103	2020-01-23	8
+Sichuan	Mainland China	30.61714	102.7103	2020-01-24	15
+Sichuan	Mainland China	30.61714	102.7103	2020-01-25	28
+Sichuan	Mainland China	30.61714	102.7103	2020-01-26	44
+Sichuan	Mainland China	30.61714	102.7103	2020-01-27	69
+Sichuan	Mainland China	30.61714	102.7103	2020-01-28	90
+Sichuan	Mainland China	30.61714	102.7103	2020-01-29	108
+Sichuan	Mainland China	30.61714	102.7103	2020-01-30	142
+Sichuan	Mainland China	30.61714	102.7103	2020-01-31	177
+Sichuan	Mainland China	30.61714	102.7103	2020-02-01	207
+Sichuan	Mainland China	30.61714	102.7103	2020-02-02	231
+Sichuan	Mainland China	30.61714	102.7103	2020-02-03	254
+Sichuan	Mainland China	30.61714	102.7103	2020-02-04	282
+Sichuan	Mainland China	30.61714	102.7103	2020-02-05	301
+Sichuan	Mainland China	30.61714	102.7103	2020-02-06	321
+Sichuan	Mainland China	30.61714	102.7103	2020-02-07	344
+Sichuan	Mainland China	30.61714	102.7103	2020-02-08	364
+Sichuan	Mainland China	30.61714	102.7103	2020-02-09	386
+Sichuan	Mainland China	30.61714	102.7103	2020-02-10	405
+Sichuan	Mainland China	30.61714	102.7103	2020-02-11	417
+Sichuan	Mainland China	30.61714	102.7103	2020-02-12	436
+Sichuan	Mainland China	30.61714	102.7103	2020-02-13	451
+Sichuan	Mainland China	30.61714	102.7103	2020-02-14	463
+Sichuan	Mainland China	30.61714	102.7103	2020-02-15	470
+Sichuan	Mainland China	30.61714	102.7103	2020-02-16	481
+Sichuan	Mainland China	30.61714	102.7103	2020-02-17	495
+Sichuan	Mainland China	30.61714	102.7103	2020-02-18	508
+Sichuan	Mainland China	30.61714	102.7103	2020-02-19	514
+Sichuan	Mainland China	30.61714	102.7103	2020-02-20	520
+Sichuan	Mainland China	30.61714	102.7103	2020-02-21	525
+Sichuan	Mainland China	30.61714	102.7103	2020-02-22	526
+Sichuan	Mainland China	30.61714	102.7103	2020-02-23	526
+Tianjin	Mainland China	39.29362	117.333	2020-01-22	4
+Tianjin	Mainland China	39.29362	117.333	2020-01-23	4
+Tianjin	Mainland China	39.29362	117.333	2020-01-24	8
+Tianjin	Mainland China	39.29362	117.333	2020-01-25	10
+Tianjin	Mainland China	39.29362	117.333	2020-01-26	14
+Tianjin	Mainland China	39.29362	117.333	2020-01-27	23
+Tianjin	Mainland China	39.29362	117.333	2020-01-28	24
+Tianjin	Mainland China	39.29362	117.333	2020-01-29	27
+Tianjin	Mainland China	39.29362	117.333	2020-01-30	31
+Tianjin	Mainland China	39.29362	117.333	2020-01-31	32
+Tianjin	Mainland China	39.29362	117.333	2020-02-01	41
+Tianjin	Mainland China	39.29362	117.333	2020-02-02	48
+Tianjin	Mainland China	39.29362	117.333	2020-02-03	60
+Tianjin	Mainland China	39.29362	117.333	2020-02-04	67
+Tianjin	Mainland China	39.29362	117.333	2020-02-05	69
+Tianjin	Mainland China	39.29362	117.333	2020-02-06	79
+Tianjin	Mainland China	39.29362	117.333	2020-02-07	81
+Tianjin	Mainland China	39.29362	117.333	2020-02-08	88
+Tianjin	Mainland China	39.29362	117.333	2020-02-09	91
+Tianjin	Mainland China	39.29362	117.333	2020-02-10	95
+Tianjin	Mainland China	39.29362	117.333	2020-02-11	106
+Tianjin	Mainland China	39.29362	117.333	2020-02-12	112
+Tianjin	Mainland China	39.29362	117.333	2020-02-13	119
+Tianjin	Mainland China	39.29362	117.333	2020-02-14	120
+Tianjin	Mainland China	39.29362	117.333	2020-02-15	122
+Tianjin	Mainland China	39.29362	117.333	2020-02-16	124
+Tianjin	Mainland China	39.29362	117.333	2020-02-17	125
+Tianjin	Mainland China	39.29362	117.333	2020-02-18	128
+Tianjin	Mainland China	39.29362	117.333	2020-02-19	130
+Tianjin	Mainland China	39.29362	117.333	2020-02-20	131
+Tianjin	Mainland China	39.29362	117.333	2020-02-21	132
+Tianjin	Mainland China	39.29362	117.333	2020-02-22	135
+Tianjin	Mainland China	39.29362	117.333	2020-02-23	135
+Tibet	Mainland China	30.1534	88.7879	2020-01-22	0
+Tibet	Mainland China	30.1534	88.7879	2020-01-23	0
+Tibet	Mainland China	30.1534	88.7879	2020-01-24	0
+Tibet	Mainland China	30.1534	88.7879	2020-01-25	0
+Tibet	Mainland China	30.1534	88.7879	2020-01-26	0
+Tibet	Mainland China	30.1534	88.7879	2020-01-27	0
+Tibet	Mainland China	30.1534	88.7879	2020-01-28	0
+Tibet	Mainland China	30.1534	88.7879	2020-01-29	0
+Tibet	Mainland China	30.1534	88.7879	2020-01-30	1
+Tibet	Mainland China	30.1534	88.7879	2020-01-31	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-01	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-02	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-03	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-04	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-05	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-06	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-07	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-08	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-09	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-10	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-11	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-12	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-13	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-14	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-15	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-16	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-17	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-18	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-19	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-20	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-21	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-22	1
+Tibet	Mainland China	30.1534	88.7879	2020-02-23	1
+Xinjiang	Mainland China	41.11981	85.17822	2020-01-22	0
+Xinjiang	Mainland China	41.11981	85.17822	2020-01-23	2
+Xinjiang	Mainland China	41.11981	85.17822	2020-01-24	2
+Xinjiang	Mainland China	41.11981	85.17822	2020-01-25	3
+Xinjiang	Mainland China	41.11981	85.17822	2020-01-26	4
+Xinjiang	Mainland China	41.11981	85.17822	2020-01-27	5
+Xinjiang	Mainland China	41.11981	85.17822	2020-01-28	10
+Xinjiang	Mainland China	41.11981	85.17822	2020-01-29	13
+Xinjiang	Mainland China	41.11981	85.17822	2020-01-30	14
+Xinjiang	Mainland China	41.11981	85.17822	2020-01-31	17
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-01	18
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-02	21
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-03	24
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-04	29
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-05	32
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-06	36
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-07	39
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-08	42
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-09	45
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-10	49
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-11	55
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-12	59
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-13	63
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-14	65
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-15	70
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-16	71
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-17	75
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-18	76
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-19	76
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-20	76
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-21	76
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-22	76
+Xinjiang	Mainland China	41.11981	85.17822	2020-02-23	76
+Yunnan	Mainland China	24.97411	101.4868	2020-01-22	1
+Yunnan	Mainland China	24.97411	101.4868	2020-01-23	2
+Yunnan	Mainland China	24.97411	101.4868	2020-01-24	5
+Yunnan	Mainland China	24.97411	101.4868	2020-01-25	11
+Yunnan	Mainland China	24.97411	101.4868	2020-01-26	16
+Yunnan	Mainland China	24.97411	101.4868	2020-01-27	26
+Yunnan	Mainland China	24.97411	101.4868	2020-01-28	44
+Yunnan	Mainland China	24.97411	101.4868	2020-01-29	55
+Yunnan	Mainland China	24.97411	101.4868	2020-01-30	70
+Yunnan	Mainland China	24.97411	101.4868	2020-01-31	83
+Yunnan	Mainland China	24.97411	101.4868	2020-02-01	93
+Yunnan	Mainland China	24.97411	101.4868	2020-02-02	105
+Yunnan	Mainland China	24.97411	101.4868	2020-02-03	117
+Yunnan	Mainland China	24.97411	101.4868	2020-02-04	122
+Yunnan	Mainland China	24.97411	101.4868	2020-02-05	128
+Yunnan	Mainland China	24.97411	101.4868	2020-02-06	133
+Yunnan	Mainland China	24.97411	101.4868	2020-02-07	138
+Yunnan	Mainland China	24.97411	101.4868	2020-02-08	138
+Yunnan	Mainland China	24.97411	101.4868	2020-02-09	141
+Yunnan	Mainland China	24.97411	101.4868	2020-02-10	149
+Yunnan	Mainland China	24.97411	101.4868	2020-02-11	153
+Yunnan	Mainland China	24.97411	101.4868	2020-02-12	154
+Yunnan	Mainland China	24.97411	101.4868	2020-02-13	156
+Yunnan	Mainland China	24.97411	101.4868	2020-02-14	162
+Yunnan	Mainland China	24.97411	101.4868	2020-02-15	168
+Yunnan	Mainland China	24.97411	101.4868	2020-02-16	171
+Yunnan	Mainland China	24.97411	101.4868	2020-02-17	171
+Yunnan	Mainland China	24.97411	101.4868	2020-02-18	172
+Yunnan	Mainland China	24.97411	101.4868	2020-02-19	172
+Yunnan	Mainland China	24.97411	101.4868	2020-02-20	174
+Yunnan	Mainland China	24.97411	101.4868	2020-02-21	174
+Yunnan	Mainland China	24.97411	101.4868	2020-02-22	174
+Yunnan	Mainland China	24.97411	101.4868	2020-02-23	174
+Zhejiang	Mainland China	29.18251	120.0985	2020-01-22	10
+Zhejiang	Mainland China	29.18251	120.0985	2020-01-23	27
+Zhejiang	Mainland China	29.18251	120.0985	2020-01-24	43
+Zhejiang	Mainland China	29.18251	120.0985	2020-01-25	62
+Zhejiang	Mainland China	29.18251	120.0985	2020-01-26	104
+Zhejiang	Mainland China	29.18251	120.0985	2020-01-27	128
+Zhejiang	Mainland China	29.18251	120.0985	2020-01-28	173
+Zhejiang	Mainland China	29.18251	120.0985	2020-01-29	296
+Zhejiang	Mainland China	29.18251	120.0985	2020-01-30	428
+Zhejiang	Mainland China	29.18251	120.0985	2020-01-31	538
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-01	599
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-02	661
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-03	724
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-04	829
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-05	895
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-06	954
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-07	1006
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-08	1048
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-09	1075
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-10	1092
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-11	1117
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-12	1131
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-13	1145
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-14	1155
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-15	1162
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-16	1167
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-17	1171
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-18	1172
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-19	1174
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-20	1175
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-21	1203
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-22	1205
+Zhejiang	Mainland China	29.18251	120.0985	2020-02-23	1205
+NA	Thailand	13.7563	100.5018	2020-01-22	2
+NA	Thailand	13.7563	100.5018	2020-01-23	3
+NA	Thailand	13.7563	100.5018	2020-01-24	5
+NA	Thailand	13.7563	100.5018	2020-01-25	7
+NA	Thailand	13.7563	100.5018	2020-01-26	8
+NA	Thailand	13.7563	100.5018	2020-01-27	8
+NA	Thailand	13.7563	100.5018	2020-01-28	14
+NA	Thailand	13.7563	100.5018	2020-01-29	14
+NA	Thailand	13.7563	100.5018	2020-01-30	14
+NA	Thailand	13.7563	100.5018	2020-01-31	19
+NA	Thailand	13.7563	100.5018	2020-02-01	19
+NA	Thailand	13.7563	100.5018	2020-02-02	19
+NA	Thailand	13.7563	100.5018	2020-02-03	19
+NA	Thailand	13.7563	100.5018	2020-02-04	25
+NA	Thailand	13.7563	100.5018	2020-02-05	25
+NA	Thailand	13.7563	100.5018	2020-02-06	25
+NA	Thailand	13.7563	100.5018	2020-02-07	25
+NA	Thailand	13.7563	100.5018	2020-02-08	32
+NA	Thailand	13.7563	100.5018	2020-02-09	32
+NA	Thailand	13.7563	100.5018	2020-02-10	32
+NA	Thailand	13.7563	100.5018	2020-02-11	33
+NA	Thailand	13.7563	100.5018	2020-02-12	33
+NA	Thailand	13.7563	100.5018	2020-02-13	33
+NA	Thailand	13.7563	100.5018	2020-02-14	33
+NA	Thailand	13.7563	100.5018	2020-02-15	33
+NA	Thailand	13.7563	100.5018	2020-02-16	34
+NA	Thailand	13.7563	100.5018	2020-02-17	35
+NA	Thailand	13.7563	100.5018	2020-02-18	35
+NA	Thailand	13.7563	100.5018	2020-02-19	35
+NA	Thailand	13.7563	100.5018	2020-02-20	35
+NA	Thailand	13.7563	100.5018	2020-02-21	35
+NA	Thailand	13.7563	100.5018	2020-02-22	35
+NA	Thailand	13.7563	100.5018	2020-02-23	35
+NA	Japan	35.6762	139.6503	2020-01-22	2
+NA	Japan	35.6762	139.6503	2020-01-23	1
+NA	Japan	35.6762	139.6503	2020-01-24	2
+NA	Japan	35.6762	139.6503	2020-01-25	2
+NA	Japan	35.6762	139.6503	2020-01-26	4
+NA	Japan	35.6762	139.6503	2020-01-27	4
+NA	Japan	35.6762	139.6503	2020-01-28	7
+NA	Japan	35.6762	139.6503	2020-01-29	7
+NA	Japan	35.6762	139.6503	2020-01-30	11
+NA	Japan	35.6762	139.6503	2020-01-31	15
+NA	Japan	35.6762	139.6503	2020-02-01	20
+NA	Japan	35.6762	139.6503	2020-02-02	20
+NA	Japan	35.6762	139.6503	2020-02-03	20
+NA	Japan	35.6762	139.6503	2020-02-04	22
+NA	Japan	35.6762	139.6503	2020-02-05	22
+NA	Japan	35.6762	139.6503	2020-02-06	45
+NA	Japan	35.6762	139.6503	2020-02-07	25
+NA	Japan	35.6762	139.6503	2020-02-08	25
+NA	Japan	35.6762	139.6503	2020-02-09	26
+NA	Japan	35.6762	139.6503	2020-02-10	26
+NA	Japan	35.6762	139.6503	2020-02-11	26
+NA	Japan	35.6762	139.6503	2020-02-12	28
+NA	Japan	35.6762	139.6503	2020-02-13	28
+NA	Japan	35.6762	139.6503	2020-02-14	29
+NA	Japan	35.6762	139.6503	2020-02-15	43
+NA	Japan	35.6762	139.6503	2020-02-16	59
+NA	Japan	35.6762	139.6503	2020-02-17	66
+NA	Japan	35.6762	139.6503	2020-02-18	74
+NA	Japan	35.6762	139.6503	2020-02-19	84
+NA	Japan	35.6762	139.6503	2020-02-20	94
+NA	Japan	35.6762	139.6503	2020-02-21	105
+NA	Japan	35.6762	139.6503	2020-02-22	122
+NA	Japan	35.6762	139.6503	2020-02-23	147
+NA	South Korea	37.5665	126.978	2020-01-22	1
+NA	South Korea	37.5665	126.978	2020-01-23	1
+NA	South Korea	37.5665	126.978	2020-01-24	2
+NA	South Korea	37.5665	126.978	2020-01-25	2
+NA	South Korea	37.5665	126.978	2020-01-26	3
+NA	South Korea	37.5665	126.978	2020-01-27	4
+NA	South Korea	37.5665	126.978	2020-01-28	4
+NA	South Korea	37.5665	126.978	2020-01-29	4
+NA	South Korea	37.5665	126.978	2020-01-30	4
+NA	South Korea	37.5665	126.978	2020-01-31	11
+NA	South Korea	37.5665	126.978	2020-02-01	12
+NA	South Korea	37.5665	126.978	2020-02-02	15
+NA	South Korea	37.5665	126.978	2020-02-03	15
+NA	South Korea	37.5665	126.978	2020-02-04	16
+NA	South Korea	37.5665	126.978	2020-02-05	19
+NA	South Korea	37.5665	126.978	2020-02-06	23
+NA	South Korea	37.5665	126.978	2020-02-07	24
+NA	South Korea	37.5665	126.978	2020-02-08	24
+NA	South Korea	37.5665	126.978	2020-02-09	25
+NA	South Korea	37.5665	126.978	2020-02-10	27
+NA	South Korea	37.5665	126.978	2020-02-11	28
+NA	South Korea	37.5665	126.978	2020-02-12	28
+NA	South Korea	37.5665	126.978	2020-02-13	28
+NA	South Korea	37.5665	126.978	2020-02-14	28
+NA	South Korea	37.5665	126.978	2020-02-15	28
+NA	South Korea	37.5665	126.978	2020-02-16	29
+NA	South Korea	37.5665	126.978	2020-02-17	30
+NA	South Korea	37.5665	126.978	2020-02-18	31
+NA	South Korea	37.5665	126.978	2020-02-19	31
+NA	South Korea	37.5665	126.978	2020-02-20	104
+NA	South Korea	37.5665	126.978	2020-02-21	204
+NA	South Korea	37.5665	126.978	2020-02-22	433
+NA	South Korea	37.5665	126.978	2020-02-23	602
+Taiwan	Taiwan	23.6978	120.9605	2020-01-22	1
+Taiwan	Taiwan	23.6978	120.9605	2020-01-23	1
+Taiwan	Taiwan	23.6978	120.9605	2020-01-24	3
+Taiwan	Taiwan	23.6978	120.9605	2020-01-25	3
+Taiwan	Taiwan	23.6978	120.9605	2020-01-26	4
+Taiwan	Taiwan	23.6978	120.9605	2020-01-27	5
+Taiwan	Taiwan	23.6978	120.9605	2020-01-28	8
+Taiwan	Taiwan	23.6978	120.9605	2020-01-29	8
+Taiwan	Taiwan	23.6978	120.9605	2020-01-30	9
+Taiwan	Taiwan	23.6978	120.9605	2020-01-31	10
+Taiwan	Taiwan	23.6978	120.9605	2020-02-01	10
+Taiwan	Taiwan	23.6978	120.9605	2020-02-02	10
+Taiwan	Taiwan	23.6978	120.9605	2020-02-03	10
+Taiwan	Taiwan	23.6978	120.9605	2020-02-04	11
+Taiwan	Taiwan	23.6978	120.9605	2020-02-05	11
+Taiwan	Taiwan	23.6978	120.9605	2020-02-06	16
+Taiwan	Taiwan	23.6978	120.9605	2020-02-07	16
+Taiwan	Taiwan	23.6978	120.9605	2020-02-08	17
+Taiwan	Taiwan	23.6978	120.9605	2020-02-09	18
+Taiwan	Taiwan	23.6978	120.9605	2020-02-10	18
+Taiwan	Taiwan	23.6978	120.9605	2020-02-11	18
+Taiwan	Taiwan	23.6978	120.9605	2020-02-12	18
+Taiwan	Taiwan	23.6978	120.9605	2020-02-13	18
+Taiwan	Taiwan	23.6978	120.9605	2020-02-14	18
+Taiwan	Taiwan	23.6978	120.9605	2020-02-15	18
+Taiwan	Taiwan	23.6978	120.9605	2020-02-16	20
+Taiwan	Taiwan	23.6978	120.9605	2020-02-17	22
+Taiwan	Taiwan	23.6978	120.9605	2020-02-18	22
+Taiwan	Taiwan	23.6978	120.9605	2020-02-19	23
+Taiwan	Taiwan	23.6978	120.9605	2020-02-20	24
+Taiwan	Taiwan	23.6978	120.9605	2020-02-21	26
+Taiwan	Taiwan	23.6978	120.9605	2020-02-22	26
+Taiwan	Taiwan	23.6978	120.9605	2020-02-23	28
+Seattle, WA	US	47.7511	-120.74	2020-01-22	1
+Seattle, WA	US	47.7511	-120.74	2020-01-23	1
+Seattle, WA	US	47.7511	-120.74	2020-01-24	1
+Seattle, WA	US	47.7511	-120.74	2020-01-25	1
+Seattle, WA	US	47.7511	-120.74	2020-01-26	1
+Seattle, WA	US	47.7511	-120.74	2020-01-27	1
+Seattle, WA	US	47.7511	-120.74	2020-01-28	1
+Seattle, WA	US	47.7511	-120.74	2020-01-29	1
+Seattle, WA	US	47.7511	-120.74	2020-01-30	1
+Seattle, WA	US	47.7511	-120.74	2020-01-31	1
+Seattle, WA	US	47.7511	-120.74	2020-02-01	1
+Seattle, WA	US	47.7511	-120.74	2020-02-02	1
+Seattle, WA	US	47.7511	-120.74	2020-02-03	1
+Seattle, WA	US	47.7511	-120.74	2020-02-04	1
+Seattle, WA	US	47.7511	-120.74	2020-02-05	1
+Seattle, WA	US	47.7511	-120.74	2020-02-06	1
+Seattle, WA	US	47.7511	-120.74	2020-02-07	1
+Seattle, WA	US	47.7511	-120.74	2020-02-08	1
+Seattle, WA	US	47.7511	-120.74	2020-02-09	1
+Seattle, WA	US	47.7511	-120.74	2020-02-10	1
+Seattle, WA	US	47.7511	-120.74	2020-02-11	1
+Seattle, WA	US	47.7511	-120.74	2020-02-12	1
+Seattle, WA	US	47.7511	-120.74	2020-02-13	1
+Seattle, WA	US	47.7511	-120.74	2020-02-14	1
+Seattle, WA	US	47.7511	-120.74	2020-02-15	1
+Seattle, WA	US	47.7511	-120.74	2020-02-16	1
+Seattle, WA	US	47.7511	-120.74	2020-02-17	1
+Seattle, WA	US	47.7511	-120.74	2020-02-18	1
+Seattle, WA	US	47.7511	-120.74	2020-02-19	1
+Seattle, WA	US	47.7511	-120.74	2020-02-20	1
+Seattle, WA	US	47.7511	-120.74	2020-02-21	1
+Seattle, WA	US	47.7511	-120.74	2020-02-22	1
+Seattle, WA	US	47.7511	-120.74	2020-02-23	1
+Chicago, IL	US	40.6331	-89.3985	2020-01-22	0
+Chicago, IL	US	40.6331	-89.3985	2020-01-23	0
+Chicago, IL	US	40.6331	-89.3985	2020-01-24	1
+Chicago, IL	US	40.6331	-89.3985	2020-01-25	1
+Chicago, IL	US	40.6331	-89.3985	2020-01-26	1
+Chicago, IL	US	40.6331	-89.3985	2020-01-27	1
+Chicago, IL	US	40.6331	-89.3985	2020-01-28	1
+Chicago, IL	US	40.6331	-89.3985	2020-01-29	1
+Chicago, IL	US	40.6331	-89.3985	2020-01-30	1
+Chicago, IL	US	40.6331	-89.3985	2020-01-31	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-01	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-02	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-03	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-04	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-05	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-06	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-07	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-08	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-09	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-10	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-11	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-12	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-13	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-14	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-15	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-16	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-17	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-18	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-19	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-20	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-21	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-22	2
+Chicago, IL	US	40.6331	-89.3985	2020-02-23	2
+Tempe, AZ	US	34.0489	-111.094	2020-01-22	0
+Tempe, AZ	US	34.0489	-111.094	2020-01-23	0
+Tempe, AZ	US	34.0489	-111.094	2020-01-24	0
+Tempe, AZ	US	34.0489	-111.094	2020-01-25	0
+Tempe, AZ	US	34.0489	-111.094	2020-01-26	1
+Tempe, AZ	US	34.0489	-111.094	2020-01-27	1
+Tempe, AZ	US	34.0489	-111.094	2020-01-28	1
+Tempe, AZ	US	34.0489	-111.094	2020-01-29	1
+Tempe, AZ	US	34.0489	-111.094	2020-01-30	1
+Tempe, AZ	US	34.0489	-111.094	2020-01-31	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-01	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-02	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-03	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-04	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-05	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-06	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-07	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-08	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-09	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-10	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-11	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-12	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-13	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-14	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-15	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-16	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-17	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-18	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-19	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-20	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-21	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-22	1
+Tempe, AZ	US	34.0489	-111.094	2020-02-23	1
+Macau	Macau	22.1987	113.5439	2020-01-22	1
+Macau	Macau	22.1987	113.5439	2020-01-23	2
+Macau	Macau	22.1987	113.5439	2020-01-24	2
+Macau	Macau	22.1987	113.5439	2020-01-25	2
+Macau	Macau	22.1987	113.5439	2020-01-26	5
+Macau	Macau	22.1987	113.5439	2020-01-27	6
+Macau	Macau	22.1987	113.5439	2020-01-28	7
+Macau	Macau	22.1987	113.5439	2020-01-29	7
+Macau	Macau	22.1987	113.5439	2020-01-30	7
+Macau	Macau	22.1987	113.5439	2020-01-31	7
+Macau	Macau	22.1987	113.5439	2020-02-01	7
+Macau	Macau	22.1987	113.5439	2020-02-02	8
+Macau	Macau	22.1987	113.5439	2020-02-03	8
+Macau	Macau	22.1987	113.5439	2020-02-04	10
+Macau	Macau	22.1987	113.5439	2020-02-05	10
+Macau	Macau	22.1987	113.5439	2020-02-06	10
+Macau	Macau	22.1987	113.5439	2020-02-07	10
+Macau	Macau	22.1987	113.5439	2020-02-08	10
+Macau	Macau	22.1987	113.5439	2020-02-09	10
+Macau	Macau	22.1987	113.5439	2020-02-10	10
+Macau	Macau	22.1987	113.5439	2020-02-11	10
+Macau	Macau	22.1987	113.5439	2020-02-12	10
+Macau	Macau	22.1987	113.5439	2020-02-13	10
+Macau	Macau	22.1987	113.5439	2020-02-14	10
+Macau	Macau	22.1987	113.5439	2020-02-15	10
+Macau	Macau	22.1987	113.5439	2020-02-16	10
+Macau	Macau	22.1987	113.5439	2020-02-17	10
+Macau	Macau	22.1987	113.5439	2020-02-18	10
+Macau	Macau	22.1987	113.5439	2020-02-19	10
+Macau	Macau	22.1987	113.5439	2020-02-20	10
+Macau	Macau	22.1987	113.5439	2020-02-21	10
+Macau	Macau	22.1987	113.5439	2020-02-22	10
+Macau	Macau	22.1987	113.5439	2020-02-23	10
+Hong Kong	Hong Kong	22.3193	114.1694	2020-01-22	0
+Hong Kong	Hong Kong	22.3193	114.1694	2020-01-23	2
+Hong Kong	Hong Kong	22.3193	114.1694	2020-01-24	2
+Hong Kong	Hong Kong	22.3193	114.1694	2020-01-25	5
+Hong Kong	Hong Kong	22.3193	114.1694	2020-01-26	8
+Hong Kong	Hong Kong	22.3193	114.1694	2020-01-27	8
+Hong Kong	Hong Kong	22.3193	114.1694	2020-01-28	8
+Hong Kong	Hong Kong	22.3193	114.1694	2020-01-29	10
+Hong Kong	Hong Kong	22.3193	114.1694	2020-01-30	10
+Hong Kong	Hong Kong	22.3193	114.1694	2020-01-31	12
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-01	13
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-02	15
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-03	15
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-04	17
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-05	21
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-06	24
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-07	25
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-08	26
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-09	29
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-10	38
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-11	49
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-12	50
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-13	53
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-14	56
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-15	56
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-16	57
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-17	60
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-18	62
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-19	63
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-20	68
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-21	68
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-22	69
+Hong Kong	Hong Kong	22.3193	114.1694	2020-02-23	74
+NA	Singapore	1.3521	103.8198	2020-01-22	0
+NA	Singapore	1.3521	103.8198	2020-01-23	1
+NA	Singapore	1.3521	103.8198	2020-01-24	3
+NA	Singapore	1.3521	103.8198	2020-01-25	3
+NA	Singapore	1.3521	103.8198	2020-01-26	4
+NA	Singapore	1.3521	103.8198	2020-01-27	5
+NA	Singapore	1.3521	103.8198	2020-01-28	7
+NA	Singapore	1.3521	103.8198	2020-01-29	7
+NA	Singapore	1.3521	103.8198	2020-01-30	10
+NA	Singapore	1.3521	103.8198	2020-01-31	13
+NA	Singapore	1.3521	103.8198	2020-02-01	16
+NA	Singapore	1.3521	103.8198	2020-02-02	18
+NA	Singapore	1.3521	103.8198	2020-02-03	18
+NA	Singapore	1.3521	103.8198	2020-02-04	24
+NA	Singapore	1.3521	103.8198	2020-02-05	28
+NA	Singapore	1.3521	103.8198	2020-02-06	28
+NA	Singapore	1.3521	103.8198	2020-02-07	30
+NA	Singapore	1.3521	103.8198	2020-02-08	33
+NA	Singapore	1.3521	103.8198	2020-02-09	40
+NA	Singapore	1.3521	103.8198	2020-02-10	45
+NA	Singapore	1.3521	103.8198	2020-02-11	47
+NA	Singapore	1.3521	103.8198	2020-02-12	50
+NA	Singapore	1.3521	103.8198	2020-02-13	58
+NA	Singapore	1.3521	103.8198	2020-02-14	67
+NA	Singapore	1.3521	103.8198	2020-02-15	72
+NA	Singapore	1.3521	103.8198	2020-02-16	75
+NA	Singapore	1.3521	103.8198	2020-02-17	77
+NA	Singapore	1.3521	103.8198	2020-02-18	81
+NA	Singapore	1.3521	103.8198	2020-02-19	84
+NA	Singapore	1.3521	103.8198	2020-02-20	84
+NA	Singapore	1.3521	103.8198	2020-02-21	85
+NA	Singapore	1.3521	103.8198	2020-02-22	85
+NA	Singapore	1.3521	103.8198	2020-02-23	89
+NA	Vietnam	21.0278	105.8342	2020-01-22	0
+NA	Vietnam	21.0278	105.8342	2020-01-23	2
+NA	Vietnam	21.0278	105.8342	2020-01-24	2
+NA	Vietnam	21.0278	105.8342	2020-01-25	2
+NA	Vietnam	21.0278	105.8342	2020-01-26	2
+NA	Vietnam	21.0278	105.8342	2020-01-27	2
+NA	Vietnam	21.0278	105.8342	2020-01-28	2
+NA	Vietnam	21.0278	105.8342	2020-01-29	2
+NA	Vietnam	21.0278	105.8342	2020-01-30	2
+NA	Vietnam	21.0278	105.8342	2020-01-31	2
+NA	Vietnam	21.0278	105.8342	2020-02-01	6
+NA	Vietnam	21.0278	105.8342	2020-02-02	6
+NA	Vietnam	21.0278	105.8342	2020-02-03	8
+NA	Vietnam	21.0278	105.8342	2020-02-04	8
+NA	Vietnam	21.0278	105.8342	2020-02-05	8
+NA	Vietnam	21.0278	105.8342	2020-02-06	10
+NA	Vietnam	21.0278	105.8342	2020-02-07	10
+NA	Vietnam	21.0278	105.8342	2020-02-08	13
+NA	Vietnam	21.0278	105.8342	2020-02-09	13
+NA	Vietnam	21.0278	105.8342	2020-02-10	14
+NA	Vietnam	21.0278	105.8342	2020-02-11	15
+NA	Vietnam	21.0278	105.8342	2020-02-12	15
+NA	Vietnam	21.0278	105.8342	2020-02-13	16
+NA	Vietnam	21.0278	105.8342	2020-02-14	16
+NA	Vietnam	21.0278	105.8342	2020-02-15	16
+NA	Vietnam	21.0278	105.8342	2020-02-16	16
+NA	Vietnam	21.0278	105.8342	2020-02-17	16
+NA	Vietnam	21.0278	105.8342	2020-02-18	16
+NA	Vietnam	21.0278	105.8342	2020-02-19	16
+NA	Vietnam	21.0278	105.8342	2020-02-20	16
+NA	Vietnam	21.0278	105.8342	2020-02-21	16
+NA	Vietnam	21.0278	105.8342	2020-02-22	16
+NA	Vietnam	21.0278	105.8342	2020-02-23	16
+NA	France	46.2276	2.2137	2020-01-22	0
+NA	France	46.2276	2.2137	2020-01-23	0
+NA	France	46.2276	2.2137	2020-01-24	2
+NA	France	46.2276	2.2137	2020-01-25	3
+NA	France	46.2276	2.2137	2020-01-26	3
+NA	France	46.2276	2.2137	2020-01-27	3
+NA	France	46.2276	2.2137	2020-01-28	4
+NA	France	46.2276	2.2137	2020-01-29	5
+NA	France	46.2276	2.2137	2020-01-30	5
+NA	France	46.2276	2.2137	2020-01-31	5
+NA	France	46.2276	2.2137	2020-02-01	6
+NA	France	46.2276	2.2137	2020-02-02	6
+NA	France	46.2276	2.2137	2020-02-03	6
+NA	France	46.2276	2.2137	2020-02-04	6
+NA	France	46.2276	2.2137	2020-02-05	6
+NA	France	46.2276	2.2137	2020-02-06	6
+NA	France	46.2276	2.2137	2020-02-07	6
+NA	France	46.2276	2.2137	2020-02-08	11
+NA	France	46.2276	2.2137	2020-02-09	11
+NA	France	46.2276	2.2137	2020-02-10	11
+NA	France	46.2276	2.2137	2020-02-11	11
+NA	France	46.2276	2.2137	2020-02-12	11
+NA	France	46.2276	2.2137	2020-02-13	11
+NA	France	46.2276	2.2137	2020-02-14	11
+NA	France	46.2276	2.2137	2020-02-15	12
+NA	France	46.2276	2.2137	2020-02-16	12
+NA	France	46.2276	2.2137	2020-02-17	12
+NA	France	46.2276	2.2137	2020-02-18	12
+NA	France	46.2276	2.2137	2020-02-19	12
+NA	France	46.2276	2.2137	2020-02-20	12
+NA	France	46.2276	2.2137	2020-02-21	12
+NA	France	46.2276	2.2137	2020-02-22	12
+NA	France	46.2276	2.2137	2020-02-23	12
+NA	Nepal	28.3949	84.124	2020-01-22	0
+NA	Nepal	28.3949	84.124	2020-01-23	0
+NA	Nepal	28.3949	84.124	2020-01-24	0
+NA	Nepal	28.3949	84.124	2020-01-25	1
+NA	Nepal	28.3949	84.124	2020-01-26	1
+NA	Nepal	28.3949	84.124	2020-01-27	1
+NA	Nepal	28.3949	84.124	2020-01-28	1
+NA	Nepal	28.3949	84.124	2020-01-29	1
+NA	Nepal	28.3949	84.124	2020-01-30	1
+NA	Nepal	28.3949	84.124	2020-01-31	1
+NA	Nepal	28.3949	84.124	2020-02-01	1
+NA	Nepal	28.3949	84.124	2020-02-02	1
+NA	Nepal	28.3949	84.124	2020-02-03	1
+NA	Nepal	28.3949	84.124	2020-02-04	1
+NA	Nepal	28.3949	84.124	2020-02-05	1
+NA	Nepal	28.3949	84.124	2020-02-06	1
+NA	Nepal	28.3949	84.124	2020-02-07	1
+NA	Nepal	28.3949	84.124	2020-02-08	1
+NA	Nepal	28.3949	84.124	2020-02-09	1
+NA	Nepal	28.3949	84.124	2020-02-10	1
+NA	Nepal	28.3949	84.124	2020-02-11	1
+NA	Nepal	28.3949	84.124	2020-02-12	1
+NA	Nepal	28.3949	84.124	2020-02-13	1
+NA	Nepal	28.3949	84.124	2020-02-14	1
+NA	Nepal	28.3949	84.124	2020-02-15	1
+NA	Nepal	28.3949	84.124	2020-02-16	1
+NA	Nepal	28.3949	84.124	2020-02-17	1
+NA	Nepal	28.3949	84.124	2020-02-18	1
+NA	Nepal	28.3949	84.124	2020-02-19	1
+NA	Nepal	28.3949	84.124	2020-02-20	1
+NA	Nepal	28.3949	84.124	2020-02-21	1
+NA	Nepal	28.3949	84.124	2020-02-22	1
+NA	Nepal	28.3949	84.124	2020-02-23	1
+NA	Malaysia	4.2105	101.9758	2020-01-22	0
+NA	Malaysia	4.2105	101.9758	2020-01-23	0
+NA	Malaysia	4.2105	101.9758	2020-01-24	0
+NA	Malaysia	4.2105	101.9758	2020-01-25	3
+NA	Malaysia	4.2105	101.9758	2020-01-26	4
+NA	Malaysia	4.2105	101.9758	2020-01-27	4
+NA	Malaysia	4.2105	101.9758	2020-01-28	4
+NA	Malaysia	4.2105	101.9758	2020-01-29	7
+NA	Malaysia	4.2105	101.9758	2020-01-30	8
+NA	Malaysia	4.2105	101.9758	2020-01-31	8
+NA	Malaysia	4.2105	101.9758	2020-02-01	8
+NA	Malaysia	4.2105	101.9758	2020-02-02	8
+NA	Malaysia	4.2105	101.9758	2020-02-03	8
+NA	Malaysia	4.2105	101.9758	2020-02-04	10
+NA	Malaysia	4.2105	101.9758	2020-02-05	12
+NA	Malaysia	4.2105	101.9758	2020-02-06	12
+NA	Malaysia	4.2105	101.9758	2020-02-07	12
+NA	Malaysia	4.2105	101.9758	2020-02-08	16
+NA	Malaysia	4.2105	101.9758	2020-02-09	16
+NA	Malaysia	4.2105	101.9758	2020-02-10	18
+NA	Malaysia	4.2105	101.9758	2020-02-11	18
+NA	Malaysia	4.2105	101.9758	2020-02-12	18
+NA	Malaysia	4.2105	101.9758	2020-02-13	19
+NA	Malaysia	4.2105	101.9758	2020-02-14	19
+NA	Malaysia	4.2105	101.9758	2020-02-15	22
+NA	Malaysia	4.2105	101.9758	2020-02-16	22
+NA	Malaysia	4.2105	101.9758	2020-02-17	22
+NA	Malaysia	4.2105	101.9758	2020-02-18	22
+NA	Malaysia	4.2105	101.9758	2020-02-19	22
+NA	Malaysia	4.2105	101.9758	2020-02-20	22
+NA	Malaysia	4.2105	101.9758	2020-02-21	22
+NA	Malaysia	4.2105	101.9758	2020-02-22	22
+NA	Malaysia	4.2105	101.9758	2020-02-23	22
+Toronto, ON	Canada	43.6532	-79.3832	2020-01-22	0
+Toronto, ON	Canada	43.6532	-79.3832	2020-01-23	0
+Toronto, ON	Canada	43.6532	-79.3832	2020-01-24	0
+Toronto, ON	Canada	43.6532	-79.3832	2020-01-25	0
+Toronto, ON	Canada	43.6532	-79.3832	2020-01-26	1
+Toronto, ON	Canada	43.6532	-79.3832	2020-01-27	1
+Toronto, ON	Canada	43.6532	-79.3832	2020-01-28	1
+Toronto, ON	Canada	43.6532	-79.3832	2020-01-29	1
+Toronto, ON	Canada	43.6532	-79.3832	2020-01-30	1
+Toronto, ON	Canada	43.6532	-79.3832	2020-01-31	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-01	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-02	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-03	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-04	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-05	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-06	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-07	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-08	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-09	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-10	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-11	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-12	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-13	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-14	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-15	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-16	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-17	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-18	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-19	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-20	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-21	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-22	2
+Toronto, ON	Canada	43.6532	-79.3832	2020-02-23	2
+British Columbia	Canada	49.2827	-123.121	2020-01-22	0
+British Columbia	Canada	49.2827	-123.121	2020-01-23	0
+British Columbia	Canada	49.2827	-123.121	2020-01-24	0
+British Columbia	Canada	49.2827	-123.121	2020-01-25	0
+British Columbia	Canada	49.2827	-123.121	2020-01-26	0
+British Columbia	Canada	49.2827	-123.121	2020-01-27	0
+British Columbia	Canada	49.2827	-123.121	2020-01-28	1
+British Columbia	Canada	49.2827	-123.121	2020-01-29	1
+British Columbia	Canada	49.2827	-123.121	2020-01-30	1
+British Columbia	Canada	49.2827	-123.121	2020-01-31	1
+British Columbia	Canada	49.2827	-123.121	2020-02-01	1
+British Columbia	Canada	49.2827	-123.121	2020-02-02	1
+British Columbia	Canada	49.2827	-123.121	2020-02-03	1
+British Columbia	Canada	49.2827	-123.121	2020-02-04	1
+British Columbia	Canada	49.2827	-123.121	2020-02-05	2
+British Columbia	Canada	49.2827	-123.121	2020-02-06	2
+British Columbia	Canada	49.2827	-123.121	2020-02-07	4
+British Columbia	Canada	49.2827	-123.121	2020-02-08	4
+British Columbia	Canada	49.2827	-123.121	2020-02-09	4
+British Columbia	Canada	49.2827	-123.121	2020-02-10	4
+British Columbia	Canada	49.2827	-123.121	2020-02-11	4
+British Columbia	Canada	49.2827	-123.121	2020-02-12	4
+British Columbia	Canada	49.2827	-123.121	2020-02-13	4
+British Columbia	Canada	49.2827	-123.121	2020-02-14	4
+British Columbia	Canada	49.2827	-123.121	2020-02-15	4
+British Columbia	Canada	49.2827	-123.121	2020-02-16	4
+British Columbia	Canada	49.2827	-123.121	2020-02-17	5
+British Columbia	Canada	49.2827	-123.121	2020-02-18	5
+British Columbia	Canada	49.2827	-123.121	2020-02-19	5
+British Columbia	Canada	49.2827	-123.121	2020-02-20	5
+British Columbia	Canada	49.2827	-123.121	2020-02-21	6
+British Columbia	Canada	49.2827	-123.121	2020-02-22	6
+British Columbia	Canada	49.2827	-123.121	2020-02-23	6
+Orange, CA	US	33.7879	-117.8531	2020-01-22	0
+Orange, CA	US	33.7879	-117.8531	2020-01-23	0
+Orange, CA	US	33.7879	-117.8531	2020-01-24	0
+Orange, CA	US	33.7879	-117.8531	2020-01-25	0
+Orange, CA	US	33.7879	-117.8531	2020-01-26	1
+Orange, CA	US	33.7879	-117.8531	2020-01-27	1
+Orange, CA	US	33.7879	-117.8531	2020-01-28	1
+Orange, CA	US	33.7879	-117.8531	2020-01-29	1
+Orange, CA	US	33.7879	-117.8531	2020-01-30	1
+Orange, CA	US	33.7879	-117.8531	2020-01-31	1
+Orange, CA	US	33.7879	-117.8531	2020-02-01	1
+Orange, CA	US	33.7879	-117.8531	2020-02-02	1
+Orange, CA	US	33.7879	-117.8531	2020-02-03	1
+Orange, CA	US	33.7879	-117.8531	2020-02-04	1
+Orange, CA	US	33.7879	-117.8531	2020-02-05	1
+Orange, CA	US	33.7879	-117.8531	2020-02-06	1
+Orange, CA	US	33.7879	-117.8531	2020-02-07	1
+Orange, CA	US	33.7879	-117.8531	2020-02-08	1
+Orange, CA	US	33.7879	-117.8531	2020-02-09	1
+Orange, CA	US	33.7879	-117.8531	2020-02-10	1
+Orange, CA	US	33.7879	-117.8531	2020-02-11	1
+Orange, CA	US	33.7879	-117.8531	2020-02-12	1
+Orange, CA	US	33.7879	-117.8531	2020-02-13	1
+Orange, CA	US	33.7879	-117.8531	2020-02-14	1
+Orange, CA	US	33.7879	-117.8531	2020-02-15	1
+Orange, CA	US	33.7879	-117.8531	2020-02-16	1
+Orange, CA	US	33.7879	-117.8531	2020-02-17	1
+Orange, CA	US	33.7879	-117.8531	2020-02-18	1
+Orange, CA	US	33.7879	-117.8531	2020-02-19	1
+Orange, CA	US	33.7879	-117.8531	2020-02-20	1
+Orange, CA	US	33.7879	-117.8531	2020-02-21	1
+Orange, CA	US	33.7879	-117.8531	2020-02-22	1
+Orange, CA	US	33.7879	-117.8531	2020-02-23	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-01-22	0
+Los Angeles, CA	US	34.0522	-118.2437	2020-01-23	0
+Los Angeles, CA	US	34.0522	-118.2437	2020-01-24	0
+Los Angeles, CA	US	34.0522	-118.2437	2020-01-25	0
+Los Angeles, CA	US	34.0522	-118.2437	2020-01-26	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-01-27	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-01-28	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-01-29	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-01-30	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-01-31	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-01	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-02	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-03	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-04	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-05	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-06	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-07	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-08	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-09	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-10	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-11	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-12	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-13	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-14	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-15	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-16	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-17	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-18	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-19	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-20	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-21	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-22	1
+Los Angeles, CA	US	34.0522	-118.2437	2020-02-23	1
+New South Wales	Australia	-33.8688	151.2093	2020-01-22	0
+New South Wales	Australia	-33.8688	151.2093	2020-01-23	0
+New South Wales	Australia	-33.8688	151.2093	2020-01-24	0
+New South Wales	Australia	-33.8688	151.2093	2020-01-25	0
+New South Wales	Australia	-33.8688	151.2093	2020-01-26	3
+New South Wales	Australia	-33.8688	151.2093	2020-01-27	4
+New South Wales	Australia	-33.8688	151.2093	2020-01-28	4
+New South Wales	Australia	-33.8688	151.2093	2020-01-29	4
+New South Wales	Australia	-33.8688	151.2093	2020-01-30	4
+New South Wales	Australia	-33.8688	151.2093	2020-01-31	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-01	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-02	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-03	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-04	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-05	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-06	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-07	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-08	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-09	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-10	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-11	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-12	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-13	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-14	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-15	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-16	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-17	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-18	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-19	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-20	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-21	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-22	4
+New South Wales	Australia	-33.8688	151.2093	2020-02-23	4
+Victoria	Australia	-37.8136	144.9631	2020-01-22	0
+Victoria	Australia	-37.8136	144.9631	2020-01-23	0
+Victoria	Australia	-37.8136	144.9631	2020-01-24	0
+Victoria	Australia	-37.8136	144.9631	2020-01-25	0
+Victoria	Australia	-37.8136	144.9631	2020-01-26	1
+Victoria	Australia	-37.8136	144.9631	2020-01-27	1
+Victoria	Australia	-37.8136	144.9631	2020-01-28	1
+Victoria	Australia	-37.8136	144.9631	2020-01-29	1
+Victoria	Australia	-37.8136	144.9631	2020-01-30	2
+Victoria	Australia	-37.8136	144.9631	2020-01-31	3
+Victoria	Australia	-37.8136	144.9631	2020-02-01	4
+Victoria	Australia	-37.8136	144.9631	2020-02-02	4
+Victoria	Australia	-37.8136	144.9631	2020-02-03	4
+Victoria	Australia	-37.8136	144.9631	2020-02-04	4
+Victoria	Australia	-37.8136	144.9631	2020-02-05	4
+Victoria	Australia	-37.8136	144.9631	2020-02-06	4
+Victoria	Australia	-37.8136	144.9631	2020-02-07	4
+Victoria	Australia	-37.8136	144.9631	2020-02-08	4
+Victoria	Australia	-37.8136	144.9631	2020-02-09	4
+Victoria	Australia	-37.8136	144.9631	2020-02-10	4
+Victoria	Australia	-37.8136	144.9631	2020-02-11	4
+Victoria	Australia	-37.8136	144.9631	2020-02-12	4
+Victoria	Australia	-37.8136	144.9631	2020-02-13	4
+Victoria	Australia	-37.8136	144.9631	2020-02-14	4
+Victoria	Australia	-37.8136	144.9631	2020-02-15	4
+Victoria	Australia	-37.8136	144.9631	2020-02-16	4
+Victoria	Australia	-37.8136	144.9631	2020-02-17	4
+Victoria	Australia	-37.8136	144.9631	2020-02-18	4
+Victoria	Australia	-37.8136	144.9631	2020-02-19	4
+Victoria	Australia	-37.8136	144.9631	2020-02-20	4
+Victoria	Australia	-37.8136	144.9631	2020-02-21	4
+Victoria	Australia	-37.8136	144.9631	2020-02-22	4
+Victoria	Australia	-37.8136	144.9631	2020-02-23	4
+Queensland	Australia	-27.4698	153.0251	2020-01-22	0
+Queensland	Australia	-27.4698	153.0251	2020-01-23	0
+Queensland	Australia	-27.4698	153.0251	2020-01-24	0
+Queensland	Australia	-27.4698	153.0251	2020-01-25	0
+Queensland	Australia	-27.4698	153.0251	2020-01-26	0
+Queensland	Australia	-27.4698	153.0251	2020-01-27	0
+Queensland	Australia	-27.4698	153.0251	2020-01-28	0
+Queensland	Australia	-27.4698	153.0251	2020-01-29	1
+Queensland	Australia	-27.4698	153.0251	2020-01-30	3
+Queensland	Australia	-27.4698	153.0251	2020-01-31	2
+Queensland	Australia	-27.4698	153.0251	2020-02-01	3
+Queensland	Australia	-27.4698	153.0251	2020-02-02	2
+Queensland	Australia	-27.4698	153.0251	2020-02-03	2
+Queensland	Australia	-27.4698	153.0251	2020-02-04	3
+Queensland	Australia	-27.4698	153.0251	2020-02-05	3
+Queensland	Australia	-27.4698	153.0251	2020-02-06	4
+Queensland	Australia	-27.4698	153.0251	2020-02-07	5
+Queensland	Australia	-27.4698	153.0251	2020-02-08	5
+Queensland	Australia	-27.4698	153.0251	2020-02-09	5
+Queensland	Australia	-27.4698	153.0251	2020-02-10	5
+Queensland	Australia	-27.4698	153.0251	2020-02-11	5
+Queensland	Australia	-27.4698	153.0251	2020-02-12	5
+Queensland	Australia	-27.4698	153.0251	2020-02-13	5
+Queensland	Australia	-27.4698	153.0251	2020-02-14	5
+Queensland	Australia	-27.4698	153.0251	2020-02-15	5
+Queensland	Australia	-27.4698	153.0251	2020-02-16	5
+Queensland	Australia	-27.4698	153.0251	2020-02-17	5
+Queensland	Australia	-27.4698	153.0251	2020-02-18	5
+Queensland	Australia	-27.4698	153.0251	2020-02-19	5
+Queensland	Australia	-27.4698	153.0251	2020-02-20	5
+Queensland	Australia	-27.4698	153.0251	2020-02-21	5
+Queensland	Australia	-27.4698	153.0251	2020-02-22	5
+Queensland	Australia	-27.4698	153.0251	2020-02-23	5
+NA	Cambodia	12.5657	104.991	2020-01-22	0
+NA	Cambodia	12.5657	104.991	2020-01-23	0
+NA	Cambodia	12.5657	104.991	2020-01-24	0
+NA	Cambodia	12.5657	104.991	2020-01-25	0
+NA	Cambodia	12.5657	104.991	2020-01-26	0
+NA	Cambodia	12.5657	104.991	2020-01-27	1
+NA	Cambodia	12.5657	104.991	2020-01-28	1
+NA	Cambodia	12.5657	104.991	2020-01-29	1
+NA	Cambodia	12.5657	104.991	2020-01-30	1
+NA	Cambodia	12.5657	104.991	2020-01-31	1
+NA	Cambodia	12.5657	104.991	2020-02-01	1
+NA	Cambodia	12.5657	104.991	2020-02-02	1
+NA	Cambodia	12.5657	104.991	2020-02-03	1
+NA	Cambodia	12.5657	104.991	2020-02-04	1
+NA	Cambodia	12.5657	104.991	2020-02-05	1
+NA	Cambodia	12.5657	104.991	2020-02-06	1
+NA	Cambodia	12.5657	104.991	2020-02-07	1
+NA	Cambodia	12.5657	104.991	2020-02-08	1
+NA	Cambodia	12.5657	104.991	2020-02-09	1
+NA	Cambodia	12.5657	104.991	2020-02-10	1
+NA	Cambodia	12.5657	104.991	2020-02-11	1
+NA	Cambodia	12.5657	104.991	2020-02-12	1
+NA	Cambodia	12.5657	104.991	2020-02-13	1
+NA	Cambodia	12.5657	104.991	2020-02-14	1
+NA	Cambodia	12.5657	104.991	2020-02-15	1
+NA	Cambodia	12.5657	104.991	2020-02-16	1
+NA	Cambodia	12.5657	104.991	2020-02-17	1
+NA	Cambodia	12.5657	104.991	2020-02-18	1
+NA	Cambodia	12.5657	104.991	2020-02-19	1
+NA	Cambodia	12.5657	104.991	2020-02-20	1
+NA	Cambodia	12.5657	104.991	2020-02-21	1
+NA	Cambodia	12.5657	104.991	2020-02-22	1
+NA	Cambodia	12.5657	104.991	2020-02-23	1
+NA	Sri Lanka	7.8731	80.7718	2020-01-22	0
+NA	Sri Lanka	7.8731	80.7718	2020-01-23	0
+NA	Sri Lanka	7.8731	80.7718	2020-01-24	0
+NA	Sri Lanka	7.8731	80.7718	2020-01-25	0
+NA	Sri Lanka	7.8731	80.7718	2020-01-26	0
+NA	Sri Lanka	7.8731	80.7718	2020-01-27	1
+NA	Sri Lanka	7.8731	80.7718	2020-01-28	1
+NA	Sri Lanka	7.8731	80.7718	2020-01-29	1
+NA	Sri Lanka	7.8731	80.7718	2020-01-30	1
+NA	Sri Lanka	7.8731	80.7718	2020-01-31	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-01	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-02	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-03	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-04	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-05	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-06	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-07	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-08	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-09	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-10	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-11	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-12	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-13	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-14	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-15	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-16	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-17	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-18	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-19	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-20	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-21	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-22	1
+NA	Sri Lanka	7.8731	80.7718	2020-02-23	1
+NA	Germany	51.1657	10.4515	2020-01-22	0
+NA	Germany	51.1657	10.4515	2020-01-23	0
+NA	Germany	51.1657	10.4515	2020-01-24	0
+NA	Germany	51.1657	10.4515	2020-01-25	0
+NA	Germany	51.1657	10.4515	2020-01-26	0
+NA	Germany	51.1657	10.4515	2020-01-27	1
+NA	Germany	51.1657	10.4515	2020-01-28	4
+NA	Germany	51.1657	10.4515	2020-01-29	4
+NA	Germany	51.1657	10.4515	2020-01-30	4
+NA	Germany	51.1657	10.4515	2020-01-31	5
+NA	Germany	51.1657	10.4515	2020-02-01	8
+NA	Germany	51.1657	10.4515	2020-02-02	10
+NA	Germany	51.1657	10.4515	2020-02-03	12
+NA	Germany	51.1657	10.4515	2020-02-04	12
+NA	Germany	51.1657	10.4515	2020-02-05	12
+NA	Germany	51.1657	10.4515	2020-02-06	12
+NA	Germany	51.1657	10.4515	2020-02-07	13
+NA	Germany	51.1657	10.4515	2020-02-08	13
+NA	Germany	51.1657	10.4515	2020-02-09	14
+NA	Germany	51.1657	10.4515	2020-02-10	14
+NA	Germany	51.1657	10.4515	2020-02-11	16
+NA	Germany	51.1657	10.4515	2020-02-12	16
+NA	Germany	51.1657	10.4515	2020-02-13	16
+NA	Germany	51.1657	10.4515	2020-02-14	16
+NA	Germany	51.1657	10.4515	2020-02-15	16
+NA	Germany	51.1657	10.4515	2020-02-16	16
+NA	Germany	51.1657	10.4515	2020-02-17	16
+NA	Germany	51.1657	10.4515	2020-02-18	16
+NA	Germany	51.1657	10.4515	2020-02-19	16
+NA	Germany	51.1657	10.4515	2020-02-20	16
+NA	Germany	51.1657	10.4515	2020-02-21	16
+NA	Germany	51.1657	10.4515	2020-02-22	16
+NA	Germany	51.1657	10.4515	2020-02-23	16
+NA	Finland	61.9241	25.7482	2020-01-22	0
+NA	Finland	61.9241	25.7482	2020-01-23	0
+NA	Finland	61.9241	25.7482	2020-01-24	0
+NA	Finland	61.9241	25.7482	2020-01-25	0
+NA	Finland	61.9241	25.7482	2020-01-26	0
+NA	Finland	61.9241	25.7482	2020-01-27	0
+NA	Finland	61.9241	25.7482	2020-01-28	0
+NA	Finland	61.9241	25.7482	2020-01-29	1
+NA	Finland	61.9241	25.7482	2020-01-30	1
+NA	Finland	61.9241	25.7482	2020-01-31	1
+NA	Finland	61.9241	25.7482	2020-02-01	1
+NA	Finland	61.9241	25.7482	2020-02-02	1
+NA	Finland	61.9241	25.7482	2020-02-03	1
+NA	Finland	61.9241	25.7482	2020-02-04	1
+NA	Finland	61.9241	25.7482	2020-02-05	1
+NA	Finland	61.9241	25.7482	2020-02-06	1
+NA	Finland	61.9241	25.7482	2020-02-07	1
+NA	Finland	61.9241	25.7482	2020-02-08	1
+NA	Finland	61.9241	25.7482	2020-02-09	1
+NA	Finland	61.9241	25.7482	2020-02-10	1
+NA	Finland	61.9241	25.7482	2020-02-11	1
+NA	Finland	61.9241	25.7482	2020-02-12	1
+NA	Finland	61.9241	25.7482	2020-02-13	1
+NA	Finland	61.9241	25.7482	2020-02-14	1
+NA	Finland	61.9241	25.7482	2020-02-15	1
+NA	Finland	61.9241	25.7482	2020-02-16	1
+NA	Finland	61.9241	25.7482	2020-02-17	1
+NA	Finland	61.9241	25.7482	2020-02-18	1
+NA	Finland	61.9241	25.7482	2020-02-19	1
+NA	Finland	61.9241	25.7482	2020-02-20	1
+NA	Finland	61.9241	25.7482	2020-02-21	1
+NA	Finland	61.9241	25.7482	2020-02-22	1
+NA	Finland	61.9241	25.7482	2020-02-23	1
+NA	United Arab Emirates	23.4241	53.8478	2020-01-22	0
+NA	United Arab Emirates	23.4241	53.8478	2020-01-23	0
+NA	United Arab Emirates	23.4241	53.8478	2020-01-24	0
+NA	United Arab Emirates	23.4241	53.8478	2020-01-25	0
+NA	United Arab Emirates	23.4241	53.8478	2020-01-26	0
+NA	United Arab Emirates	23.4241	53.8478	2020-01-27	0
+NA	United Arab Emirates	23.4241	53.8478	2020-01-28	0
+NA	United Arab Emirates	23.4241	53.8478	2020-01-29	4
+NA	United Arab Emirates	23.4241	53.8478	2020-01-30	4
+NA	United Arab Emirates	23.4241	53.8478	2020-01-31	4
+NA	United Arab Emirates	23.4241	53.8478	2020-02-01	4
+NA	United Arab Emirates	23.4241	53.8478	2020-02-02	5
+NA	United Arab Emirates	23.4241	53.8478	2020-02-03	5
+NA	United Arab Emirates	23.4241	53.8478	2020-02-04	5
+NA	United Arab Emirates	23.4241	53.8478	2020-02-05	5
+NA	United Arab Emirates	23.4241	53.8478	2020-02-06	5
+NA	United Arab Emirates	23.4241	53.8478	2020-02-07	5
+NA	United Arab Emirates	23.4241	53.8478	2020-02-08	7
+NA	United Arab Emirates	23.4241	53.8478	2020-02-09	7
+NA	United Arab Emirates	23.4241	53.8478	2020-02-10	8
+NA	United Arab Emirates	23.4241	53.8478	2020-02-11	8
+NA	United Arab Emirates	23.4241	53.8478	2020-02-12	8
+NA	United Arab Emirates	23.4241	53.8478	2020-02-13	8
+NA	United Arab Emirates	23.4241	53.8478	2020-02-14	8
+NA	United Arab Emirates	23.4241	53.8478	2020-02-15	8
+NA	United Arab Emirates	23.4241	53.8478	2020-02-16	9
+NA	United Arab Emirates	23.4241	53.8478	2020-02-17	9
+NA	United Arab Emirates	23.4241	53.8478	2020-02-18	9
+NA	United Arab Emirates	23.4241	53.8478	2020-02-19	9
+NA	United Arab Emirates	23.4241	53.8478	2020-02-20	9
+NA	United Arab Emirates	23.4241	53.8478	2020-02-21	9
+NA	United Arab Emirates	23.4241	53.8478	2020-02-22	13
+NA	United Arab Emirates	23.4241	53.8478	2020-02-23	13
+NA	Philippines	12.8797	121.774	2020-01-22	0
+NA	Philippines	12.8797	121.774	2020-01-23	0
+NA	Philippines	12.8797	121.774	2020-01-24	0
+NA	Philippines	12.8797	121.774	2020-01-25	0
+NA	Philippines	12.8797	121.774	2020-01-26	0
+NA	Philippines	12.8797	121.774	2020-01-27	0
+NA	Philippines	12.8797	121.774	2020-01-28	0
+NA	Philippines	12.8797	121.774	2020-01-29	0
+NA	Philippines	12.8797	121.774	2020-01-30	1
+NA	Philippines	12.8797	121.774	2020-01-31	1
+NA	Philippines	12.8797	121.774	2020-02-01	1
+NA	Philippines	12.8797	121.774	2020-02-02	2
+NA	Philippines	12.8797	121.774	2020-02-03	2
+NA	Philippines	12.8797	121.774	2020-02-04	2
+NA	Philippines	12.8797	121.774	2020-02-05	2
+NA	Philippines	12.8797	121.774	2020-02-06	2
+NA	Philippines	12.8797	121.774	2020-02-07	3
+NA	Philippines	12.8797	121.774	2020-02-08	3
+NA	Philippines	12.8797	121.774	2020-02-09	3
+NA	Philippines	12.8797	121.774	2020-02-10	3
+NA	Philippines	12.8797	121.774	2020-02-11	3
+NA	Philippines	12.8797	121.774	2020-02-12	3
+NA	Philippines	12.8797	121.774	2020-02-13	3
+NA	Philippines	12.8797	121.774	2020-02-14	3
+NA	Philippines	12.8797	121.774	2020-02-15	3
+NA	Philippines	12.8797	121.774	2020-02-16	3
+NA	Philippines	12.8797	121.774	2020-02-17	3
+NA	Philippines	12.8797	121.774	2020-02-18	3
+NA	Philippines	12.8797	121.774	2020-02-19	3
+NA	Philippines	12.8797	121.774	2020-02-20	3
+NA	Philippines	12.8797	121.774	2020-02-21	3
+NA	Philippines	12.8797	121.774	2020-02-22	3
+NA	Philippines	12.8797	121.774	2020-02-23	3
+NA	India	20.5937	78.9629	2020-01-22	0
+NA	India	20.5937	78.9629	2020-01-23	0
+NA	India	20.5937	78.9629	2020-01-24	0
+NA	India	20.5937	78.9629	2020-01-25	0
+NA	India	20.5937	78.9629	2020-01-26	0
+NA	India	20.5937	78.9629	2020-01-27	0
+NA	India	20.5937	78.9629	2020-01-28	0
+NA	India	20.5937	78.9629	2020-01-29	0
+NA	India	20.5937	78.9629	2020-01-30	1
+NA	India	20.5937	78.9629	2020-01-31	1
+NA	India	20.5937	78.9629	2020-02-01	1
+NA	India	20.5937	78.9629	2020-02-02	2
+NA	India	20.5937	78.9629	2020-02-03	3
+NA	India	20.5937	78.9629	2020-02-04	3
+NA	India	20.5937	78.9629	2020-02-05	3
+NA	India	20.5937	78.9629	2020-02-06	3
+NA	India	20.5937	78.9629	2020-02-07	3
+NA	India	20.5937	78.9629	2020-02-08	3
+NA	India	20.5937	78.9629	2020-02-09	3
+NA	India	20.5937	78.9629	2020-02-10	3
+NA	India	20.5937	78.9629	2020-02-11	3
+NA	India	20.5937	78.9629	2020-02-12	3
+NA	India	20.5937	78.9629	2020-02-13	3
+NA	India	20.5937	78.9629	2020-02-14	3
+NA	India	20.5937	78.9629	2020-02-15	3
+NA	India	20.5937	78.9629	2020-02-16	3
+NA	India	20.5937	78.9629	2020-02-17	3
+NA	India	20.5937	78.9629	2020-02-18	3
+NA	India	20.5937	78.9629	2020-02-19	3
+NA	India	20.5937	78.9629	2020-02-20	3
+NA	India	20.5937	78.9629	2020-02-21	3
+NA	India	20.5937	78.9629	2020-02-22	3
+NA	India	20.5937	78.9629	2020-02-23	3
+London, ON	Canada	42.9849	-81.2453	2020-01-22	0
+London, ON	Canada	42.9849	-81.2453	2020-01-23	0
+London, ON	Canada	42.9849	-81.2453	2020-01-24	0
+London, ON	Canada	42.9849	-81.2453	2020-01-25	0
+London, ON	Canada	42.9849	-81.2453	2020-01-26	0
+London, ON	Canada	42.9849	-81.2453	2020-01-27	0
+London, ON	Canada	42.9849	-81.2453	2020-01-28	0
+London, ON	Canada	42.9849	-81.2453	2020-01-29	0
+London, ON	Canada	42.9849	-81.2453	2020-01-30	0
+London, ON	Canada	42.9849	-81.2453	2020-01-31	1
+London, ON	Canada	42.9849	-81.2453	2020-02-01	1
+London, ON	Canada	42.9849	-81.2453	2020-02-02	1
+London, ON	Canada	42.9849	-81.2453	2020-02-03	1
+London, ON	Canada	42.9849	-81.2453	2020-02-04	1
+London, ON	Canada	42.9849	-81.2453	2020-02-05	1
+London, ON	Canada	42.9849	-81.2453	2020-02-06	1
+London, ON	Canada	42.9849	-81.2453	2020-02-07	1
+London, ON	Canada	42.9849	-81.2453	2020-02-08	1
+London, ON	Canada	42.9849	-81.2453	2020-02-09	1
+London, ON	Canada	42.9849	-81.2453	2020-02-10	1
+London, ON	Canada	42.9849	-81.2453	2020-02-11	1
+London, ON	Canada	42.9849	-81.2453	2020-02-12	1
+London, ON	Canada	42.9849	-81.2453	2020-02-13	1
+London, ON	Canada	42.9849	-81.2453	2020-02-14	1
+London, ON	Canada	42.9849	-81.2453	2020-02-15	1
+London, ON	Canada	42.9849	-81.2453	2020-02-16	1
+London, ON	Canada	42.9849	-81.2453	2020-02-17	1
+London, ON	Canada	42.9849	-81.2453	2020-02-18	1
+London, ON	Canada	42.9849	-81.2453	2020-02-19	1
+London, ON	Canada	42.9849	-81.2453	2020-02-20	1
+London, ON	Canada	42.9849	-81.2453	2020-02-21	1
+London, ON	Canada	42.9849	-81.2453	2020-02-22	1
+London, ON	Canada	42.9849	-81.2453	2020-02-23	1
+NA	Italy	41.8719	12.5674	2020-01-22	0
+NA	Italy	41.8719	12.5674	2020-01-23	0
+NA	Italy	41.8719	12.5674	2020-01-24	0
+NA	Italy	41.8719	12.5674	2020-01-25	0
+NA	Italy	41.8719	12.5674	2020-01-26	0
+NA	Italy	41.8719	12.5674	2020-01-27	0
+NA	Italy	41.8719	12.5674	2020-01-28	0
+NA	Italy	41.8719	12.5674	2020-01-29	0
+NA	Italy	41.8719	12.5674	2020-01-30	0
+NA	Italy	41.8719	12.5674	2020-01-31	2
+NA	Italy	41.8719	12.5674	2020-02-01	2
+NA	Italy	41.8719	12.5674	2020-02-02	2
+NA	Italy	41.8719	12.5674	2020-02-03	2
+NA	Italy	41.8719	12.5674	2020-02-04	2
+NA	Italy	41.8719	12.5674	2020-02-05	2
+NA	Italy	41.8719	12.5674	2020-02-06	2
+NA	Italy	41.8719	12.5674	2020-02-07	3
+NA	Italy	41.8719	12.5674	2020-02-08	3
+NA	Italy	41.8719	12.5674	2020-02-09	3
+NA	Italy	41.8719	12.5674	2020-02-10	3
+NA	Italy	41.8719	12.5674	2020-02-11	3
+NA	Italy	41.8719	12.5674	2020-02-12	3
+NA	Italy	41.8719	12.5674	2020-02-13	3
+NA	Italy	41.8719	12.5674	2020-02-14	3
+NA	Italy	41.8719	12.5674	2020-02-15	3
+NA	Italy	41.8719	12.5674	2020-02-16	3
+NA	Italy	41.8719	12.5674	2020-02-17	3
+NA	Italy	41.8719	12.5674	2020-02-18	3
+NA	Italy	41.8719	12.5674	2020-02-19	3
+NA	Italy	41.8719	12.5674	2020-02-20	3
+NA	Italy	41.8719	12.5674	2020-02-21	20
+NA	Italy	41.8719	12.5674	2020-02-22	62
+NA	Italy	41.8719	12.5674	2020-02-23	155
+NA	UK	55.3781	-3.436	2020-01-22	0
+NA	UK	55.3781	-3.436	2020-01-23	0
+NA	UK	55.3781	-3.436	2020-01-24	0
+NA	UK	55.3781	-3.436	2020-01-25	0
+NA	UK	55.3781	-3.436	2020-01-26	0
+NA	UK	55.3781	-3.436	2020-01-27	0
+NA	UK	55.3781	-3.436	2020-01-28	0
+NA	UK	55.3781	-3.436	2020-01-29	0
+NA	UK	55.3781	-3.436	2020-01-30	0
+NA	UK	55.3781	-3.436	2020-01-31	2
+NA	UK	55.3781	-3.436	2020-02-01	2
+NA	UK	55.3781	-3.436	2020-02-02	2
+NA	UK	55.3781	-3.436	2020-02-03	2
+NA	UK	55.3781	-3.436	2020-02-04	2
+NA	UK	55.3781	-3.436	2020-02-05	2
+NA	UK	55.3781	-3.436	2020-02-06	2
+NA	UK	55.3781	-3.436	2020-02-07	3
+NA	UK	55.3781	-3.436	2020-02-08	3
+NA	UK	55.3781	-3.436	2020-02-09	3
+NA	UK	55.3781	-3.436	2020-02-10	8
+NA	UK	55.3781	-3.436	2020-02-11	8
+NA	UK	55.3781	-3.436	2020-02-12	9
+NA	UK	55.3781	-3.436	2020-02-13	9
+NA	UK	55.3781	-3.436	2020-02-14	9
+NA	UK	55.3781	-3.436	2020-02-15	9
+NA	UK	55.3781	-3.436	2020-02-16	9
+NA	UK	55.3781	-3.436	2020-02-17	9
+NA	UK	55.3781	-3.436	2020-02-18	9
+NA	UK	55.3781	-3.436	2020-02-19	9
+NA	UK	55.3781	-3.436	2020-02-20	9
+NA	UK	55.3781	-3.436	2020-02-21	9
+NA	UK	55.3781	-3.436	2020-02-22	9
+NA	UK	55.3781	-3.436	2020-02-23	9
+NA	Russia	61.524	105.3188	2020-01-22	0
+NA	Russia	61.524	105.3188	2020-01-23	0
+NA	Russia	61.524	105.3188	2020-01-24	0
+NA	Russia	61.524	105.3188	2020-01-25	0
+NA	Russia	61.524	105.3188	2020-01-26	0
+NA	Russia	61.524	105.3188	2020-01-27	0
+NA	Russia	61.524	105.3188	2020-01-28	0
+NA	Russia	61.524	105.3188	2020-01-29	0
+NA	Russia	61.524	105.3188	2020-01-30	0
+NA	Russia	61.524	105.3188	2020-01-31	2
+NA	Russia	61.524	105.3188	2020-02-01	2
+NA	Russia	61.524	105.3188	2020-02-02	2
+NA	Russia	61.524	105.3188	2020-02-03	2
+NA	Russia	61.524	105.3188	2020-02-04	2
+NA	Russia	61.524	105.3188	2020-02-05	2
+NA	Russia	61.524	105.3188	2020-02-06	2
+NA	Russia	61.524	105.3188	2020-02-07	2
+NA	Russia	61.524	105.3188	2020-02-08	2
+NA	Russia	61.524	105.3188	2020-02-09	2
+NA	Russia	61.524	105.3188	2020-02-10	2
+NA	Russia	61.524	105.3188	2020-02-11	2
+NA	Russia	61.524	105.3188	2020-02-12	2
+NA	Russia	61.524	105.3188	2020-02-13	2
+NA	Russia	61.524	105.3188	2020-02-14	2
+NA	Russia	61.524	105.3188	2020-02-15	2
+NA	Russia	61.524	105.3188	2020-02-16	2
+NA	Russia	61.524	105.3188	2020-02-17	2
+NA	Russia	61.524	105.3188	2020-02-18	2
+NA	Russia	61.524	105.3188	2020-02-19	2
+NA	Russia	61.524	105.3188	2020-02-20	2
+NA	Russia	61.524	105.3188	2020-02-21	2
+NA	Russia	61.524	105.3188	2020-02-22	2
+NA	Russia	61.524	105.3188	2020-02-23	2
+NA	Sweden	60.1282	18.6435	2020-01-22	0
+NA	Sweden	60.1282	18.6435	2020-01-23	0
+NA	Sweden	60.1282	18.6435	2020-01-24	0
+NA	Sweden	60.1282	18.6435	2020-01-25	0
+NA	Sweden	60.1282	18.6435	2020-01-26	0
+NA	Sweden	60.1282	18.6435	2020-01-27	0
+NA	Sweden	60.1282	18.6435	2020-01-28	0
+NA	Sweden	60.1282	18.6435	2020-01-29	0
+NA	Sweden	60.1282	18.6435	2020-01-30	0
+NA	Sweden	60.1282	18.6435	2020-01-31	1
+NA	Sweden	60.1282	18.6435	2020-02-01	1
+NA	Sweden	60.1282	18.6435	2020-02-02	1
+NA	Sweden	60.1282	18.6435	2020-02-03	1
+NA	Sweden	60.1282	18.6435	2020-02-04	1
+NA	Sweden	60.1282	18.6435	2020-02-05	1
+NA	Sweden	60.1282	18.6435	2020-02-06	1
+NA	Sweden	60.1282	18.6435	2020-02-07	1
+NA	Sweden	60.1282	18.6435	2020-02-08	1
+NA	Sweden	60.1282	18.6435	2020-02-09	1
+NA	Sweden	60.1282	18.6435	2020-02-10	1
+NA	Sweden	60.1282	18.6435	2020-02-11	1
+NA	Sweden	60.1282	18.6435	2020-02-12	1
+NA	Sweden	60.1282	18.6435	2020-02-13	1
+NA	Sweden	60.1282	18.6435	2020-02-14	1
+NA	Sweden	60.1282	18.6435	2020-02-15	1
+NA	Sweden	60.1282	18.6435	2020-02-16	1
+NA	Sweden	60.1282	18.6435	2020-02-17	1
+NA	Sweden	60.1282	18.6435	2020-02-18	1
+NA	Sweden	60.1282	18.6435	2020-02-19	1
+NA	Sweden	60.1282	18.6435	2020-02-20	1
+NA	Sweden	60.1282	18.6435	2020-02-21	1
+NA	Sweden	60.1282	18.6435	2020-02-22	1
+NA	Sweden	60.1282	18.6435	2020-02-23	1
+Santa Clara, CA	US	37.3541	-121.9552	2020-01-22	0
+Santa Clara, CA	US	37.3541	-121.9552	2020-01-23	0
+Santa Clara, CA	US	37.3541	-121.9552	2020-01-24	0
+Santa Clara, CA	US	37.3541	-121.9552	2020-01-25	0
+Santa Clara, CA	US	37.3541	-121.9552	2020-01-26	0
+Santa Clara, CA	US	37.3541	-121.9552	2020-01-27	0
+Santa Clara, CA	US	37.3541	-121.9552	2020-01-28	0
+Santa Clara, CA	US	37.3541	-121.9552	2020-01-29	0
+Santa Clara, CA	US	37.3541	-121.9552	2020-01-30	0
+Santa Clara, CA	US	37.3541	-121.9552	2020-01-31	1
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-01	1
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-02	1
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-03	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-04	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-05	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-06	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-07	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-08	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-09	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-10	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-11	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-12	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-13	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-14	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-15	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-16	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-17	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-18	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-19	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-20	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-21	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-22	2
+Santa Clara, CA	US	37.3541	-121.9552	2020-02-23	2
+NA	Spain	40.4637	-3.7492	2020-01-22	0
+NA	Spain	40.4637	-3.7492	2020-01-23	0
+NA	Spain	40.4637	-3.7492	2020-01-24	0
+NA	Spain	40.4637	-3.7492	2020-01-25	0
+NA	Spain	40.4637	-3.7492	2020-01-26	0
+NA	Spain	40.4637	-3.7492	2020-01-27	0
+NA	Spain	40.4637	-3.7492	2020-01-28	0
+NA	Spain	40.4637	-3.7492	2020-01-29	0
+NA	Spain	40.4637	-3.7492	2020-01-30	0
+NA	Spain	40.4637	-3.7492	2020-01-31	0
+NA	Spain	40.4637	-3.7492	2020-02-01	1
+NA	Spain	40.4637	-3.7492	2020-02-02	1
+NA	Spain	40.4637	-3.7492	2020-02-03	1
+NA	Spain	40.4637	-3.7492	2020-02-04	1
+NA	Spain	40.4637	-3.7492	2020-02-05	1
+NA	Spain	40.4637	-3.7492	2020-02-06	1
+NA	Spain	40.4637	-3.7492	2020-02-07	1
+NA	Spain	40.4637	-3.7492	2020-02-08	1
+NA	Spain	40.4637	-3.7492	2020-02-09	2
+NA	Spain	40.4637	-3.7492	2020-02-10	2
+NA	Spain	40.4637	-3.7492	2020-02-11	2
+NA	Spain	40.4637	-3.7492	2020-02-12	2
+NA	Spain	40.4637	-3.7492	2020-02-13	2
+NA	Spain	40.4637	-3.7492	2020-02-14	2
+NA	Spain	40.4637	-3.7492	2020-02-15	2
+NA	Spain	40.4637	-3.7492	2020-02-16	2
+NA	Spain	40.4637	-3.7492	2020-02-17	2
+NA	Spain	40.4637	-3.7492	2020-02-18	2
+NA	Spain	40.4637	-3.7492	2020-02-19	2
+NA	Spain	40.4637	-3.7492	2020-02-20	2
+NA	Spain	40.4637	-3.7492	2020-02-21	2
+NA	Spain	40.4637	-3.7492	2020-02-22	2
+NA	Spain	40.4637	-3.7492	2020-02-23	2
+South Australia	Australia	-34.9285	138.6007	2020-01-22	0
+South Australia	Australia	-34.9285	138.6007	2020-01-23	0
+South Australia	Australia	-34.9285	138.6007	2020-01-24	0
+South Australia	Australia	-34.9285	138.6007	2020-01-25	0
+South Australia	Australia	-34.9285	138.6007	2020-01-26	0
+South Australia	Australia	-34.9285	138.6007	2020-01-27	0
+South Australia	Australia	-34.9285	138.6007	2020-01-28	0
+South Australia	Australia	-34.9285	138.6007	2020-01-29	0
+South Australia	Australia	-34.9285	138.6007	2020-01-30	0
+South Australia	Australia	-34.9285	138.6007	2020-01-31	0
+South Australia	Australia	-34.9285	138.6007	2020-02-01	1
+South Australia	Australia	-34.9285	138.6007	2020-02-02	2
+South Australia	Australia	-34.9285	138.6007	2020-02-03	2
+South Australia	Australia	-34.9285	138.6007	2020-02-04	2
+South Australia	Australia	-34.9285	138.6007	2020-02-05	2
+South Australia	Australia	-34.9285	138.6007	2020-02-06	2
+South Australia	Australia	-34.9285	138.6007	2020-02-07	2
+South Australia	Australia	-34.9285	138.6007	2020-02-08	2
+South Australia	Australia	-34.9285	138.6007	2020-02-09	2
+South Australia	Australia	-34.9285	138.6007	2020-02-10	2
+South Australia	Australia	-34.9285	138.6007	2020-02-11	2
+South Australia	Australia	-34.9285	138.6007	2020-02-12	2
+South Australia	Australia	-34.9285	138.6007	2020-02-13	2
+South Australia	Australia	-34.9285	138.6007	2020-02-14	2
+South Australia	Australia	-34.9285	138.6007	2020-02-15	2
+South Australia	Australia	-34.9285	138.6007	2020-02-16	2
+South Australia	Australia	-34.9285	138.6007	2020-02-17	2
+South Australia	Australia	-34.9285	138.6007	2020-02-18	2
+South Australia	Australia	-34.9285	138.6007	2020-02-19	2
+South Australia	Australia	-34.9285	138.6007	2020-02-20	2
+South Australia	Australia	-34.9285	138.6007	2020-02-21	2
+South Australia	Australia	-34.9285	138.6007	2020-02-22	2
+South Australia	Australia	-34.9285	138.6007	2020-02-23	2
+Boston, MA	US	42.3601	-71.0589	2020-01-22	0
+Boston, MA	US	42.3601	-71.0589	2020-01-23	0
+Boston, MA	US	42.3601	-71.0589	2020-01-24	0
+Boston, MA	US	42.3601	-71.0589	2020-01-25	0
+Boston, MA	US	42.3601	-71.0589	2020-01-26	0
+Boston, MA	US	42.3601	-71.0589	2020-01-27	0
+Boston, MA	US	42.3601	-71.0589	2020-01-28	0
+Boston, MA	US	42.3601	-71.0589	2020-01-29	0
+Boston, MA	US	42.3601	-71.0589	2020-01-30	0
+Boston, MA	US	42.3601	-71.0589	2020-01-31	0
+Boston, MA	US	42.3601	-71.0589	2020-02-01	1
+Boston, MA	US	42.3601	-71.0589	2020-02-02	1
+Boston, MA	US	42.3601	-71.0589	2020-02-03	1
+Boston, MA	US	42.3601	-71.0589	2020-02-04	1
+Boston, MA	US	42.3601	-71.0589	2020-02-05	1
+Boston, MA	US	42.3601	-71.0589	2020-02-06	1
+Boston, MA	US	42.3601	-71.0589	2020-02-07	1
+Boston, MA	US	42.3601	-71.0589	2020-02-08	1
+Boston, MA	US	42.3601	-71.0589	2020-02-09	1
+Boston, MA	US	42.3601	-71.0589	2020-02-10	1
+Boston, MA	US	42.3601	-71.0589	2020-02-11	1
+Boston, MA	US	42.3601	-71.0589	2020-02-12	1
+Boston, MA	US	42.3601	-71.0589	2020-02-13	1
+Boston, MA	US	42.3601	-71.0589	2020-02-14	1
+Boston, MA	US	42.3601	-71.0589	2020-02-15	1
+Boston, MA	US	42.3601	-71.0589	2020-02-16	1
+Boston, MA	US	42.3601	-71.0589	2020-02-17	1
+Boston, MA	US	42.3601	-71.0589	2020-02-18	1
+Boston, MA	US	42.3601	-71.0589	2020-02-19	1
+Boston, MA	US	42.3601	-71.0589	2020-02-20	1
+Boston, MA	US	42.3601	-71.0589	2020-02-21	1
+Boston, MA	US	42.3601	-71.0589	2020-02-22	1
+Boston, MA	US	42.3601	-71.0589	2020-02-23	1
+San Benito, CA	US	36.5761	-120.9876	2020-01-22	0
+San Benito, CA	US	36.5761	-120.9876	2020-01-23	0
+San Benito, CA	US	36.5761	-120.9876	2020-01-24	0
+San Benito, CA	US	36.5761	-120.9876	2020-01-25	0
+San Benito, CA	US	36.5761	-120.9876	2020-01-26	0
+San Benito, CA	US	36.5761	-120.9876	2020-01-27	0
+San Benito, CA	US	36.5761	-120.9876	2020-01-28	0
+San Benito, CA	US	36.5761	-120.9876	2020-01-29	0
+San Benito, CA	US	36.5761	-120.9876	2020-01-30	0
+San Benito, CA	US	36.5761	-120.9876	2020-01-31	0
+San Benito, CA	US	36.5761	-120.9876	2020-02-01	0
+San Benito, CA	US	36.5761	-120.9876	2020-02-02	0
+San Benito, CA	US	36.5761	-120.9876	2020-02-03	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-04	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-05	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-06	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-07	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-08	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-09	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-10	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-11	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-12	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-13	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-14	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-15	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-16	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-17	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-18	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-19	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-20	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-21	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-22	2
+San Benito, CA	US	36.5761	-120.9876	2020-02-23	2
+NA	Belgium	50.5039	4.4699	2020-01-22	0
+NA	Belgium	50.5039	4.4699	2020-01-23	0
+NA	Belgium	50.5039	4.4699	2020-01-24	0
+NA	Belgium	50.5039	4.4699	2020-01-25	0
+NA	Belgium	50.5039	4.4699	2020-01-26	0
+NA	Belgium	50.5039	4.4699	2020-01-27	0
+NA	Belgium	50.5039	4.4699	2020-01-28	0
+NA	Belgium	50.5039	4.4699	2020-01-29	0
+NA	Belgium	50.5039	4.4699	2020-01-30	0
+NA	Belgium	50.5039	4.4699	2020-01-31	0
+NA	Belgium	50.5039	4.4699	2020-02-01	0
+NA	Belgium	50.5039	4.4699	2020-02-02	0
+NA	Belgium	50.5039	4.4699	2020-02-03	0
+NA	Belgium	50.5039	4.4699	2020-02-04	1
+NA	Belgium	50.5039	4.4699	2020-02-05	1
+NA	Belgium	50.5039	4.4699	2020-02-06	1
+NA	Belgium	50.5039	4.4699	2020-02-07	1
+NA	Belgium	50.5039	4.4699	2020-02-08	1
+NA	Belgium	50.5039	4.4699	2020-02-09	1
+NA	Belgium	50.5039	4.4699	2020-02-10	1
+NA	Belgium	50.5039	4.4699	2020-02-11	1
+NA	Belgium	50.5039	4.4699	2020-02-12	1
+NA	Belgium	50.5039	4.4699	2020-02-13	1
+NA	Belgium	50.5039	4.4699	2020-02-14	1
+NA	Belgium	50.5039	4.4699	2020-02-15	1
+NA	Belgium	50.5039	4.4699	2020-02-16	1
+NA	Belgium	50.5039	4.4699	2020-02-17	1
+NA	Belgium	50.5039	4.4699	2020-02-18	1
+NA	Belgium	50.5039	4.4699	2020-02-19	1
+NA	Belgium	50.5039	4.4699	2020-02-20	1
+NA	Belgium	50.5039	4.4699	2020-02-21	1
+NA	Belgium	50.5039	4.4699	2020-02-22	1
+NA	Belgium	50.5039	4.4699	2020-02-23	1
+Madison, WI	US	43.0731	-89.4012	2020-01-22	0
+Madison, WI	US	43.0731	-89.4012	2020-01-23	0
+Madison, WI	US	43.0731	-89.4012	2020-01-24	0
+Madison, WI	US	43.0731	-89.4012	2020-01-25	0
+Madison, WI	US	43.0731	-89.4012	2020-01-26	0
+Madison, WI	US	43.0731	-89.4012	2020-01-27	0
+Madison, WI	US	43.0731	-89.4012	2020-01-28	0
+Madison, WI	US	43.0731	-89.4012	2020-01-29	0
+Madison, WI	US	43.0731	-89.4012	2020-01-30	0
+Madison, WI	US	43.0731	-89.4012	2020-01-31	0
+Madison, WI	US	43.0731	-89.4012	2020-02-01	0
+Madison, WI	US	43.0731	-89.4012	2020-02-02	0
+Madison, WI	US	43.0731	-89.4012	2020-02-03	0
+Madison, WI	US	43.0731	-89.4012	2020-02-04	0
+Madison, WI	US	43.0731	-89.4012	2020-02-05	1
+Madison, WI	US	43.0731	-89.4012	2020-02-06	1
+Madison, WI	US	43.0731	-89.4012	2020-02-07	1
+Madison, WI	US	43.0731	-89.4012	2020-02-08	1
+Madison, WI	US	43.0731	-89.4012	2020-02-09	1
+Madison, WI	US	43.0731	-89.4012	2020-02-10	1
+Madison, WI	US	43.0731	-89.4012	2020-02-11	1
+Madison, WI	US	43.0731	-89.4012	2020-02-12	1
+Madison, WI	US	43.0731	-89.4012	2020-02-13	1
+Madison, WI	US	43.0731	-89.4012	2020-02-14	1
+Madison, WI	US	43.0731	-89.4012	2020-02-15	1
+Madison, WI	US	43.0731	-89.4012	2020-02-16	1
+Madison, WI	US	43.0731	-89.4012	2020-02-17	1
+Madison, WI	US	43.0731	-89.4012	2020-02-18	1
+Madison, WI	US	43.0731	-89.4012	2020-02-19	1
+Madison, WI	US	43.0731	-89.4012	2020-02-20	1
+Madison, WI	US	43.0731	-89.4012	2020-02-21	1
+Madison, WI	US	43.0731	-89.4012	2020-02-22	1
+Madison, WI	US	43.0731	-89.4012	2020-02-23	1
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-01-22	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-01-23	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-01-24	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-01-25	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-01-26	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-01-27	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-01-28	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-01-29	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-01-30	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-01-31	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-01	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-02	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-03	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-04	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-05	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-06	0
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-07	61
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-08	61
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-09	64
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-10	135
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-11	135
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-12	175
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-13	175
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-14	218
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-15	285
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-16	355
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-17	454
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-18	542
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-19	621
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-20	634
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-21	634
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-22	634
+Diamond Princess cruise ship	Others	35.4437	139.638	2020-02-23	691
+San Diego County, CA	US	32.7157	-117.1611	2020-01-22	0
+San Diego County, CA	US	32.7157	-117.1611	2020-01-23	0
+San Diego County, CA	US	32.7157	-117.1611	2020-01-24	0
+San Diego County, CA	US	32.7157	-117.1611	2020-01-25	0
+San Diego County, CA	US	32.7157	-117.1611	2020-01-26	0
+San Diego County, CA	US	32.7157	-117.1611	2020-01-27	0
+San Diego County, CA	US	32.7157	-117.1611	2020-01-28	0
+San Diego County, CA	US	32.7157	-117.1611	2020-01-29	0
+San Diego County, CA	US	32.7157	-117.1611	2020-01-30	0
+San Diego County, CA	US	32.7157	-117.1611	2020-01-31	0
+San Diego County, CA	US	32.7157	-117.1611	2020-02-01	0
+San Diego County, CA	US	32.7157	-117.1611	2020-02-02	0
+San Diego County, CA	US	32.7157	-117.1611	2020-02-03	0
+San Diego County, CA	US	32.7157	-117.1611	2020-02-04	0
+San Diego County, CA	US	32.7157	-117.1611	2020-02-05	0
+San Diego County, CA	US	32.7157	-117.1611	2020-02-06	0
+San Diego County, CA	US	32.7157	-117.1611	2020-02-07	0
+San Diego County, CA	US	32.7157	-117.1611	2020-02-08	0
+San Diego County, CA	US	32.7157	-117.1611	2020-02-09	0
+San Diego County, CA	US	32.7157	-117.1611	2020-02-10	0
+San Diego County, CA	US	32.7157	-117.1611	2020-02-11	1
+San Diego County, CA	US	32.7157	-117.1611	2020-02-12	1
+San Diego County, CA	US	32.7157	-117.1611	2020-02-13	2
+San Diego County, CA	US	32.7157	-117.1611	2020-02-14	2
+San Diego County, CA	US	32.7157	-117.1611	2020-02-15	2
+San Diego County, CA	US	32.7157	-117.1611	2020-02-16	2
+San Diego County, CA	US	32.7157	-117.1611	2020-02-17	2
+San Diego County, CA	US	32.7157	-117.1611	2020-02-18	2
+San Diego County, CA	US	32.7157	-117.1611	2020-02-19	2
+San Diego County, CA	US	32.7157	-117.1611	2020-02-20	2
+San Diego County, CA	US	32.7157	-117.1611	2020-02-21	2
+San Diego County, CA	US	32.7157	-117.1611	2020-02-22	2
+San Diego County, CA	US	32.7157	-117.1611	2020-02-23	2
+San Antonio, TX	US	29.4241	-98.4936	2020-01-22	0
+San Antonio, TX	US	29.4241	-98.4936	2020-01-23	0
+San Antonio, TX	US	29.4241	-98.4936	2020-01-24	0
+San Antonio, TX	US	29.4241	-98.4936	2020-01-25	0
+San Antonio, TX	US	29.4241	-98.4936	2020-01-26	0
+San Antonio, TX	US	29.4241	-98.4936	2020-01-27	0
+San Antonio, TX	US	29.4241	-98.4936	2020-01-28	0
+San Antonio, TX	US	29.4241	-98.4936	2020-01-29	0
+San Antonio, TX	US	29.4241	-98.4936	2020-01-30	0
+San Antonio, TX	US	29.4241	-98.4936	2020-01-31	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-01	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-02	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-03	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-04	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-05	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-06	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-07	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-08	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-09	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-10	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-11	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-12	0
+San Antonio, TX	US	29.4241	-98.4936	2020-02-13	1
+San Antonio, TX	US	29.4241	-98.4936	2020-02-14	1
+San Antonio, TX	US	29.4241	-98.4936	2020-02-15	1
+San Antonio, TX	US	29.4241	-98.4936	2020-02-16	1
+San Antonio, TX	US	29.4241	-98.4936	2020-02-17	1
+San Antonio, TX	US	29.4241	-98.4936	2020-02-18	1
+San Antonio, TX	US	29.4241	-98.4936	2020-02-19	1
+San Antonio, TX	US	29.4241	-98.4936	2020-02-20	1
+San Antonio, TX	US	29.4241	-98.4936	2020-02-21	1
+San Antonio, TX	US	29.4241	-98.4936	2020-02-22	1
+San Antonio, TX	US	29.4241	-98.4936	2020-02-23	1
+NA	Egypt	26.8206	30.8025	2020-01-22	0
+NA	Egypt	26.8206	30.8025	2020-01-23	0
+NA	Egypt	26.8206	30.8025	2020-01-24	0
+NA	Egypt	26.8206	30.8025	2020-01-25	0
+NA	Egypt	26.8206	30.8025	2020-01-26	0
+NA	Egypt	26.8206	30.8025	2020-01-27	0
+NA	Egypt	26.8206	30.8025	2020-01-28	0
+NA	Egypt	26.8206	30.8025	2020-01-29	0
+NA	Egypt	26.8206	30.8025	2020-01-30	0
+NA	Egypt	26.8206	30.8025	2020-01-31	0
+NA	Egypt	26.8206	30.8025	2020-02-01	0
+NA	Egypt	26.8206	30.8025	2020-02-02	0
+NA	Egypt	26.8206	30.8025	2020-02-03	0
+NA	Egypt	26.8206	30.8025	2020-02-04	0
+NA	Egypt	26.8206	30.8025	2020-02-05	0
+NA	Egypt	26.8206	30.8025	2020-02-06	0
+NA	Egypt	26.8206	30.8025	2020-02-07	0
+NA	Egypt	26.8206	30.8025	2020-02-08	0
+NA	Egypt	26.8206	30.8025	2020-02-09	0
+NA	Egypt	26.8206	30.8025	2020-02-10	0
+NA	Egypt	26.8206	30.8025	2020-02-11	0
+NA	Egypt	26.8206	30.8025	2020-02-12	0
+NA	Egypt	26.8206	30.8025	2020-02-13	0
+NA	Egypt	26.8206	30.8025	2020-02-14	1
+NA	Egypt	26.8206	30.8025	2020-02-15	1
+NA	Egypt	26.8206	30.8025	2020-02-16	1
+NA	Egypt	26.8206	30.8025	2020-02-17	1
+NA	Egypt	26.8206	30.8025	2020-02-18	1
+NA	Egypt	26.8206	30.8025	2020-02-19	1
+NA	Egypt	26.8206	30.8025	2020-02-20	1
+NA	Egypt	26.8206	30.8025	2020-02-21	1
+NA	Egypt	26.8206	30.8025	2020-02-22	1
+NA	Egypt	26.8206	30.8025	2020-02-23	1
+NA	Iran	32.4279	53.688	2020-01-22	0
+NA	Iran	32.4279	53.688	2020-01-23	0
+NA	Iran	32.4279	53.688	2020-01-24	0
+NA	Iran	32.4279	53.688	2020-01-25	0
+NA	Iran	32.4279	53.688	2020-01-26	0
+NA	Iran	32.4279	53.688	2020-01-27	0
+NA	Iran	32.4279	53.688	2020-01-28	0
+NA	Iran	32.4279	53.688	2020-01-29	0
+NA	Iran	32.4279	53.688	2020-01-30	0
+NA	Iran	32.4279	53.688	2020-01-31	0
+NA	Iran	32.4279	53.688	2020-02-01	0
+NA	Iran	32.4279	53.688	2020-02-02	0
+NA	Iran	32.4279	53.688	2020-02-03	0
+NA	Iran	32.4279	53.688	2020-02-04	0
+NA	Iran	32.4279	53.688	2020-02-05	0
+NA	Iran	32.4279	53.688	2020-02-06	0
+NA	Iran	32.4279	53.688	2020-02-07	0
+NA	Iran	32.4279	53.688	2020-02-08	0
+NA	Iran	32.4279	53.688	2020-02-09	0
+NA	Iran	32.4279	53.688	2020-02-10	0
+NA	Iran	32.4279	53.688	2020-02-11	0
+NA	Iran	32.4279	53.688	2020-02-12	0
+NA	Iran	32.4279	53.688	2020-02-13	0
+NA	Iran	32.4279	53.688	2020-02-14	0
+NA	Iran	32.4279	53.688	2020-02-15	0
+NA	Iran	32.4279	53.688	2020-02-16	0
+NA	Iran	32.4279	53.688	2020-02-17	0
+NA	Iran	32.4279	53.688	2020-02-18	0
+NA	Iran	32.4279	53.688	2020-02-19	2
+NA	Iran	32.4279	53.688	2020-02-20	5
+NA	Iran	32.4279	53.688	2020-02-21	18
+NA	Iran	32.4279	53.688	2020-02-22	28
+NA	Iran	32.4279	53.688	2020-02-23	43
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-01-22	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-01-23	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-01-24	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-01-25	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-01-26	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-01-27	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-01-28	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-01-29	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-01-30	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-01-31	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-01	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-02	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-03	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-04	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-05	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-06	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-07	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-08	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-09	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-10	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-11	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-12	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-13	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-14	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-15	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-16	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-17	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-18	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-19	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-20	0
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-21	11
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-22	11
+Omaha, NE (From Diamond Princess)	US	41.2545	-95.9758	2020-02-23	11
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-01-22	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-01-23	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-01-24	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-01-25	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-01-26	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-01-27	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-01-28	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-01-29	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-01-30	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-01-31	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-01	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-02	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-03	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-04	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-05	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-06	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-07	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-08	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-09	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-10	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-11	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-12	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-13	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-14	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-15	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-16	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-17	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-18	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-19	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-20	0
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-21	5
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-22	5
+Travis, CA (From Diamond Princess)	US	38.2721	-121.9399	2020-02-23	5
+From Diamond Princess	Australia	35.4437	139.638	2020-01-22	0
+From Diamond Princess	Australia	35.4437	139.638	2020-01-23	0
+From Diamond Princess	Australia	35.4437	139.638	2020-01-24	0
+From Diamond Princess	Australia	35.4437	139.638	2020-01-25	0
+From Diamond Princess	Australia	35.4437	139.638	2020-01-26	0
+From Diamond Princess	Australia	35.4437	139.638	2020-01-27	0
+From Diamond Princess	Australia	35.4437	139.638	2020-01-28	0
+From Diamond Princess	Australia	35.4437	139.638	2020-01-29	0
+From Diamond Princess	Australia	35.4437	139.638	2020-01-30	0
+From Diamond Princess	Australia	35.4437	139.638	2020-01-31	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-01	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-02	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-03	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-04	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-05	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-06	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-07	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-08	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-09	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-10	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-11	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-12	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-13	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-14	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-15	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-16	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-17	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-18	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-19	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-20	0
+From Diamond Princess	Australia	35.4437	139.638	2020-02-21	4
+From Diamond Princess	Australia	35.4437	139.638	2020-02-22	7
+From Diamond Princess	Australia	35.4437	139.638	2020-02-23	7
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-01-22	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-01-23	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-01-24	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-01-25	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-01-26	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-01-27	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-01-28	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-01-29	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-01-30	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-01-31	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-01	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-02	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-03	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-04	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-05	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-06	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-07	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-08	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-09	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-10	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-11	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-12	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-13	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-14	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-15	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-16	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-17	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-18	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-19	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-20	0
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-21	2
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-22	2
+Lackland, TX (From Diamond Princess)	US	29.3829	-98.6134	2020-02-23	2
+From Diamond Princess	Israel	31.0461	34.8516	2020-01-22	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-01-23	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-01-24	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-01-25	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-01-26	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-01-27	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-01-28	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-01-29	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-01-30	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-01-31	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-01	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-02	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-03	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-04	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-05	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-06	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-07	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-08	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-09	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-10	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-11	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-12	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-13	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-14	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-15	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-16	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-17	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-18	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-19	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-20	0
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-21	1
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-22	1
+From Diamond Princess	Israel	31.0461	34.8516	2020-02-23	1
+NA	Lebanon	33.8547	35.8623	2020-01-22	0
+NA	Lebanon	33.8547	35.8623	2020-01-23	0
+NA	Lebanon	33.8547	35.8623	2020-01-24	0
+NA	Lebanon	33.8547	35.8623	2020-01-25	0
+NA	Lebanon	33.8547	35.8623	2020-01-26	0
+NA	Lebanon	33.8547	35.8623	2020-01-27	0
+NA	Lebanon	33.8547	35.8623	2020-01-28	0
+NA	Lebanon	33.8547	35.8623	2020-01-29	0
+NA	Lebanon	33.8547	35.8623	2020-01-30	0
+NA	Lebanon	33.8547	35.8623	2020-01-31	0
+NA	Lebanon	33.8547	35.8623	2020-02-01	0
+NA	Lebanon	33.8547	35.8623	2020-02-02	0
+NA	Lebanon	33.8547	35.8623	2020-02-03	0
+NA	Lebanon	33.8547	35.8623	2020-02-04	0
+NA	Lebanon	33.8547	35.8623	2020-02-05	0
+NA	Lebanon	33.8547	35.8623	2020-02-06	0
+NA	Lebanon	33.8547	35.8623	2020-02-07	0
+NA	Lebanon	33.8547	35.8623	2020-02-08	0
+NA	Lebanon	33.8547	35.8623	2020-02-09	0
+NA	Lebanon	33.8547	35.8623	2020-02-10	0
+NA	Lebanon	33.8547	35.8623	2020-02-11	0
+NA	Lebanon	33.8547	35.8623	2020-02-12	0
+NA	Lebanon	33.8547	35.8623	2020-02-13	0
+NA	Lebanon	33.8547	35.8623	2020-02-14	0
+NA	Lebanon	33.8547	35.8623	2020-02-15	0
+NA	Lebanon	33.8547	35.8623	2020-02-16	0
+NA	Lebanon	33.8547	35.8623	2020-02-17	0
+NA	Lebanon	33.8547	35.8623	2020-02-18	0
+NA	Lebanon	33.8547	35.8623	2020-02-19	0
+NA	Lebanon	33.8547	35.8623	2020-02-20	0
+NA	Lebanon	33.8547	35.8623	2020-02-21	1
+NA	Lebanon	33.8547	35.8623	2020-02-22	1
+NA	Lebanon	33.8547	35.8623	2020-02-23	1
+Humboldt County, CA	US	40.745	-123.8695	2020-01-22	0
+Humboldt County, CA	US	40.745	-123.8695	2020-01-23	0
+Humboldt County, CA	US	40.745	-123.8695	2020-01-24	0
+Humboldt County, CA	US	40.745	-123.8695	2020-01-25	0
+Humboldt County, CA	US	40.745	-123.8695	2020-01-26	0
+Humboldt County, CA	US	40.745	-123.8695	2020-01-27	0
+Humboldt County, CA	US	40.745	-123.8695	2020-01-28	0
+Humboldt County, CA	US	40.745	-123.8695	2020-01-29	0
+Humboldt County, CA	US	40.745	-123.8695	2020-01-30	0
+Humboldt County, CA	US	40.745	-123.8695	2020-01-31	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-01	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-02	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-03	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-04	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-05	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-06	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-07	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-08	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-09	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-10	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-11	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-12	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-13	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-14	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-15	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-16	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-17	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-18	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-19	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-20	0
+Humboldt County, CA	US	40.745	-123.8695	2020-02-21	1
+Humboldt County, CA	US	40.745	-123.8695	2020-02-22	1
+Humboldt County, CA	US	40.745	-123.8695	2020-02-23	1
+Sacramento County, CA	US	38.4747	-121.3542	2020-01-22	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-01-23	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-01-24	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-01-25	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-01-26	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-01-27	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-01-28	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-01-29	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-01-30	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-01-31	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-01	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-02	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-03	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-04	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-05	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-06	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-07	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-08	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-09	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-10	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-11	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-12	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-13	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-14	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-15	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-16	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-17	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-18	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-19	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-20	0
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-21	1
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-22	1
+Sacramento County, CA	US	38.4747	-121.3542	2020-02-23	1
+None	Iraq	33.2232	43.6793	2020-01-22	0
+None	Iraq	33.2232	43.6793	2020-01-23	0
+None	Iraq	33.2232	43.6793	2020-01-24	0
+None	Iraq	33.2232	43.6793	2020-01-25	0
+None	Iraq	33.2232	43.6793	2020-01-26	0
+None	Iraq	33.2232	43.6793	2020-01-27	0
+None	Iraq	33.2232	43.6793	2020-01-28	0
+None	Iraq	33.2232	43.6793	2020-01-29	0
+None	Iraq	33.2232	43.6793	2020-01-30	0
+None	Iraq	33.2232	43.6793	2020-01-31	0
+None	Iraq	33.2232	43.6793	2020-02-01	0
+None	Iraq	33.2232	43.6793	2020-02-02	0
+None	Iraq	33.2232	43.6793	2020-02-03	0
+None	Iraq	33.2232	43.6793	2020-02-04	0
+None	Iraq	33.2232	43.6793	2020-02-05	0
+None	Iraq	33.2232	43.6793	2020-02-06	0
+None	Iraq	33.2232	43.6793	2020-02-07	0
+None	Iraq	33.2232	43.6793	2020-02-08	0
+None	Iraq	33.2232	43.6793	2020-02-09	0
+None	Iraq	33.2232	43.6793	2020-02-10	0
+None	Iraq	33.2232	43.6793	2020-02-11	0
+None	Iraq	33.2232	43.6793	2020-02-12	0
+None	Iraq	33.2232	43.6793	2020-02-13	0
+None	Iraq	33.2232	43.6793	2020-02-14	0
+None	Iraq	33.2232	43.6793	2020-02-15	0
+None	Iraq	33.2232	43.6793	2020-02-16	0
+None	Iraq	33.2232	43.6793	2020-02-17	0
+None	Iraq	33.2232	43.6793	2020-02-18	0
+None	Iraq	33.2232	43.6793	2020-02-19	0
+None	Iraq	33.2232	43.6793	2020-02-20	0
+None	Iraq	33.2232	43.6793	2020-02-21	0
+None	Iraq	33.2232	43.6793	2020-02-22	0
+None	Iraq	33.2232	43.6793	2020-02-23	0
+Hubei	Mainland China	30.97564	112.2707	2019-12-08	1
+Hubei	Mainland China	30.97564	112.2707	2019-12-09	1
+Hubei	Mainland China	30.97564	112.2707	2019-12-10	2
+Hubei	Mainland China	30.97564	112.2707	2019-12-11	2
+Hubei	Mainland China	30.97564	112.2707	2019-12-12	2
+Hubei	Mainland China	30.97564	112.2707	2019-12-13	3
+Hubei	Mainland China	30.97564	112.2707	2019-12-14	3
+Hubei	Mainland China	30.97564	112.2707	2019-12-15	5
+Hubei	Mainland China	30.97564	112.2707	2019-12-16	6
+Hubei	Mainland China	30.97564	112.2707	2019-12-17	7
+Hubei	Mainland China	30.97564	112.2707	2019-12-18	7
+Hubei	Mainland China	30.97564	112.2707	2019-12-19	9
+Hubei	Mainland China	30.97564	112.2707	2019-12-20	13
+Hubei	Mainland China	30.97564	112.2707	2019-12-21	17
+Hubei	Mainland China	30.97564	112.2707	2019-12-22	20
+Hubei	Mainland China	30.97564	112.2707	2019-12-23	24
+Hubei	Mainland China	30.97564	112.2707	2019-12-24	24
+Hubei	Mainland China	30.97564	112.2707	2019-12-25	28
+Hubei	Mainland China	30.97564	112.2707	2019-12-26	29
+Hubei	Mainland China	30.97564	112.2707	2019-12-27	32
+Hubei	Mainland China	30.97564	112.2707	2019-12-28	34
+Hubei	Mainland China	30.97564	112.2707	2019-12-29	40
+Hubei	Mainland China	30.97564	112.2707	2019-12-30	45
+Hubei	Mainland China	30.97564	112.2707	2019-12-31	47
+Hubei	Mainland China	30.97564	112.2707	2020-01-01	57
+Hubei	Mainland China	30.97564	112.2707	2020-01-02	64
+Hubei	Mainland China	30.97564	112.2707	2020-01-03	77
+Hubei	Mainland China	30.97564	112.2707	2020-01-04	90
+Hubei	Mainland China	30.97564	112.2707	2020-01-05	105
+Hubei	Mainland China	30.97564	112.2707	2020-01-06	124
+Hubei	Mainland China	30.97564	112.2707	2020-01-07	155
+Hubei	Mainland China	30.97564	112.2707	2020-01-08	199
+Hubei	Mainland China	30.97564	112.2707	2020-01-09	231
+Hubei	Mainland China	30.97564	112.2707	2020-01-10	264
+Hubei	Mainland China	30.97564	112.2707	2020-01-11	297
+Hubei	Mainland China	30.97564	112.2707	2020-01-12	327
+Hubei	Mainland China	30.97564	112.2707	2020-01-13	349
+Hubei	Mainland China	30.97564	112.2707	2020-01-14	372
+Hubei	Mainland China	30.97564	112.2707	2020-01-15	395
+Hubei	Mainland China	30.97564	112.2707	2020-01-16	408
+Hubei	Mainland China	30.97564	112.2707	2020-01-17	414
+Hubei	Mainland China	30.97564	112.2707	2020-01-18	420
+Hubei	Mainland China	30.97564	112.2707	2020-01-19	422
+Hubei	Mainland China	30.97564	112.2707	2020-01-20	425
+Hubei	Mainland China	30.97564	112.2707	2020-01-21	427
+Guangdong	Mainland China	23.33841	113.422	2020-01-20	14
+Beijing	Mainland China	40.18238	116.4142	2020-01-20	5
+Shanghai	Mainland China	31.20327	121.4554	2020-01-20	1
+Guangdong	Mainland China	23.33841	113.422	2020-01-21	17
+Beijing	Mainland China	40.18238	116.4142	2020-01-21	5
+Shanghai	Mainland China	31.20327	121.4554	2020-01-21	2
+Chongqing	Mainland China	30.05718	107.874	2020-01-21	1
+Zhejiang	Mainland China	29.18251	120.0985	2020-01-21	5
+Jiangxi	Mainland China	27.61401	115.7221	2020-01-21	2
+Sichuan	Mainland China	30.61714	102.7103	2020-01-21	1
+Tianjin	Mainland China	39.29362	117.333	2020-01-21	2
+Henan	Mainland China	33.88202	113.614	2020-01-21	1
+Hunan	Mainland China	27.61041	111.7088	2020-01-21	1
+Shandong	Mainland China	36.34377	118.1529	2020-01-21	1
+Yunnan	Mainland China	24.97411	101.4868	2020-01-21	1
+Taiwan	Taiwan	23.6978	120.9605	2020-01-21	1

@@ -1,0 +1,25 @@
+province	country	lat	long	date	cumulative_cases
+Hubei	Mainland China	30.97564	112.2707	2020-01-20	258
+Guangdong	Mainland China	23.33841	113.422	2020-01-20	14
+Beijing	Mainland China	40.18238	116.4142	2020-01-20	5
+Shanghai	Mainland China	31.20327	121.4554	2020-01-20	1
+NA	Japan	35.6762	139.6503	2020-01-20	1
+NA	South Korea	37.5665	126.978	2020-01-20	1
+NA	Thailand	13.7563	100.5018	2020-01-20	2
+Hubei	Mainland China	30.97564	112.2707	2020-01-21	270
+Guangdong	Mainland China	23.33841	113.422	2020-01-21	17
+Beijing	Mainland China	40.18238	116.4142	2020-01-21	5
+Shanghai	Mainland China	31.20327	121.4554	2020-01-21	2
+Chongqing	Mainland China	30.05718	107.874	2020-01-21	1
+Zhejiang	Mainland China	29.18251	120.0985	2020-01-21	5
+Jiangxi	Mainland China	27.61401	115.7221	2020-01-21	2
+Sichuan	Mainland China	30.61714	102.7103	2020-01-21	1
+Tianjin	Mainland China	39.29362	117.333	2020-01-21	2
+Henan	Mainland China	33.88202	113.614	2020-01-21	1
+Hunan	Mainland China	27.61041	111.7088	2020-01-21	1
+Shandong	Mainland China	36.34377	118.1529	2020-01-21	1
+Yunnan	Mainland China	24.97411	101.4868	2020-01-21	1
+Taiwan	Taiwan	23.6978	120.9605	2020-01-21	1
+NA	Japan	35.6762	139.6503	2020-01-21	1
+NA	South Korea	37.5665	126.978	2020-01-21	1
+NA	Thailand	13.7563	100.5018	2020-01-21	2

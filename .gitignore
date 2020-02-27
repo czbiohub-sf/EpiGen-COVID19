@@ -5,6 +5,7 @@ packrat/src
 .RData
 .Rhistory
 data/sequences/GISAID
+data/time_series/CSSE
 exploratory
 msa
 tree
