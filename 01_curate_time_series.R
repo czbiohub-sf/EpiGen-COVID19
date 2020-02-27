@@ -34,8 +34,24 @@ early_who_sitreps <- read_tsv(file.path(data_dir, "WHO_sitreps_20200121-20200122
 cumulative_cases <- 
   rbind(csse_confirmed, 
       nejm_wuhan %>% select(-new_diagnoses),
-      early_who_sitreps %>% filter(province!="Hubei") # only use WHO numbers for Jan 21/22 for non-Hubei provinces
-      )
+      early_who_sitreps %>% filter(!(!is.na(province) & province=="Hubei")) # only use WHO numbers for Jan 21/22 for non-Hubei provinces
+      ) %>%
+  arrange(country, province, date, cumulative_cases) %>%
+  group_by(country, province, date) %>%
+  summarize_all(first) %>%
+  group_modify(function (x, ...) {
+    # check for decreases in cumulative number of cases
+    if (nrow(x)==1) return (x)
+    if ((any(diff(x$cumulative_cases)<0))) {
+      for (i in 2:nrow(x)) {
+        if ((x$cumulative_cases[i])<(x$cumulative_cases[i-1])) {
+          x$cumulative_cases[i] <- x$cumulative_cases[i-1]
+        }
+      }
+    }
+    return (x)
+  }) %>%
+  ungroup()
 write_tsv(cumulative_cases, file.path(data_dir, "timeseries_cumulative_cases.tsv"))
 
 
@@ -59,8 +75,13 @@ write_tsv(china_cumulative_cases, file.path(data_dir, "summary_china_timeseries_
 new_cases <- cumulative_cases %>%
   group_by(province, country) %>%
   group_modify(function (x, ...) {
-    new_cases <- c(x$cumulative_cases[1], diff(x$cumulative_cases))
-    mutate(x, new_cases=new_cases) %>%
+    if (nrow(x)>1) {
+      x <- arrange(x, date)
+      new_cases_vector <- c(min(x$cumulative_cases), diff(x$cumulative_cases))
+    } else {
+      new_cases_vector <- x$cumulative_cases
+    }
+    mutate(x, new_cases=new_cases_vector) %>%
       select(-cumulative_cases)
   }) %>%
   ungroup()
