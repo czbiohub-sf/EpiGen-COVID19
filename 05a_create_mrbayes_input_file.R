@@ -20,7 +20,10 @@ msa_coll_dates[ambiguous_samples] <- paste0(msa_coll_dates_str[ambiguous_samples
 rownames(msa) %<>% paste(., msa_coll_dates, sep="_")
 write.dna(msa, mb_filename, "fasta", nbcol=1, colw=80)
 
-generate.MrBayes.input(mb_filename, output.fn=mb_nex, set.tip.date=TRUE)
+generate.MrBayes.input(mb_filename, output.fn=mb_nex, set.tip.date=TRUE, 
+                       nt.subst.model=6, rates="gamma", mol.clock="uniform", 
+                       clockratepr="gamma(2, 0.1)", units="years", treeagepr="uniform(0.16, 1)",
+                       Ngen=1e7, Samplefreq=1e4, Printfreq = 1e4)
 
 if (sum(ambiguous_samples)>0) {
   # If there are ambiguous dates (only year-month is reported), put a uniform prior on age of that tip, +/- 30 days
