@@ -9,7 +9,7 @@ data_dir <- "data/sequences"
 filenames <- list.files(file.path(data_dir, "GISAID"), ".fasta", full.names=TRUE)
 fastas <- lapply(filenames, read.dna, "fasta")
 outgroup_id <- "MG772933.1"
-outgroup_fasta <- read.dna(paste0(data_dir, outgroup_id, ".fasta"), "fasta")
+outgroup_fasta <- read.dna(paste0(data_dir, "/", outgroup_id, ".fasta"), "fasta")
 
 # filter sequences with >10% ambiguous bases
 base_freq <- lapply(fastas, base.freq, all=TRUE)
