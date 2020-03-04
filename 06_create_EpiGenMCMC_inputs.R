@@ -4,6 +4,9 @@ library(dplyr)
 library(lubridate)
 library(ape)
 library(parallel)
+library(stringr)
+
+options(scipen=999)
 
 ts_dir <- "data/time_series"
 tree_dir <- "tree"
@@ -102,10 +105,10 @@ commands <- expand.grid(0:2, names(input_data), seq(selected_trees)) %>%
     id <- paste0("covid19_", mcmc_suffix)
     dir_id <- file.path(epigen_mcmc_dir, id)
     params_to_estimate <- c(paste0("R", 0:6), "CV", paste0("reporting", 0:6), "time_before_data")
-    transformation <- c(rep(NA, 8), rep("inverse", 7), NA)
+    transformation <- c(rep(NA, 7), "log", rep("inverse", 7), NA)
     priors <- c(rep("uniform", 16))
-    prior_params <- c(replicate(7, c(0.1, 20), simplify=FALSE), list(c(2, 400)), list(c(1, 1000)), replicate(6, c(0.1, 20), simplify=FALSE), list(c(1, 360)))
-    proposal_params <- c(replicate(7, c(0.1, 0.1, 20), simplify=FALSE), list(c(5, 2, 400)), list(c(3, 1, 1000)), replicate(6, c(1, 0.1, 20), simplify=FALSE), list(c(2, 1, 360)))
+    prior_params <- c(replicate(7, c(0.1, 20), simplify=FALSE), list(c(-1, 4)), list(c(1, 1000)), replicate(6, c(0.1, 20), simplify=FALSE), list(c(1, 360)))
+    proposal_params <- c(replicate(7, c(0.1, 0.1, 20), simplify=FALSE), list(c(2, -1, 4)), list(c(3, 1, 1000)), replicate(6, c(1, 0.1, 20), simplify=FALSE), list(c(2, 1, 360)))
     if (which_lik==2) {
       params_to_remove <- grep("reporting", params_to_estimate)
       params_to_estimate <- params_to_estimate[-params_to_remove]
@@ -151,11 +154,71 @@ commands <- expand.grid(0:2, names(input_data), seq(selected_trees)) %>%
                              params_file=file.path(dir_id, paste0(prefix, "_params.txt")))
   }, mc.cores=detectCores())
 
-mapply(paste, "~/EpiGenMCMC/src/covid19branching", commands) %>%
+program_binary <- "/home/lucy/EpiGenMCMC/src/covid19branching"
+mapply(paste, program_binary, commands) %>%
   cat(file=file.path(epigen_mcmc_dir, paste0("covid19_", mcmc_suffix), "commands"), sep="\n")
 
 paste("scp -pr ", file.path(epigen_mcmc_dir, paste0("covid19_", mcmc_suffix)),
-      file.path("lucy@lrrr:~/EpiGen-COVID19", epigen_mcmc_dir)) %>%
+      file.path("lucy@lrrr:/mnt/data_lg/lucymli/EpiGen-COVID19", epigen_mcmc_dir)) %>%
   system()
 
+# Create parameter sweep
+if (!dir.exists(file.path(epigen_mcmc_dir, "testing"))) {
+  dir.create(file.path(epigen_mcmc_dir, "testing"))
+}
 
+template_command <- commands[[which(sapply(commands, function (x) grepl("hubei", x)))[1]]]
+str_to_sub_params <- template_command %>% strsplit(., " ") %>% unlist() %>% grep("param", ., value=TRUE)
+str_to_sub_mcmc <- template_command %>% strsplit(., " ") %>% unlist() %>% grep("mcmc_option", ., value=TRUE)
+
+test_params <- read_delim(str_to_sub_params, delim=" ", skip=1, col_names=FALSE)
+test_params[c(2:7, 16:21), 3] <- FALSE
+param_combos <- expand.grid(R0=seq(1.1, 5, length.out=10), 
+                            CV=c(.5, 1, 2, 3, 5, 30, 50), 
+                            reporting0=1/c(1, 2, 3, 5, 10, 20, 50, 100),
+                            time_before_data=round(seq(52, 360, length.out=8)))
+test_params_combos <- mclapply(1:nrow(param_combos), function (i) {
+  test_params[which(test_params$X3), 1] <- unlist(c(param_combos[i, ]))[test_params$X2[which(test_params$X3)]]
+  test_params$X3 %<>% as.character() %>% tolower()
+  test_params
+}, mc.cores=8)
+
+test_params_filenames <- mclapply(1:length(test_params_combos), function (i) {
+  outfile <- file.path(epigen_mcmc_dir, "testing", paste0("test_params_", i, ".txt"))
+  apply(test_params_combos[[i]], 1, paste, collapse=" ") %>% 
+    trimws() %>% 
+    str_squish() %>%
+    c(readLines(param_template_file, n=1), .) %>% 
+    cat(file=outfile, sep="\n")
+  outfile
+}, mc.cores=8) %>%
+  unlist()
+
+test_mcmc_option_filenames <- lapply(1:length(test_params_filenames), function (i) {
+  test_mcmc_option_filename <- file.path(epigen_mcmc_dir, "testing", paste0("test_mcmc_options_", i, ".txt"))
+  readLines(str_to_sub_mcmc) %>%
+    grep("iterations", ., value=TRUE, invert=TRUE) %>%
+    c(., "iterations 2") %>%
+    grep("log_filename", ., value=TRUE, invert=TRUE) %>%
+    c(., paste("log_filename", file.path(epigen_mcmc_dir, "testing", paste0("test_logfile_", i, ".txt")))) %>%
+    grep("traj_filename", ., value=TRUE, invert=TRUE) %>%
+    c(., paste("traj_filename", file.path(epigen_mcmc_dir, "testing", paste0("test_traj_", i, ".txt")))) %>%
+    cat(., file=test_mcmc_option_filename, sep="\n")
+  test_mcmc_option_filename
+}) %>%
+  unlist()
+
+
+test_commands <- mapply(function (param_filename, mcmc_filename) {
+  gsub(str_to_sub_params, param_filename, template_command) %>% 
+    gsub(str_to_sub_mcmc, mcmc_filename, .) %>%
+    paste("timeout 20s ", program_binary, .)
+}, as.list(test_params_filenames), as.list(test_mcmc_option_filenames), 
+SIMPLIFY=FALSE) %>%
+  unlist()
+
+cat(test_commands, file=file.path(epigen_mcmc_dir, "testing", "commands"), sep="\n")
+
+paste0("find ", file.path(epigen_mcmc_dir, "testing"),
+      " -type f | parallel scp {} lucy@lrrr:/mnt/data_lg/lucymli/EpiGen-COVID19/{}") %>%
+  system()
