@@ -7,11 +7,11 @@ channels:
 dependencies:
   - beagle-lib=3.1.2
   - ca-certificates=2020.1.1
-  - iqtree=1.5.5
-  - libcxx=4.0.1
-  - libcxxabi=4.0.1
+  - iqtree=1.6.12
+  - libcxx
+  - libcxxabi
   - libgcc=4.8.5
-  - libgfortran=3.0.1
+  - libgfortran
   - libtool=2.4.6
   - mpi=1.0
   - mrbayes=3.2.7
