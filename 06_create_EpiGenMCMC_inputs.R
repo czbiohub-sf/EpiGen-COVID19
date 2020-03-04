@@ -107,8 +107,8 @@ commands <- expand.grid(0:2, names(input_data), seq(selected_trees)) %>%
     params_to_estimate <- c(paste0("R", 0:6), "CV", paste0("reporting", 0:6), "time_before_data")
     transformation <- c(rep(NA, 7), "log", rep("inverse", 7), NA)
     priors <- c(rep("uniform", 16))
-    prior_params <- c(replicate(7, c(0.1, 20), simplify=FALSE), list(c(-1, 4)), list(c(1, 1000)), replicate(6, c(0.1, 20), simplify=FALSE), list(c(1, 360)))
-    proposal_params <- c(replicate(7, c(0.1, 0.1, 20), simplify=FALSE), list(c(2, -1, 4)), list(c(3, 1, 1000)), replicate(6, c(1, 0.1, 20), simplify=FALSE), list(c(2, 1, 360)))
+    prior_params <- c(replicate(7, c(0.1, 20), simplify=FALSE), list(c(0.1, 4)), list(c(1, 1000)), replicate(6, c(0.1, 20), simplify=FALSE), list(c(1, 360)))
+    proposal_params <- c(replicate(7, c(0.1, 0.1, 20), simplify=FALSE), list(c(1, 0.1, 4)), list(c(3, 1, 1000)), replicate(6, c(1, 0.1, 20), simplify=FALSE), list(c(2, 1, 360)))
     if (which_lik==2) {
       params_to_remove <- grep("reporting", params_to_estimate)
       params_to_estimate <- params_to_estimate[-params_to_remove]
@@ -174,9 +174,10 @@ str_to_sub_mcmc <- template_command %>% strsplit(., " ") %>% unlist() %>% grep("
 test_params <- read_delim(str_to_sub_params, delim=" ", skip=1, col_names=FALSE)
 test_params[c(2:7, 16:21), 3] <- FALSE
 param_combos <- expand.grid(R0=seq(1.1, 5, length.out=10), 
-                            CV=c(.5, 1, 2, 3, 5, 30, 50), 
+                            CV=c(2, 3, 5, 30, 50), 
                             reporting0=1/c(1, 2, 3, 5, 10, 20, 50, 100),
-                            time_before_data=round(seq(52, 360, length.out=8)))
+                            time_before_data=round(seq(52, 360, length.out=8)))# %>%
+  #slice(nrow(.))
 test_params_combos <- mclapply(1:nrow(param_combos), function (i) {
   test_params[which(test_params$X3), 1] <- unlist(c(param_combos[i, ]))[test_params$X2[which(test_params$X3)]]
   test_params$X3 %<>% as.character() %>% tolower()
@@ -219,6 +220,6 @@ SIMPLIFY=FALSE) %>%
 
 cat(test_commands, file=file.path(epigen_mcmc_dir, "testing", "commands"), sep="\n")
 
-paste0("find ", file.path(epigen_mcmc_dir, "testing"),
-      " -type f | parallel scp {} lucy@lrrr:/mnt/data_lg/lucymli/EpiGen-COVID19/{}") %>%
+file.path(epigen_mcmc_dir, "testing") %>%
+paste0("scp -pr ", ., " lucy@lrrr:/mnt/data_lg/lucymli/EpiGen-COVID19/", .) %>%
   system()
