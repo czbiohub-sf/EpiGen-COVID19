@@ -2,7 +2,7 @@
 packrat/lib*/
 packrat/src
 .Rproj.user
-.RData
+*.RData
 .Rhistory
 data/sequences/GISAID
 data/time_series/CSSE
