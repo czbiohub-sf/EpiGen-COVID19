@@ -33,7 +33,6 @@ if (file.exists(iqtree_filename)) {
   ml_tr_root2tip$outlier <- FALSE
   ml_tr_root2tip$outlier[ml_tr_lm_fit_outliers] <- TRUE
   ml_tr_lm_fit_adjusted <- lm(divergence~decimal_date(time), data=filter(ml_tr_root2tip, !outlier))
-  ml_tr_tips_to_drop <- ml_tr_lm_fit_outliers %>% `[`(ml_tr$tip.label, .)
   ml_tr_lm_fit_adjusted_str <- list()
   ml_tr_lm_fit_adjusted_str$subst.rate <- 
     c(ml_tr_lm_fit_adjusted$coefficients[2], confint(ml_tr_lm_fit_adjusted)[2, ]) %>%
@@ -60,6 +59,8 @@ if (file.exists(iqtree_filename)) {
     xlab("Date") + ylab("Divergence from root")
   ggsave(iqtree_filename %>% gsub(".treefile", "_root2tip.pdf", .), ml_tr_root2tip_plot,
          width=4, height=2)
+  ml_tr_tips_to_drop <- ml_tr_lm_fit_outliers %>% `[`(ml_tr$tip.label, .)
+  msa <- msa[!(rownames(msa) %in% ml_tr_tips_to_drop), ]
 }
 
 
