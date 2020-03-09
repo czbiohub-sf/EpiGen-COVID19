@@ -193,6 +193,6 @@ paste("scp -pr ", file.path(epigen_mcmc_dir, paste0("covid19_", mcmc_suffix)),
   system()
 
 
-save.image("create_EpiGenMCMC_inputs.RData")
+save.image(paste0("06_create_EpiGenMCMC_inputs_", mcmc_suffix, ".RData"))
 
 
