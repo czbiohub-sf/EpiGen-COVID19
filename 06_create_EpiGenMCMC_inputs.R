@@ -52,8 +52,16 @@ timeseries_hubei <- read_tsv(file.path(ts_dir, "timeseries_new_cases.tsv")) %>%
   select(date, new_cases)
 
 
-shape_param <- 4.6
-scale_param <- 1/2.65
+incub_pars <- optim(c(1, 1), fn=function (pars) {
+  mean_num <- pars[2] * gamma(1+1/pars[1])
+  sd_num <- sqrt(pars[2]^2*(gamma(1+2/pars[1])-gamma(1+1/pars[1])^2))
+  x1 <- abs(mean_num-6.4/365)
+  x2 <- abs(sd_num-2.3/365)
+  return(x1+x2)
+})
+
+shape_param <- incub_pars$par[1]
+scale_param <- incub_pars$par[2]
 set.seed(2342343)
 inferred_dates <- list(global=infer_dates_from_timeseries(timeseries, shape_param, scale_param),
                        china=infer_dates_from_timeseries(timeseries_china, shape_param, scale_param),
@@ -62,18 +70,16 @@ inferred_dates <- list(global=infer_dates_from_timeseries(timeseries, shape_para
 
 # Create input data -------------------------------------------------------
 
-mcmc_suffix <- list.files(msa_dir) %>% sub('\\.fasta$', '', .) %>% strsplit("_") %>% sapply(tail, 1) %>% sort() %>% tail (1)
-
 dt <- (1/4)/365
 
-truncate_at_date <- as.Date("2020-01-31")
+truncate_at_date <- as.Date("2020-01-26")
 
 input_data <- lapply(inferred_dates, function (x) {
   mclapply(selected_trees, function (i) {
     get_data(epi=x, phy=skylines$trees[[i]], dt=dt)
   }, mc.cores=5) %>%
     lapply(function (y) {
-      difference <- most_recent_tipdate-truncate_at_date
+      difference <- (most_recent_tipdate-truncate_at_date)/365/(dt)
       selection <- -(nrow(y$epi)-difference+1):-nrow(y$epi)
       y$epi <- y$epi[selection, ]
       y$gen <- y$gen[selection]
