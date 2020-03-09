@@ -85,3 +85,5 @@ if (sum(ambiguous_samples)>0) {
   nex_str[line_to_change] <- paste0("calibrate ", paste(calibrations, collapse=" "), ";")
   writeLines(nex_str, mb_nex)
 }
+
+save.image(file=paste0("05a_create_mrbayes_input_file_", run_id, ".RData"))
