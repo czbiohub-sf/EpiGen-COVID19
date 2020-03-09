@@ -13,10 +13,17 @@ tree_dir <- "tree"
 msa_dir <- "msa"
 epigen_mcmc_dir <- "epigenmcmc_results"
 
-infer_dates_from_timeseries <- function (full_timeseries, gamma_shape, gamma_scale) {
+mcmc_suffix <- list.files(msa_dir, "msa_muscle") %>% 
+  sub('\\.fasta$', '', .) %>% 
+  strsplit("_") %>% 
+  sapply(tail, 1) %>% 
+  sort(decreasing=TRUE) %>% 
+  `[`(2)
+
+infer_dates_from_timeseries <- function (full_timeseries, weibull_shape, weibull_scale) {
   apply(full_timeseries, 1, function (x) {
     decimal_date(as.Date(x[1])) %>%
-      `-`(rgamma(x[2], shape=gamma_shape, scale=gamma_scale)/365) %>%
+      `-`(rweibull(x[2], shape=weibull_shape, scale=weibull_scale)) %>%
       date_decimal() %>%
       as.Date()
   }) %>%
@@ -24,15 +31,15 @@ infer_dates_from_timeseries <- function (full_timeseries, gamma_shape, gamma_sca
 }
 
 # Read in phylogenies -----------------------------------------------------
-skylines <- EpiGenR::Phylos2Skyline(list.files(tree_dir, "[.]t$", full.names=TRUE), nex=TRUE, 
-                                    param.filenames=list.files(tree_dir, "[.]p$", full.names=TRUE),
-                                    burninfrac=.2, max.trees=1000, skyline.time.steps=100)
+skylines <- EpiGenR::Phylos2Skyline(grep(mcmc_suffix, list.files(tree_dir, "[.]t$", full.names=TRUE), value=TRUE), nex=TRUE, 
+                                    param.filenames=grep(mcmc_suffix, list.files(tree_dir, "[.]p$", full.names=TRUE), value=TRUE),
+                                    burninfrac=.4, max.trees=1000, skyline.time.steps=100)
 most_recent_tipdate <- strsplit(skylines$trees[[1]]$tip.label, "_") %>% 
   lapply(tail, 1) %>% 
   lapply(as.Date) %>% 
   do.call(what=c) %>% 
   max()
-selected_trees <- round(seq(1, length(skylines$trees), length.out=10))
+selected_trees <- round(seq(1, round(length(skylines$trees)/2), length.out=10))
 
 
 # Read in time series data ------------------------------------------------
