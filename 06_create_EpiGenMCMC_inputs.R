@@ -106,7 +106,8 @@ sars_sd <- 3.8/365
 generation_time_scale <- sars_sd^2/sars_mean
 generation_time_alpha <- sars_mean/generation_time_scale
 
-commands <- expand.grid(0:2, names(input_data), seq(selected_trees)) %>%
+commands <- expand.grid(c(0, 2), names(input_data), seq(selected_trees)) %>%
+  rbind(., expand.grid(1, names(input_data), 1)) %>%
   apply(1, list) %>% 
   unlist(recursive=FALSE) %>%
   mclapply(function (row_x) {
@@ -117,11 +118,40 @@ commands <- expand.grid(0:2, names(input_data), seq(selected_trees)) %>%
     prefix <- paste(epi_data_set, which_lik_str, selected_trees[which_tree], sep="_")
     id <- paste0("covid19_", mcmc_suffix)
     dir_id <- file.path(epigen_mcmc_dir, id)
-    params_to_estimate <- c(paste0("R", 0:6), "CV", paste0("reporting", 0:6), "time_before_data")
-    transformation <- c(rep(NA, 7), "log", rep("inverse", 7), NA)
-    priors <- c(rep("uniform", 16))
-    prior_params <- c(replicate(7, c(0.1, 20), simplify=FALSE), list(c(0.1, 4)), list(c(1, 1000)), replicate(6, c(0.1, 20), simplify=FALSE), list(c(1, 360)))
-    proposal_params <- c(replicate(7, c(0.1, 0.1, 20), simplify=FALSE), list(c(1, 0.1, 4)), list(c(3, 1, 1000)), replicate(6, c(1, 0.1, 20), simplify=FALSE), list(c(2, 1, 360)))
+    mcmc_list <- create_mcmc_options(
+      particles=3000, iterations=1e4, log_every=10, pfilter_every=2/(dt*365), 
+      which_likelihood=which_lik, pfilter_threshold=1,
+      num_threads=15,
+      log_filename=file.path(dir_id, paste0(prefix, "_logfile.txt")), 
+      traj_filename=file.path(dir_id, paste0(prefix, "_trajfile.txt"))
+    )
+    if (!(dir.exists(dir_id))) {
+      dir.create(dir_id, recursive=TRUE)
+    }
+    if (which_lik==0) {
+      data_in <- input_data[[epi_data_set]][[which_tree]]
+    } else if (which_lik==1) {
+      data_in <- input_data[[epi_data_set]][[which_tree]]$epi %>%
+        slice(., which(incidence>0)[1]:nrow(.))
+      deselected <- nrow(input_data[[epi_data_set]][[which_tree]]$epi)-nrow(data_in)
+      change_points[[epi_data_set]] %<>% `-` (deselected)
+    } else {
+      deselected <- input_data[[epi_data_set]][[which_tree]]$gen %>% 
+        lapply(`[[`, "binomial") %>% sapply(sum) %>% `>`(0) %>% which() %>% `[`(1) %>% `-`(1)
+      change_points[[epi_data_set]] %<>% `-` (length(deselected))
+      data_in <- input_data[[epi_data_set]][[which_tree]]$gen[-1:-deselected]
+    }
+    params_to_estimate <- c(paste0("R", 0:4), "CV", paste0("reporting", 0:4), "time_before_data")
+    transformation <- c(rep(NA, 5), "log", rep("inverse", 5), NA)
+    priors <- c(rep("uniform", length(params_to_estimate)))
+    prior_params <- c(list(c(1, 5)), replicate(4, c(0.1, 10), simplify=FALSE),
+                      list(c(.1, 4)), list(c(1, 200)),
+                      replicate(4, c(0.1, 20), simplify=FALSE),
+                      list(c(1, 360)))
+    proposal_params <- c(list(c(0.1, 1, 5)), replicate(4, c(0.1, 0.1, 20), simplify=FALSE), 
+                         list(c(1, .1, 4)), list(c(3, 1, 200)),
+                         replicate(4, c(1, 0.1, 20), simplify=FALSE),
+                         list(c(8, 1, 360)))
     if (which_lik==2) {
       params_to_remove <- grep("reporting", params_to_estimate)
       params_to_estimate <- params_to_estimate[-params_to_remove]
@@ -132,30 +162,17 @@ commands <- expand.grid(0:2, names(input_data), seq(selected_trees)) %>%
     }
     param_list <- create_params_list(
       param_names=c(paste0("R", 0:6), "CV", paste0("RT", 0:5), paste0("reporting", 0:6), paste0("reportingT", 0:5), "gtalpha", "gtscale", "N0", "time_before_data"),
-      init_param_values=c(c(2.5, 1, 1, 1, 1, 1, 1), 30, change_points[[epi_data_set]], 1/3, rep(1, 6), change_points[[epi_data_set]], generation_time_alpha, generation_time_scale, 1, 100),
+      init_param_values=c(c(3, 1, 1, 1, 1, 1, 1), 4.5, change_points[[epi_data_set]], 1/2, rep(1, 6), change_points[[epi_data_set]], generation_time_alpha, generation_time_scale, 1, 150),
       params_to_estimate=params_to_estimate, 
       transform=transformation, 
       prior=priors, 
       prior_params=prior_params, 
-      proposal_params=proposal_params
+      proposal_params=proposal_params,
+      optimal_acceptance = 0.234,
+      lower_acceptance=0.1,
+      upper_acceptance=0.8,
+      adapt_every=50, max_adapt_times=100
     )
-    mcmc_list <- create_mcmc_options(
-      particles=3000, iterations=1e6, log_every=1, pfilter_every=4, which_likelihood=which_lik, pfilter_threshold=1,
-      num_threads=20,
-      log_filename=file.path(dir_id, paste0(prefix, "_logfile.txt")), 
-      traj_filename=file.path(dir_id, paste0(prefix, "_trajfile.txt")),
-      use_lhs=1, lhs_divides=5, lhs_iterations=100
-    )
-    if (!(dir.exists(dir_id))) {
-      dir.create(dir_id, recursive=TRUE)
-    }
-    if (which_lik==0) {
-      data_in <- input_data[[epi_data_set]][[which_tree]]
-    } else if (which_lik==1) {
-      data_in <- input_data[[epi_data_set]][[which_tree]]$epi
-    } else {
-      data_in <- input_data[[epi_data_set]][[which_tree]]$gen
-    }
     generate_cpp_input_files(data=data_in,
                              dt=dt, 
                              params=param_list,
