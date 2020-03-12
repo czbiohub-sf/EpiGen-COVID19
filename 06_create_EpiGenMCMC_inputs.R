@@ -1,6 +1,7 @@
 library(EpiGenR)
 library(magrittr)
 library(dplyr)
+library(readr)
 library(lubridate)
 library(ape)
 library(parallel)
