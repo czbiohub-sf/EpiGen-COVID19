@@ -168,7 +168,7 @@ commands <- lapply(1:100, function (run_i) {
       }
       param_list <- create_params_list(
         param_names=c(paste0("R", 0:6), "CV", paste0("RT", 0:5), paste0("reporting", 0:6), paste0("reportingT", 0:5), "gtalpha", "gtscale", "N0", "time_before_data"),
-        init_param_values=c(rep(3+rnorm(7)), 10^(runif(1, .1, 2)), change_points[[epi_data_set]], rbeta(7, .01, .99), change_points[[epi_data_set]], generation_time_alpha, generation_time_scale, 1, runif(1, 1, 360)),
+        init_param_values=c(sapply(1.5+rnorm(7), max, 1), 10^(runif(1, .1, 2)), change_points[[epi_data_set]], rbeta(7, 1, 1), change_points[[epi_data_set]], generation_time_alpha, generation_time_scale, 1, runif(1, 1, 360)),
         params_to_estimate=params_to_estimate, 
         transform=transformation, 
         prior=priors, 
