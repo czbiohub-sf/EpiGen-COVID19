@@ -51,7 +51,7 @@ tip_labels_locations <- slice(metadata, match(tip_labels, `Accession ID`))$Locat
 tip_select <- lapply(c("hubei", "china", "global"), function (x) {
   if (x=="hubei") return (grep("hubei", tip_labels_locations, ignore.case=TRUE))
   if (x=="china") return (grep("china", tip_labels_locations, ignore.case=TRUE))
-  return (grep("china", tip_labels_locations, invert=TRUE, ignore.case=TRUE))
+  return (1:length(tip_labels_locations))
 }) %>%
   setNames(c("hubei", "china", "global"))
 
