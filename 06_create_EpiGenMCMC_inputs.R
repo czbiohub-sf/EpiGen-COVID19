@@ -6,10 +6,12 @@ library(lubridate)
 library(ape)
 library(parallel)
 library(stringr)
+library(readxl)
 
 options(scipen=999)
 
 ts_dir <- "data/time_series"
+seq_dir <- "data/sequences"
 tree_dir <- "tree"
 msa_dir <- "msa"
 epigen_mcmc_dir <- "epigenmcmc_results"
@@ -31,6 +33,7 @@ infer_dates_from_timeseries <- function (full_timeseries, weibull_shape, weibull
     do.call(what=c)
 }
 
+
 # Read in phylogenies -----------------------------------------------------
 skylines <- EpiGenR::Phylos2Skyline(grep(mcmc_suffix, list.files(tree_dir, "[.]t$", full.names=TRUE), value=TRUE), nex=TRUE, 
                                     param.filenames=grep(mcmc_suffix, list.files(tree_dir, "[.]p$", full.names=TRUE), value=TRUE),
@@ -42,6 +45,15 @@ most_recent_tipdate <- strsplit(skylines$trees[[1]]$tip.label, "_") %>%
   max()
 selected_trees <- round(seq(1, round(length(skylines$trees)/2), length.out=10))
 
+metadata <- read_xls(list.files(seq_dir, "acknowledgement_table", full.names = TRUE), skip=2)
+tip_labels <- sub("(.*)_.*", "\\1", skylines$tree[[1]]$tip.label)
+tip_labels_locations <- slice(metadata, match(tip_labels, `Accession ID`))$Location
+tip_select <- lapply(c("hubei", "china", "global"), function (x) {
+  if (x=="hubei") return (grep("hubei", tip_labels_locations, ignore.case=TRUE))
+  if (x=="china") return (grep("china", tip_labels_locations, ignore.case=TRUE))
+  return (grep("china", tip_labels_locations, invert=TRUE, ignore.case=TRUE))
+}) %>%
+  setNames(c("hubei", "china", "global"))
 
 # Read in time series data ------------------------------------------------
 timeseries <- read_tsv(file.path(ts_dir, "summary_global_timeseries_new_cases.tsv")) %>%
@@ -51,6 +63,7 @@ timeseries_china <- read_tsv(file.path(ts_dir, "summary_china_timeseries_new_cas
 timeseries_hubei <- read_tsv(file.path(ts_dir, "timeseries_new_cases.tsv")) %>%
   filter(new_cases>0, province=="Hubei") %>%
   select(date, new_cases)
+timeseries$new_cases %<>% `-`(timeseries_china$new_cases)
 
 
 incub_pars <- optim(c(1, 1), fn=function (pars) {
@@ -73,19 +86,20 @@ inferred_dates <- list(global=infer_dates_from_timeseries(timeseries, shape_para
 
 dt <- (1/4)/365
 
-truncate_at_date <- as.Date("2020-01-26")
-
-input_data <- lapply(inferred_dates, function (x) {
+input_data <- lapply(names(inferred_dates), function (location) {
   mclapply(selected_trees, function (i) {
-    get_data(epi=x, phy=skylines$trees[[i]], dt=dt)
-  }, mc.cores=5) %>%
-    lapply(function (y) {
-      difference <- (most_recent_tipdate-truncate_at_date)/365/(dt)
-      selection <- -(nrow(y$epi)-difference+1):-nrow(y$epi)
-      y$epi <- y$epi[selection, ]
-      y$gen <- y$gen[selection]
-      y
-    })
+    x <- inferred_dates[[location]]
+    tr <- skylines$trees[[i]]
+    tr <- keep.tip(tr, tip_select[[location]])
+    days_to_deduct <- round(sum(coalescent.intervals.datedPhylo(tr)$interval.length[1:5])*365)
+    truncate_at_date <- strsplit(tr$tip.label, "_") %>% sapply(tail, 1) %>% as.Date() %>% max() %>% `-`(days_to_deduct)
+    y <- get_data(epi=x, phy=tr, dt=dt)
+    difference <- (most_recent_tipdate-truncate_at_date)/365/(dt)
+    selection <- -(nrow(y$epi)-difference+1):-nrow(y$epi)
+    y$epi <- y$epi[selection, ]
+    y$gen <- y$gen[selection]
+    y
+  }, mc.cores=min(length(selected_trees), detectCores()))
 })
 
 
@@ -111,8 +125,8 @@ generation_time_alpha <- sars_mean/generation_time_scale
 # create c++ commands -----------------------------------------------------
 set.seed(2342353)
 commands <- lapply(1:100, function (run_i) {
-  expand.grid(c(0, 2), names(input_data), seq(selected_trees)) %>%
-    rbind(., expand.grid(1, names(input_data), 1)) %>%
+  expand.grid(1, names(input_data), 1) %>% 
+  rbvind(., expand.grid(c(0, 2), names(input_data), seq(selected_trees))) %>%
     apply(1, list) %>% 
     unlist(recursive=FALSE) %>%
     mclapply(function (row_x) {
@@ -123,9 +137,9 @@ commands <- lapply(1:100, function (run_i) {
       prefix <- paste(epi_data_set, which_lik_str, selected_trees[which_tree], paste0("run", run_i), sep="_")
       id <- paste0("covid19_", mcmc_suffix)
       dir_id <- file.path(epigen_mcmc_dir, id)
-      mcmc_steps <- 1e2
+      mcmc_steps <- 20
       mcmc_list <- create_mcmc_options(
-        particles=3000, iterations=mcmc_steps, log_every=10, pfilter_every=round(2/(dt*365)), 
+        particles=3000, iterations=mcmc_steps, log_every=1, pfilter_every=round(2/(dt*365)), 
         which_likelihood=which_lik, pfilter_threshold=1,
         num_threads=15,
         log_filename=file.path(dir_id, paste0(prefix, "_logfile.txt")), 
@@ -177,7 +191,7 @@ commands <- lapply(1:100, function (run_i) {
         optimal_acceptance = 0.234,
         lower_acceptance=0.1,
         upper_acceptance=0.8,
-        adapt_every=50, max_adapt_times=mcmc_steps
+        adapt_every=5, max_adapt_times=mcmc_steps
       )
       generate_cpp_input_files(data=data_in,
                                dt=dt, 
