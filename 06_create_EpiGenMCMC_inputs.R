@@ -63,7 +63,6 @@ timeseries_china <- read_tsv(file.path(ts_dir, "summary_china_timeseries_new_cas
 timeseries_hubei <- read_tsv(file.path(ts_dir, "timeseries_new_cases.tsv")) %>%
   filter(new_cases>0, province=="Hubei") %>%
   select(date, new_cases)
-timeseries$new_cases %<>% `-`(timeseries_china$new_cases)
 
 
 incub_pars <- optim(c(1, 1), fn=function (pars) {
@@ -77,10 +76,11 @@ incub_pars <- optim(c(1, 1), fn=function (pars) {
 shape_param <- incub_pars$par[1]
 scale_param <- incub_pars$par[2]
 set.seed(2342343)
-inferred_dates <- list(global=infer_dates_from_timeseries(timeseries, shape_param, scale_param),
-                       china=infer_dates_from_timeseries(timeseries_china, shape_param, scale_param),
+inferred_dates <- list(global=infer_dates_from_timeseries(left_join(timeseries, timeseries_china, by="date", suffix=c("", "_china")) %>% mutate(new_cases=new_cases-new_cases_china) %>% select(-new_cases_china) %>% filter(new_cases>0), shape_param, scale_param),
+                       china=infer_dates_from_timeseries(left_join(timeseries_china, timeseries_hubei, by="date", suffix=c("", "_hubei")) %>% mutate(new_cases=new_cases-new_cases_hubei) %>% select(-new_cases_hubei) %>% filter(new_cases>0), shape_param, scale_param),
                        hubei=infer_dates_from_timeseries(timeseries_hubei, shape_param, scale_param))
-
+inferred_dates$china %<>% c(inferred_dates$hubei)
+inferred_dates$global %<>% c(inferred_dates$china)
 
 # Create input data -------------------------------------------------------
 
@@ -138,7 +138,7 @@ commands <- lapply(1:100, function (run_i) {
       prefix <- paste(epi_data_set, which_lik_str, selected_trees[which_tree], paste0("run", run_i), sep="_")
       id <- paste0("covid19_", mcmc_suffix)
       dir_id <- file.path(epigen_mcmc_dir, id)
-      mcmc_steps <- 20
+      mcmc_steps <- 10
       mcmc_list <- create_mcmc_options(
         particles=3000, iterations=mcmc_steps, log_every=1, pfilter_every=round(2/(dt*365)), 
         which_likelihood=which_lik, pfilter_threshold=1,
@@ -192,7 +192,7 @@ commands <- lapply(1:100, function (run_i) {
         optimal_acceptance = 0.234,
         lower_acceptance=0.1,
         upper_acceptance=0.8,
-        adapt_every=5, max_adapt_times=mcmc_steps
+        adapt_every=2, max_adapt_times=mcmc_steps
       )
       generate_cpp_input_files(data=data_in,
                                dt=dt, 
