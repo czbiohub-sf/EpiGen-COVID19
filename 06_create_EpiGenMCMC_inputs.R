@@ -100,7 +100,8 @@ input_data <- lapply(names(inferred_dates), function (location) {
     y$gen <- y$gen[selection]
     y
   }, mc.cores=min(length(selected_trees), detectCores()))
-})
+}) %>% 
+  setNames(names(inferred_dates))
 
 
 change_points <- lapply(input_data, function (x) {
@@ -126,7 +127,7 @@ generation_time_alpha <- sars_mean/generation_time_scale
 set.seed(2342353)
 commands <- lapply(1:100, function (run_i) {
   expand.grid(1, names(input_data), 1) %>% 
-  rbvind(., expand.grid(c(0, 2), names(input_data), seq(selected_trees))) %>%
+  rbind(., expand.grid(c(0, 2), names(input_data), seq(selected_trees))) %>%
     apply(1, list) %>% 
     unlist(recursive=FALSE) %>%
     mclapply(function (row_x) {
