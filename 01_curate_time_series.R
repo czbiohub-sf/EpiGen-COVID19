@@ -20,7 +20,7 @@ csse_confirmed <- read_csv(file.path(data_dir, "CSSE", "time_series_19-covid-Con
 nejm_wuhan <- read_tsv(file.path(data_dir, "li2020nejm_wuhan_incidence.tsv")) %>%
   mutate(cumulative_cases=cumsum(new_diagnoses)) %>%
   cbind(., csse_confirmed %>% filter(province=="Hubei") %>% head(1) %>% select(lat, long)) %>%
-  mutate(province="Hubei", country="Mainland China")
+  mutate(province="Hubei", country="China")
 
 # For the time period before January 22, use the first two WHO
 # situation reports for all other places outside of Hubei
@@ -96,7 +96,7 @@ write_tsv(global_new_cases, file.path(data_dir, "summary_global_timeseries_new_c
 
 
 china_new_cases <- new_cases %>%
-  filter(country=="Mainland China") %>%
+  filter(country=="China") %>%
   group_by(date) %>%
   summarize(new_cases=sum(new_cases))
 write_tsv(china_new_cases, file.path(data_dir, "summary_china_timeseries_new_cases.tsv"))
