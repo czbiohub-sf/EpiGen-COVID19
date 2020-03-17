@@ -131,9 +131,40 @@ generation_time_scale <- sars_sd^2/sars_mean
 generation_time_alpha <- sars_mean/generation_time_scale
 
 
+params_to_estimate <- c(paste0("R", 0:7), "CV", paste0("reporting", 0:7), "time_before_data")
+transformation <- c(rep(NA, 8), "log", rep(NA, 8), NA)
+priors <- c(rep("uniform", 9), "beta", rep("beta", 7), "uniform")
+prior_params <- c(list(c(1, 6)), replicate(7, c(0.1, 6), simplify=FALSE),
+                  list(c(.1, 2)), 
+                  list(c(1, 1)), replicate(7, c(1, 1), simplify=FALSE),
+                  list(c(1, 360)))
+proposal_params <- c(list(c(0.1, 1, 6)), replicate(7, c(0.1, 0.1, 6), simplify=FALSE), 
+                     list(c(1, .1, 42)), 
+                     list(c(.05, 0.01, 0.99)), replicate(7, c(.05, 0.01, 0.99), simplify=FALSE),
+                     list(c(8, 1, 360)))
+param_names <- c(paste0("R", 0:7), "CV", paste0("RT", 0:6), paste0("reporting", 0:7), paste0("reportingT", 0:6), "gtalpha", "gtscale", "N0", "time_before_data")
+init_param_values <- lapply(change_points, function (x) {
+  c(sapply(c(rnorm(3, 2.5, 1), rnorm(2, 1, 0.1), rnorm(3, 2.5, 1)), max, 0.1), 
+    10^(runif(1, .1, 2)), 
+    x, 
+    rep(rbeta(1, 1, 1)*0.8, 8), 
+    x, 
+    generation_time_alpha,
+    generation_time_scale,
+    1,
+    runif(1, 28, 28*4))
+})
+
+mcmc_steps <- 10
+nparticles <- 3000
+log_every <- 1
+pfilter_every <- round(2/(dt*365))
+num_threads <- 15
+
 # create c++ commands -----------------------------------------------------
 set.seed(2342353)
 commands <- lapply(1:100, function (run_i) {
+  print (paste0("run ", run_i))
   expand.grid(1, names(input_data), 1) %>% 
   rbind(., expand.grid(c(0, 2), names(input_data), seq(selected_trees))) %>%
     apply(1, list) %>% 
@@ -146,11 +177,11 @@ commands <- lapply(1:100, function (run_i) {
       prefix <- paste(epi_data_set, which_lik_str, selected_trees[which_tree], paste0("run", run_i), sep="_")
       id <- paste0("covid19_", mcmc_suffix)
       dir_id <- file.path(epigen_mcmc_dir, id)
-      mcmc_steps <- 10
       mcmc_list <- create_mcmc_options(
-        particles=3000, iterations=mcmc_steps, log_every=1, pfilter_every=round(2/(dt*365)), 
+        particles=nparticles, iterations=mcmc_steps, log_every=log_every, 
+        pfilter_every=pfilter_every, 
         which_likelihood=which_lik, pfilter_threshold=1,
-        num_threads=15,
+        num_threads=num_threads,
         log_filename=file.path(dir_id, paste0(prefix, "_logfile.txt")), 
         traj_filename=file.path(dir_id, paste0(prefix, "_trajfile.txt"))
       )
@@ -170,17 +201,6 @@ commands <- lapply(1:100, function (run_i) {
         change_points[[epi_data_set]] %<>% `-` (length(deselected))
         data_in <- input_data[[epi_data_set]][[which_tree]]$gen[-1:-deselected]
       }
-      params_to_estimate <- c(paste0("R", 0:6), "CV", paste0("reporting", 0:6), "time_before_data")
-      transformation <- c(rep(NA, 7), "log", rep(NA, 7), NA)
-      priors <- c(rep("uniform", 8), "beta", rep("beta", 6), "uniform")
-      prior_params <- c(list(c(1, 10)), replicate(6, c(1, 10), simplify=FALSE),
-                        list(c(.1, 2)), 
-                        list(c(1, 1)), replicate(6, c(1, 1), simplify=FALSE),
-                        list(c(1, 360)))
-      proposal_params <- c(list(c(0.1, 1, 5)), replicate(6, c(0.1, 1, 10), simplify=FALSE), 
-                           list(c(1, .1, 42)), 
-                           list(c(.05, 0.01, 0.99)), replicate(6, c(.05, 0.01, 0.99), simplify=FALSE),
-                           list(c(8, 1, 360)))
       if (which_lik==2) {
         params_to_remove <- grep("reporting", params_to_estimate)
         params_to_estimate <- params_to_estimate[-params_to_remove]
@@ -190,8 +210,8 @@ commands <- lapply(1:100, function (run_i) {
         proposal_params <- proposal_params[-params_to_remove]
       }
       param_list <- create_params_list(
-        param_names=c(paste0("R", 0:6), "CV", paste0("RT", 0:5), paste0("reporting", 0:6), paste0("reportingT", 0:5), "gtalpha", "gtscale", "N0", "time_before_data"),
-        init_param_values=c(sapply(2.5+rnorm(7), max, 1), 10^(runif(1, .1, 2)), change_points[[epi_data_set]], rbeta(7, 1, 1), change_points[[epi_data_set]], generation_time_alpha, generation_time_scale, 1, runif(1, 1, 360)),
+        param_names=param_names,
+        init_param_values=init_param_values[[epi_data_set]],
         params_to_estimate=params_to_estimate, 
         transform=transformation, 
         prior=priors, 
@@ -223,9 +243,9 @@ mapply(paste, program_binary, commands) %>%
 # copy commands and files to server ---------------------------------------
 
 
-paste("scp -pr ", file.path(epigen_mcmc_dir, paste0("covid19_", mcmc_suffix)),
-      file.path("lucy@lrrr:/mnt/data_lg/lucymli/EpiGen-COVID19", epigen_mcmc_dir)) %>%
-  system()
+# paste("scp -pr ", file.path(epigen_mcmc_dir, paste0("covid19_", mcmc_suffix)),
+#       file.path("lucy@lrrr:/mnt/data_lg/lucymli/EpiGen-COVID19", epigen_mcmc_dir)) %>%
+#   system()
 
 
 
