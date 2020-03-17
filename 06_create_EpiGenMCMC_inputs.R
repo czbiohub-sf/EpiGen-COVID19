@@ -93,6 +93,7 @@ input_data <- lapply(names(inferred_dates), function (location) {
     tr <- keep.tip(tr, tip_select[[location]])
     days_to_deduct <- round(sum(coalescent.intervals.datedPhylo(tr)$interval.length[1:5])*365)
     truncate_at_date <- strsplit(tr$tip.label, "_") %>% sapply(tail, 1) %>% as.Date() %>% max() %>% `-`(days_to_deduct)
+    truncate_at_date <- min(as.Date("2020-01-31"), truncate_at_date)
     y <- get_data(epi=x, phy=tr, dt=dt)
     difference <- (most_recent_tipdate-truncate_at_date)/365/(dt)
     selection <- -(nrow(y$epi)-difference+1):-nrow(y$epi)
