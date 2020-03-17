@@ -240,13 +240,6 @@ mapply(paste, program_binary, commands) %>%
   cat(file=file.path(epigen_mcmc_dir, paste0("covid19_", mcmc_suffix), "commands"), sep="\n")
 
 
-# copy commands and files to server ---------------------------------------
-
-
-# paste("scp -pr ", file.path(epigen_mcmc_dir, paste0("covid19_", mcmc_suffix)),
-#       file.path("lucy@lrrr:/mnt/data_lg/lucymli/EpiGen-COVID19", epigen_mcmc_dir)) %>%
-#   system()
-
 
 
 # save output -------------------------------------------------------------
