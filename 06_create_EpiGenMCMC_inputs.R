@@ -106,7 +106,14 @@ input_data <- lapply(names(inferred_dates), function (location) {
 
 
 change_points <- lapply(input_data, function (x) {
-  c("2020-01-03", "2020-01-11", "2020-01-20", "2020-01-23", "2020-01-25", "2020-02-03") %>%
+  # c("2020-01-03", # NHC notified WHO and relevant countries of outbreak
+  #   "2020-01-11", # PCR testing provided to Wuhan - increased specificity of testing; increase in travel due to Chinese New Year
+  #   "2020-01-23", # Start of Wuhan quarantine
+  #   "2020-02-03", # End of 2-week mandatory quaranting across China
+  #   "2020-02-10", # Weekly transmission and reporting rate estimation during February
+  #   "2020-02-17",
+  #   "2020-02-24") %>%
+  (seq(as.Date("2019-12-15"), as.Date("2020-02-01"), "1 week")) %>%
   as.Date() %>%
   decimal_date() %>%
   `-`(x[[1]]$epi[1, 1]) %>% 
