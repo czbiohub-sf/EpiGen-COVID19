@@ -75,7 +75,7 @@ incub_pars <- optim(c(1, 1), fn=function (pars) {
 
 shape_param <- incub_pars$par[1]
 scale_param <- incub_pars$par[2]
-set.seed(2342343)
+set.seed(2342342)
 inferred_dates <- list(global=infer_dates_from_timeseries(left_join(timeseries, timeseries_china, by="date", suffix=c("", "_china")) %>% mutate(new_cases=new_cases-new_cases_china) %>% select(-new_cases_china) %>% filter(new_cases>0), shape_param, scale_param),
                        china=infer_dates_from_timeseries(left_join(timeseries_china, timeseries_hubei, by="date", suffix=c("", "_hubei")) %>% mutate(new_cases=new_cases-new_cases_hubei) %>% select(-new_cases_hubei) %>% filter(new_cases>0), shape_param, scale_param),
                        hubei=infer_dates_from_timeseries(timeseries_hubei, shape_param, scale_param))
