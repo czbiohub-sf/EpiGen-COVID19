@@ -134,11 +134,11 @@ generation_time_alpha <- sars_mean/generation_time_scale
 params_to_estimate <- c(paste0("R", 0:7), "CV", paste0("reporting", 0:7), "time_before_data")
 transformation <- c(rep(NA, 8), "log", rep(NA, 8), NA)
 priors <- c(rep("uniform", 9), "beta", rep("beta", 7), "uniform")
-prior_params <- c(list(c(1, 6)), replicate(7, c(0.1, 6), simplify=FALSE),
+prior_params <- c(list(c(0.1, 6)), replicate(7, c(0.1, 6), simplify=FALSE),
                   list(c(.1, 2)), 
                   list(c(1, 1)), replicate(7, c(1, 1), simplify=FALSE),
                   list(c(1, 360)))
-proposal_params <- c(list(c(0.1, 1, 6)), replicate(7, c(0.1, 0.1, 6), simplify=FALSE), 
+proposal_params <- c(list(c(0.1, .1, 6)), replicate(7, c(0.1, 0.1, 6), simplify=FALSE), 
                      list(c(1, .1, 42)), 
                      list(c(.05, 0.01, 0.99)), replicate(7, c(.05, 0.01, 0.99), simplify=FALSE),
                      list(c(8, 1, 360)))
