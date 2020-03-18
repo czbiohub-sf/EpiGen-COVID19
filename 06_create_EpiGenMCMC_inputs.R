@@ -85,6 +85,7 @@ inferred_dates$global %<>% c(inferred_dates$china)
 # Create input data -------------------------------------------------------
 
 dt <- (1/4)/365
+max_date <- as.Date("2020-02-15")
 
 input_data <- lapply(names(inferred_dates), function (location) {
   mclapply(selected_trees, function (i) {
@@ -93,9 +94,10 @@ input_data <- lapply(names(inferred_dates), function (location) {
     tr <- keep.tip(tr, tip_select[[location]])
     days_to_deduct <- round(sum(coalescent.intervals.datedPhylo(tr)$interval.length[1:5])*365)
     truncate_at_date <- strsplit(tr$tip.label, "_") %>% sapply(tail, 1) %>% as.Date() %>% max() %>% `-`(days_to_deduct)
-    truncate_at_date <- min(as.Date("2020-01-31"), truncate_at_date)
+    truncate_at_date <- min(max_date, truncate_at_date)
     y <- get_data(epi=x, phy=tr, dt=dt)
-    difference <- (most_recent_tipdate-truncate_at_date)/365/(dt)
+    difference <- (max(most_recent_tipdate, as.Date(date_decimal(max(y$epi$time)))) -
+                     truncate_at_date)/365/(dt)
     selection <- -(nrow(y$epi)-difference+1):-nrow(y$epi)
     y$epi <- y$epi[selection, ]
     y$gen <- y$gen[selection]
@@ -104,6 +106,7 @@ input_data <- lapply(names(inferred_dates), function (location) {
 }) %>% 
   setNames(names(inferred_dates))
 
+change_point_dates <- seq(from=max_date-7*7, by="1 week", length.out=7)
 
 change_points <- lapply(input_data, function (x) {
   # c("2020-01-03", # NHC notified WHO and relevant countries of outbreak
@@ -113,7 +116,7 @@ change_points <- lapply(input_data, function (x) {
   #   "2020-02-10", # Weekly transmission and reporting rate estimation during February
   #   "2020-02-17",
   #   "2020-02-24") %>%
-  (seq(as.Date("2019-12-15"), as.Date("2020-02-01"), "1 week")) %>%
+  change_point_dates %>%
   as.Date() %>%
   decimal_date() %>%
   `-`(x[[1]]$epi[1, 1]) %>% 
@@ -130,30 +133,35 @@ sars_sd <- 3.8/365
 generation_time_scale <- sars_sd^2/sars_mean
 generation_time_alpha <- sars_mean/generation_time_scale
 
+param_reps <- 100
 
-params_to_estimate <- c(paste0("R", 0:7), "CV", paste0("reporting", 0:7), "time_before_data")
-transformation <- c(rep(NA, 8), "log", rep(NA, 8), NA)
-priors <- c(rep("uniform", 9), "beta", rep("beta", 7), "uniform")
-prior_params <- c(list(c(0.1, 6)), replicate(7, c(0.1, 6), simplify=FALSE),
+params_to_estimate <- c(paste0("R", 0:length(change_point_dates)), "CV", paste0("reporting", 0:length(change_point_dates)), "time_before_data")
+transformation <- c(rep(NA, length(change_point_dates)+1), "log", rep(NA, length(change_point_dates)+1), NA)
+priors <- c(rep("uniform", length(change_point_dates)+2), rep("beta", length(change_point_dates)+1), "uniform")
+prior_params <- c(replicate(length(change_point_dates)+1, c(0.1, 6), simplify=FALSE),
                   list(c(.1, 2)), 
-                  list(c(1, 1)), replicate(7, c(1, 1), simplify=FALSE),
+                  replicate(length(change_point_dates)+1, c(1, 1), simplify=FALSE),
                   list(c(1, 360)))
-proposal_params <- c(list(c(0.1, .1, 6)), replicate(7, c(0.1, 0.1, 6), simplify=FALSE), 
+proposal_params <- c(replicate(length(change_point_dates)+1, c(0.1, 0.1, 6), simplify=FALSE), 
                      list(c(1, .1, 42)), 
-                     list(c(.05, 0.01, 0.99)), replicate(7, c(.05, 0.01, 0.99), simplify=FALSE),
+                     replicate(length(change_point_dates)+1, c(.05, 0.01, 0.99), simplify=FALSE),
                      list(c(8, 1, 360)))
-param_names <- c(paste0("R", 0:7), "CV", paste0("RT", 0:6), paste0("reporting", 0:7), paste0("reportingT", 0:6), "gtalpha", "gtscale", "N0", "time_before_data")
-init_param_values <- lapply(change_points, function (x) {
-  c(sapply(c(rnorm(3, 2.5, 1), rnorm(2, 1, 0.1), rnorm(3, 2.5, 1)), max, 0.1), 
+param_names <- c(paste0("R", 0:length(change_point_dates)), "CV", paste0("RT", 0:(length(change_point_dates)-1)), paste0("reporting", 0:length(change_point_dates)), paste0("reportingT", 0:(length(change_point_dates)-1)), "gtalpha", "gtscale", "N0", "time_before_data")
+
+
+generate_init_values <- function (change_points, change_point_dates) {
+  c(sapply(rnorm(length(change_point_dates)+1, 3, .5), max, 0.1), 
     10^(runif(1, .1, 2)), 
-    x, 
-    rep(rbeta(1, 1, 1)*0.8, 8), 
-    x, 
+    change_points, 
+    sapply(seq(0.2, 0.01, length.out=length(change_point_dates)+1), function (x) rbeta(1, 2, (1-x)/x*2)),
+    change_points, 
     generation_time_alpha,
     generation_time_scale,
     1,
     runif(1, 28, 28*4))
-})
+}
+
+init_param_values <- lapply(change_points, function (x) generate_init_values(x, change_point_dates))
 
 mcmc_steps <- 10
 nparticles <- 3000
@@ -209,9 +217,10 @@ commands <- lapply(1:100, function (run_i) {
         prior_params <- prior_params[-params_to_remove]
         proposal_params <- proposal_params[-params_to_remove]
       }
+      init_param_values <- generate_init_values(change_points[[epi_data_set]], change_point_dates)
       param_list <- create_params_list(
         param_names=param_names,
-        init_param_values=init_param_values[[epi_data_set]],
+        init_param_values=init_param_values,
         params_to_estimate=params_to_estimate, 
         transform=transformation, 
         prior=priors, 
