@@ -52,6 +52,8 @@ mcmc_steps <- 100000
 log_every <- 100
 pfilter_every <- round(2/365/dt)
 num_threads <- 15
+adapt_every <- 100
+max_adapt_times <- round(mcmc_steps*0.2)
 
 set.seed(2343432)
 inference_commands <- apply(top_params, 1, function (row_x) {
@@ -107,7 +109,7 @@ inference_commands <- apply(top_params, 1, function (row_x) {
     optimal_acceptance = 0.234,
     lower_acceptance=0.1,
     upper_acceptance=0.8,
-    adapt_every=2, max_adapt_times=mcmc_steps
+    adapt_every=adapt_every, max_adapt_times=max_adapt_times
   )
   generate_cpp_input_files(data=data_in,
                            dt=dt, 
