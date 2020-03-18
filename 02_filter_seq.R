@@ -6,18 +6,18 @@ library(magrittr)
 data_dir <- "data/sequences"
 
 # read in GISAID fastas and outgroup MG772933.1
-filenames <- list.files(file.path(data_dir, "GISAID"), ".fasta", full.names=TRUE)
-fastas <- lapply(filenames, read.dna, "fasta")
+fastas <- read.dna(file.path(data_dir, "gisaid_cov2020_sequences.fasta"), "fasta")
+fasta_ids <- strsplit(names(fastas), "|", fixed=TRUE) %>% sapply(`[`, 2)
 outgroup_id <- "MG772933.1"
 outgroup_fasta <- read.dna(paste0(data_dir, "/", outgroup_id, ".fasta"), "fasta")
 
 # filter sequences with >10% ambiguous bases
-base_freq <- lapply(fastas, base.freq, all=TRUE)
+base_freq <- lapply(1:length(fastas), function (i) base.freq(fastas[i]))
 ambiguous_prop <- sapply(base_freq, function (x) sum(x[!(names(x) %in% c("a", "c", "t", "g"))]))
 output_fasta <- fastas[ambiguous_prop<=.1]
 output_fasta$outgroup <- outgroup_fasta
 class(output_fasta) <- "DNAbin"
-epi_id <- filenames[ambiguous_prop<=.1] %>% basename() %>% gsub(".fasta", "", .) %>% c(., outgroup_id)
+epi_id <- fasta_ids[ambiguous_prop<=.1] %>% basename() %>% gsub(".fasta", "", .) %>% c(., outgroup_id)
 names(output_fasta) <- epi_id
 
 # output files
@@ -34,3 +34,4 @@ if (length(existing_msa)>0) {
 }
 write.dna(output_fasta, paste0("msa/input_muscle_", time_str, ".fasta"), format="fasta", nbcol=1, colw = 80)
 
+save.image(paste0("02_filter_seq_", time_str, ".RData"))

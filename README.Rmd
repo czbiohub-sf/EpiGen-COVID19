@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE, eval=FALSE)
 
 ## Data
 
-Genomic data are manually downloaded from [GISAID](https://www.gisaid.org/) and stored in a folder named 'data/sequences/GISAID'. The accompanying metadata is also manually downloaded and stored in 'data/sequences/gisaid_cov2020_acknowledgement_table.xls'.
+Genomic data are manually downloaded from [GISAID](https://www.gisaid.org/) and stored in a file named 'data/sequences/gisaid_cov2020_sequences.fasta'. The accompanying metadata is also manually downloaded and stored in 'data/sequences/gisaid_cov2020_acknowledgement_table.xls'.
 
 Time series data are from Johns Hopkins [github page](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data).
 
@@ -42,7 +42,7 @@ Rscript 01_curate_time_series.R
 
 ### 2. Rename sequences to include dates of collection
 
-Input: data/sequences/GISAID/*.fasta, data/sequences/gisaid_cov2020_acknowledgement_table.xls
+Input: data/sequences/gisaid_cov2020_sequences.fasta, data/sequences/gisaid_cov2020_acknowledgement_table.xls
 
 Output: msa/input_muscle_{analysisid}.fasta
 
