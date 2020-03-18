@@ -53,6 +53,7 @@ log_every <- 100
 pfilter_every <- round(2/365/dt)
 num_threads <- 15
 
+set.seed(2343432)
 inference_commands <- apply(top_params, 1, function (row_x) {
   epi_data_set <- row_x[["country"]]
   which_tree <- which(selected_trees == as.numeric(row_x[["tree"]]))
@@ -92,9 +93,9 @@ inference_commands <- apply(top_params, 1, function (row_x) {
     proposal_params <- proposal_params[-params_to_remove]
   }
   param_values_to_change <- row_x[seq(which(names(row_x)=="prior")+1, which(names(row_x)=="run")-1)] %>%
-    unlist() %>% as.numeric()
+    unlist()
   init_param_values[[epi_data_set]][match(names(param_values_to_change), param_names)] <- 
-    param_values_to_change
+    as.numeric(param_values_to_change)
   param_list <- create_params_list(
     param_names=param_names,
     init_param_values=init_param_values[[epi_data_set]],
