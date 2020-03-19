@@ -68,8 +68,8 @@ timeseries_hubei <- read_tsv(file.path(ts_dir, "timeseries_new_cases.tsv")) %>%
 incub_pars <- optim(c(1, 1), fn=function (pars) {
   mean_num <- pars[2] * gamma(1+1/pars[1])
   sd_num <- sqrt(pars[2]^2*(gamma(1+2/pars[1])-gamma(1+1/pars[1])^2))
-  x1 <- abs(mean_num-6.4/365)
-  x2 <- abs(sd_num-2.3/365)
+  x1 <- abs(mean_num-5/365)
+  x2 <- abs(sd_num-1.9/365)
   return(x1+x2)
 })
 
