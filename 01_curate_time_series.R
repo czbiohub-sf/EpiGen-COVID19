@@ -1,6 +1,7 @@
 library(dplyr)
 library(readr)
 library(tidyr)
+library(stringr)
 library(lubridate)
 
 data_dir <- "data/time_series"
@@ -61,11 +62,17 @@ global_cumulative_cases <- cumulative_cases %>%
 write_tsv(global_cumulative_cases, file.path(data_dir, "summary_global_timeseries_cumulative_cases.tsv"))
 
 
-china_cumulative_cases <- cumulative_cases %>%
-  filter(country=="Mainland China") %>%
-  group_by(date) %>%
-  summarize(cumulative_cases=sum(cumulative_cases))
-write_tsv(china_cumulative_cases, file.path(data_dir, "summary_china_timeseries_cumulative_cases.tsv"))
+country_specific_cumulative_cases <- cumulative_cases %>%
+  split(., .$country) %>%
+  lapply(function (x) {
+    country_name <- x$country[1] %>% tolower() %>% gsub(" ", "", ., fixed = TRUE)
+    output_df <- group_by(x, date) %>%
+      summarize(cumulative_cases=sum(cumulative_cases))
+    write_tsv(output_df, file.path(data_dir, paste0("summary_", country_name, "_timeseries_cumulative_cases.tsv")))
+    output_df
+  })
+  
+
 
 
 
@@ -95,10 +102,14 @@ write_tsv(global_new_cases, file.path(data_dir, "summary_global_timeseries_new_c
 
 
 
-china_new_cases <- new_cases %>%
-  filter(country=="China") %>%
-  group_by(date) %>%
-  summarize(new_cases=sum(new_cases))
-write_tsv(china_new_cases, file.path(data_dir, "summary_china_timeseries_new_cases.tsv"))
+country_specific_new_cases <- new_cases %>%
+  split(., .$country) %>%
+  lapply(function (x) {
+    country_name <- x$country[1] %>% tolower() %>% gsub(" ", "", ., fixed = TRUE)
+    output_df <- group_by(x, date) %>%
+      summarize(new_cases=sum(new_cases))
+    write_tsv(output_df, file.path(data_dir, paste0("summary_", country_name, "_timeseries_new_cases.tsv")))
+    output_df
+  })
 
-
+save.image("01_curate_time_series.RData")
