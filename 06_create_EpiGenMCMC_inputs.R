@@ -21,12 +21,12 @@ mcmc_suffix <- list.files(msa_dir, "msa_muscle") %>%
   strsplit("_") %>% 
   sapply(tail, 1) %>% 
   sort(decreasing=TRUE) %>% 
-  `[`(1)
+  `[`(2)
 
-infer_dates_from_timeseries <- function (full_timeseries, weibull_shape, weibull_scale) {
+infer_dates_from_timeseries <- function (full_timeseries, lognormal_mean, lognormal_sd) {
   apply(full_timeseries, 1, function (x) {
     decimal_date(as.Date(x[1])) %>%
-      `-`(rweibull(x[2], shape=weibull_shape, scale=weibull_scale)) %>%
+      `-`(rlnorm(x[2], lognormal_mean, lognormal_sd)) %>%
       date_decimal() %>%
       as.Date()
   }) %>%
@@ -64,17 +64,11 @@ timeseries_hubei <- read_tsv(file.path(ts_dir, "timeseries_new_cases.tsv")) %>%
   filter(new_cases>0, province=="Hubei") %>%
   select(date, new_cases)
 
+# Based on https://www.medrxiv.org/content/10.1101/2020.03.08.20032946v1.full.pdf
+incub_pars <- EpiGenR::get_lognormal_params(5.5/365, 2.1/365)
 
-incub_pars <- optim(c(1, 1), fn=function (pars) {
-  mean_num <- pars[2] * gamma(1+1/pars[1])
-  sd_num <- sqrt(pars[2]^2*(gamma(1+2/pars[1])-gamma(1+1/pars[1])^2))
-  x1 <- abs(mean_num-5/365)
-  x2 <- abs(sd_num-1.9/365)
-  return(x1+x2)
-})
-
-shape_param <- incub_pars$par[1]
-scale_param <- incub_pars$par[2]
+shape_param <- incub_pars[1]
+scale_param <- incub_pars[2]
 set.seed(2342342)
 inferred_dates <- list(global=infer_dates_from_timeseries(left_join(timeseries, timeseries_china, by="date", suffix=c("", "_china")) %>% mutate(new_cases=new_cases-new_cases_china) %>% select(-new_cases_china) %>% filter(new_cases>0), shape_param, scale_param),
                        china=infer_dates_from_timeseries(left_join(timeseries_china, timeseries_hubei, by="date", suffix=c("", "_hubei")) %>% mutate(new_cases=new_cases-new_cases_hubei) %>% select(-new_cases_hubei) %>% filter(new_cases>0), shape_param, scale_param),
@@ -85,7 +79,7 @@ inferred_dates$global %<>% c(inferred_dates$china)
 # Create input data -------------------------------------------------------
 
 dt <- (1/4)/365
-max_date <- as.Date("2020-02-15")
+max_date <- as.Date("2020-01-31")
 
 input_data <- lapply(names(inferred_dates), function (location) {
   mclapply(selected_trees, function (i) {
@@ -96,13 +90,12 @@ input_data <- lapply(names(inferred_dates), function (location) {
     truncate_at_date <- strsplit(tr$tip.label, "_") %>% sapply(tail, 1) %>% as.Date() %>% max() %>% `-`(days_to_deduct)
     truncate_at_date <- min(max_date, truncate_at_date)
     y <- get_data(epi=x, phy=tr, dt=dt)
-    difference <- (max(most_recent_tipdate, as.Date(date_decimal(max(y$epi$time)))) -
-                     truncate_at_date)/365/(dt)
-    selection <- -(nrow(y$epi)-difference+1):-nrow(y$epi)
+    difference_epi <- (as.Date(date_decimal(max(y$epi$time)))-truncate_at_date)/365/(dt)
+    selection <- 1:(nrow(y$epi)-difference_epi)
     y$epi <- y$epi[selection, ]
     y$gen <- y$gen[selection]
     y
-  }, mc.cores=min(length(selected_trees), detectCores()))
+  }, mc.cores=min(length(selected_trees, detectCores())))
 }) %>% 
   setNames(names(inferred_dates))
 
@@ -125,13 +118,21 @@ change_points <- lapply(input_data, function (x) {
 })
 
 
-# generation time distribution taken from SARS studies
-# mean=8.4 days | SD=3.8 days
+# generation time distribution taken from 
+# https://www.medrxiv.org/content/10.1101/2020.03.08.20032946v1.full.pdf
 
-sars_mean <- 8.4/365
-sars_sd <- 3.8/365
-generation_time_scale <- sars_sd^2/sars_mean
-generation_time_alpha <- sars_mean/generation_time_scale
+gen_time_mean <- 5/365
+gen_time_sd <- 1.9/365
+
+gen_time_pars <- optim(c(2, 0.01), fn=function (pars) {
+  mean_num <- pars[2] * gamma(1+1/pars[1])
+  sd_num <- sqrt(pars[2]^2*(gamma(1+2/pars[1])-gamma(1+1/pars[1])^2))
+  x1 <- abs(mean_num-gen_time_mean)
+  x2 <- abs(sd_num-gen_time_sd)
+  return(x1+x2)
+}, lower=c(0, 0), method="L-BFGS-B", control=list(maxit=1000))
+generation_time_alpha <- gen_time_pars$par[2] # parameters for weibull are swapped in GSL library compared to R
+generation_time_scale <- gen_time_pars$par[1]
 
 param_reps <- 100
 
