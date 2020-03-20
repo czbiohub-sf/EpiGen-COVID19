@@ -154,7 +154,7 @@ generate_init_values <- function (change_points, change_point_dates) {
   c(sapply(rnorm(length(change_point_dates)+1, 3, .5), max, 0.1), 
     10^(runif(1, .1, 2)), 
     change_points, 
-    sapply(seq(0.2, 0.01, length.out=length(change_point_dates)+1), function (x) rbeta(1, 2, (1-x)/x*2)),
+    sapply(seq(0.2, 0.1, length.out=length(change_point_dates)+1), function (x) rbeta(1, 2, (1-x)/x*2)),
     change_points, 
     generation_time_alpha,
     generation_time_scale,
