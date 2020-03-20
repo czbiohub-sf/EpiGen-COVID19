@@ -34,7 +34,7 @@ Output: data/time_series/CSSE/*.csv
 
 Input: data from Johns Hopkins GitHub repo at data/time_series/CSSE/*.csv, early WHO sitrep (data/time_series/WHO_sitreps_20200121-20200122.tsv), and data from [Li et al. (2020) NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316) (data/time_series/li2020nejm_wuhan_incidence.tsv).
 
-Output: data/timeseries/summary*.tsv, data/timeseries/timeseries_new_cases.tsv, data/timeseries/timeseries_cumulative_cases.tsv
+Output: data/timeseries/summary_{country}_timeseries_{cumulative|new_cases}.tsv, data/timeseries/timeseries_new_cases.tsv, data/timeseries/timeseries_cumulative_cases.tsv
 
 ```{bash eval=FALSE, echo=TRUE}
 Rscript 01_curate_time_series.R
@@ -44,7 +44,7 @@ Rscript 01_curate_time_series.R
 
 Input: data/sequences/gisaid_cov2020_sequences.fasta, data/sequences/gisaid_cov2020_acknowledgement_table.xls
 
-Output: msa/input_muscle_{analysisid}.fasta
+Output: msa/input_muscle_{analysisid}.fasta, msa/{country}/input_muscle_{analysisid}.fasta
 
 {analysisid} refers to the date of the last data pull.
 
@@ -54,22 +54,24 @@ Rscript 02_filter_seq.R
 
 ### 3. Align sequences against each other using `muscle`
 
-Input: msa/input_muscle_{analysisid}.fasta
+Input: msa/input_muscle_{analysisid}.fasta, msa/{country}/input_muscle_{analysisid}.fasta
 
-Output: msa/msa_{analysisid}.fasta
+Output: msa/msa_{analysisid}.fasta, msa/{country}/msa_{analysisid}.fasta
 
 ```{bash, eval=FALSE, echo=TRUE}
-./03_multi_sequence_alignment.sh
+./03_multi_sequence_alignment.sh msa
+for x in msa/*/; do ./03_multi_sequence_alignment.sh $x; done
 ```
 
 ### 4. Create a maximum-likelihood phylogeny using `iqtree`
 
 Input: msa/msa_{analysisid}.fasta
 
-Output: tree/iqtree_{analysisid}
+Output: tree/iqtree_{analysisid}.{bionj|boottrees|ckp.gz|contree|iqtree|log|mldist|model.gz|treefile}
 
 ```{bash, eval=FALSE, echo=TRUE}
-./04_build_ml_tree.sh
+./04_build_ml_tree.sh tree
+for x in msa/*/; do ./04_build_ml_tree.sh ${x/msa/tree}; done
 ```
 
 ### 5. Obtain a posterior distribution of phylogenies using a Bayesian MCMC approach (`MrBayes`)
@@ -78,10 +80,17 @@ The maximum likelihood tree is used to exclude sequences that are low quality.
 
 Input: msa/msa_{analysisid}.fasta, tree/iqtree_{analysisid}.treefile
 
-Output: tree/mb_input_{analysisid}.nex, tree/mb_input_{analysisid}.p, tree/mb_input_{analysisid}.t
+Output: tree/mb_input_{analysisid}.nex, tree/mb_input_{analysisid}.fasta 
 
 ```{bash}
 Rscript 05a_create_mrbayes_input_file.R
+```
+
+Input: tree/mb_input_{analysisid}.nex
+
+Output: tree/mb_input_{analysisid}.{run1|run2}.p, tree/mb_input_{analysisid}.{run1|run2}.t
+
+```{bash}
 ./05b_mrbayes.sh
 ```
 
@@ -97,7 +106,7 @@ Using just the phylogenetic data, EpiGenMCMC estimates parameter values for each
 
 Using a both time series and phylogenetic data, EpiGenMCMC estimates parameter values for each of the 10 sampled trees from tree/mb_input_{analysisid}.t files, and for each of the 3 time series dataset.
 
-Input: tree/mb_input_{analysisid}.p, tree/mb_input_{analysisid}.t, data/time_series/timeseries_new_cases.tsv, data/sequences/gisaid_cov2020_acknowledgement_table.xls
+Input: tree/mb_input_{analysisid}.{run1|run2}.p, tree/mb_input_{analysisid}.{run1|run2}.t, data/time_series/timeseries_new_cases.tsv, data/sequences/gisaid_cov2020_acknowledgement_table.xls
 
 Output: 
 - epigenmcmc_results/covid19_{analysisid}/commands - this file contains all the bash commands for running EpiGenMCMC

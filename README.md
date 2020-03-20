@@ -17,9 +17,9 @@ Estimating coronavirus infections using phylogenies and time series data
 ## Data
 
 Genomic data are manually downloaded from
-[GISAID](https://www.gisaid.org/) and stored in a folder named
-‘data/sequences/GISAID’. The accompanying metadata is also manually
-downloaded and stored in
+[GISAID](https://www.gisaid.org/) and stored in a file named
+‘data/sequences/gisaid\_cov2020\_sequences.fasta’. The accompanying
+metadata is also manually downloaded and stored in
 ‘data/sequences/gisaid\_cov2020\_acknowledgement\_table.xls’.
 
 Time series data are from Johns Hopkins [github
@@ -46,7 +46,8 @@ data/time\_series/CSSE/\*.csv, early WHO sitrep
 NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316)
 (data/time\_series/li2020nejm\_wuhan\_incidence.tsv).
 
-Output: data/timeseries/summary\*.tsv,
+Output:
+data/timeseries/summary\_{country}*timeseries*{cumulative|new\_cases}.tsv,
 data/timeseries/timeseries\_new\_cases.tsv,
 data/timeseries/timeseries\_cumulative\_cases.tsv
 
@@ -56,10 +57,11 @@ Rscript 01_curate_time_series.R
 
 ### 2\. Rename sequences to include dates of collection
 
-Input: data/sequences/GISAID/\*.fasta,
+Input: data/sequences/gisaid\_cov2020\_sequences.fasta,
 data/sequences/gisaid\_cov2020\_acknowledgement\_table.xls
 
-Output: msa/input\_muscle\_{analysisid}.fasta
+Output: msa/input\_muscle\_{analysisid}.fasta,
+msa/{country}/input\_muscle\_{analysisid}.fasta
 
 {analysisid} refers to the date of the last data pull.
 
@@ -69,12 +71,15 @@ Rscript 02_filter_seq.R
 
 ### 3\. Align sequences against each other using `muscle`
 
-Input: msa/input\_muscle\_{analysisid}.fasta
+Input: msa/input\_muscle\_{analysisid}.fasta,
+msa/{country}/input\_muscle\_{analysisid}.fasta
 
-Output: msa/msa\_{analysisid}.fasta
+Output: msa/msa\_{analysisid}.fasta,
+msa/{country}/msa\_{analysisid}.fasta
 
 ``` bash
-./03_multi_sequence_alignment.sh
+./03_multi_sequence_alignment.sh msa
+for x in msa/*/; do ./03_multi_sequence_alignment.sh $x; done
 ```
 
 ### 4\. Create a maximum-likelihood phylogeny using `iqtree`
@@ -82,10 +87,11 @@ Output: msa/msa\_{analysisid}.fasta
 Input: msa/msa\_{analysisid}.fasta
 
 Output:
-tree/iqtree\_{analysisid}
+tree/iqtree\_{analysisid}.{bionj|boottrees|ckp.gz|contree|iqtree|log|mldist|model.gz|treefile}
 
 ``` bash
-./04_build_ml_tree.sh
+./04_build_ml_tree.sh tree
+for x in msa/*/; do ./04_build_ml_tree.sh ${x/msa/tree}; done
 ```
 
 ### 5\. Obtain a posterior distribution of phylogenies using a Bayesian MCMC approach (`MrBayes`)
@@ -96,10 +102,18 @@ quality.
 Input: msa/msa\_{analysisid}.fasta, tree/iqtree\_{analysisid}.treefile
 
 Output: tree/mb\_input\_{analysisid}.nex,
-tree/mb\_input\_{analysisid}.p, tree/mb\_input\_{analysisid}.t
+tree/mb\_input\_{analysisid}.fasta
 
 ``` bash
 Rscript 05a_create_mrbayes_input_file.R
+```
+
+Input: tree/mb\_input\_{analysisid}.nex
+
+Output: tree/mb\_input\_{analysisid}.{run1|run2}.p,
+tree/mb\_input\_{analysisid}.{run1|run2}.t
+
+``` bash
 ./05b_mrbayes.sh
 ```
 
@@ -123,7 +137,8 @@ parameter values for each of the 10 sampled trees from
 tree/mb\_input\_{analysisid}.t files, and for each of the 3 time series
 dataset.
 
-Input: tree/mb\_input\_{analysisid}.p, tree/mb\_input\_{analysisid}.t,
+Input: tree/mb\_input\_{analysisid}.{run1|run2}.p,
+tree/mb\_input\_{analysisid}.{run1|run2}.t,
 data/time\_series/timeseries\_new\_cases.tsv,
 data/sequences/gisaid\_cov2020\_acknowledgement\_table.xls
 
