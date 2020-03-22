@@ -164,8 +164,8 @@ generate_init_values <- function (change_points, change_point_dates) {
 
 init_param_values <- lapply(change_points, function (x) generate_init_values(x, change_point_dates))
 
-mcmc_steps <- 10
-nparticles <- 3000
+mcmc_steps <- 100000
+nparticles <- 5000
 log_every <- 1
 pfilter_every <- round(2/(dt*365))
 num_threads <- 15
