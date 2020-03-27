@@ -783,7 +783,9 @@ Beadle, SD	US	2020-03-14	44.4797	-98.2213	0
 Beadle, SD	US	2020-03-15	44.4797	-98.2213	0
 Beadle, SD	US	2020-03-16	44.4797	-98.2213	0
 Beadle, SD	US	2020-03-17	44.4797	-98.2213	0
-Beijing	China	2020-01-22	40.1824	116.4142	14
+Beijing	China	2020-01-20	40.18238	116.4142	5
+Beijing	China	2020-01-21	40.18238	116.4142	0
+Beijing	China	2020-01-22	40.1824	116.4142	9
 Beijing	China	2020-01-23	40.1824	116.4142	8
 Beijing	China	2020-01-24	40.1824	116.4142	14
 Beijing	China	2020-01-25	40.1824	116.4142	5
@@ -839,8 +841,6 @@ Beijing	China	2020-03-14	40.1824	116.4142	1
 Beijing	China	2020-03-15	40.1824	116.4142	5
 Beijing	China	2020-03-16	40.1824	116.4142	10
 Beijing	China	2020-03-17	40.1824	116.4142	4
-Beijing	Mainland China	2020-01-20	40.18238	116.4142	5
-Beijing	Mainland China	2020-01-21	40.18238	116.4142	0
 Bennington County, VT	US	2020-01-22	43.0279	-73.135	0
 Bennington County, VT	US	2020-01-23	43.0279	-73.135	0
 Bennington County, VT	US	2020-01-24	43.0279	-73.135	0
@@ -2129,7 +2129,8 @@ Cherokee County, GA	US	2020-03-14	34.2515	-84.4803	0
 Cherokee County, GA	US	2020-03-15	34.2515	-84.4803	0
 Cherokee County, GA	US	2020-03-16	34.2515	-84.4803	0
 Cherokee County, GA	US	2020-03-17	34.2515	-84.4803	0
-Chongqing	China	2020-01-22	30.0572	107.874	6
+Chongqing	China	2020-01-21	30.05718	107.874	1
+Chongqing	China	2020-01-22	30.0572	107.874	5
 Chongqing	China	2020-01-23	30.0572	107.874	3
 Chongqing	China	2020-01-24	30.0572	107.874	18
 Chongqing	China	2020-01-25	30.0572	107.874	30
@@ -2185,7 +2186,6 @@ Chongqing	China	2020-03-14	30.0572	107.874	0
 Chongqing	China	2020-03-15	30.0572	107.874	0
 Chongqing	China	2020-03-16	30.0572	107.874	0
 Chongqing	China	2020-03-17	30.0572	107.874	0
-Chongqing	Mainland China	2020-01-21	30.05718	107.874	1
 Clark County, NV	US	2020-01-22	36.0796	-115.094	0
 Clark County, NV	US	2020-01-23	36.0796	-115.094	0
 Clark County, NV	US	2020-01-24	36.0796	-115.094	0
@@ -5322,7 +5322,9 @@ Guam	US	2020-03-14	13.4443	144.7937	0
 Guam	US	2020-03-15	13.4443	144.7937	3
 Guam	US	2020-03-16	13.4443	144.7937	0
 Guam	US	2020-03-17	13.4443	144.7937	0
-Guangdong	China	2020-01-22	23.3417	113.4244	26
+Guangdong	China	2020-01-20	23.33841	113.422	14
+Guangdong	China	2020-01-21	23.33841	113.422	3
+Guangdong	China	2020-01-22	23.3417	113.4244	9
 Guangdong	China	2020-01-23	23.3417	113.4244	6
 Guangdong	China	2020-01-24	23.3417	113.4244	21
 Guangdong	China	2020-01-25	23.3417	113.4244	25
@@ -5378,8 +5380,6 @@ Guangdong	China	2020-03-14	23.3417	113.4244	0
 Guangdong	China	2020-03-15	23.3417	113.4244	4
 Guangdong	China	2020-03-16	23.3417	113.4244	1
 Guangdong	China	2020-03-17	23.3417	113.4244	3
-Guangdong	Mainland China	2020-01-20	23.33841	113.422	14
-Guangdong	Mainland China	2020-01-21	23.33841	113.422	3
 Guangxi	China	2020-01-22	23.8298	108.7881	2
 Guangxi	China	2020-01-23	23.8298	108.7881	3
 Guangxi	China	2020-01-24	23.8298	108.7881	18
@@ -6052,7 +6052,8 @@ Heilongjiang	China	2020-03-14	47.862	127.7615	0
 Heilongjiang	China	2020-03-15	47.862	127.7615	0
 Heilongjiang	China	2020-03-16	47.862	127.7615	0
 Heilongjiang	China	2020-03-17	47.862	127.7615	0
-Henan	China	2020-01-22	33.882	113.614	5
+Henan	China	2020-01-21	33.88202	113.614	1
+Henan	China	2020-01-22	33.882	113.614	4
 Henan	China	2020-01-23	33.882	113.614	0
 Henan	China	2020-01-24	33.882	113.614	4
 Henan	China	2020-01-25	33.882	113.614	23
@@ -6108,7 +6109,6 @@ Henan	China	2020-03-14	33.882	113.614	0
 Henan	China	2020-03-15	33.882	113.614	0
 Henan	China	2020-03-16	33.882	113.614	0
 Henan	China	2020-03-17	33.882	113.614	0
-Henan	Mainland China	2020-01-21	33.88202	113.614	1
 Hendricks County, IN	US	2020-01-22	39.8065	-86.5401	0
 Hendricks County, IN	US	2020-01-23	39.8065	-86.5401	0
 Hendricks County, IN	US	2020-01-24	39.8065	-86.5401	0
@@ -6221,62 +6221,62 @@ Hillsborough, FL	US	2020-03-14	27.9904	-82.3018	0
 Hillsborough, FL	US	2020-03-15	27.9904	-82.3018	0
 Hillsborough, FL	US	2020-03-16	27.9904	-82.3018	0
 Hillsborough, FL	US	2020-03-17	27.9904	-82.3018	0
-Hong Kong	China	2020-01-22	22.3	114.2	0
-Hong Kong	China	2020-01-23	22.3	114.2	2
-Hong Kong	China	2020-01-24	22.3	114.2	0
-Hong Kong	China	2020-01-25	22.3	114.2	3
-Hong Kong	China	2020-01-26	22.3	114.2	3
-Hong Kong	China	2020-01-27	22.3	114.2	0
-Hong Kong	China	2020-01-28	22.3	114.2	0
-Hong Kong	China	2020-01-29	22.3	114.2	2
-Hong Kong	China	2020-01-30	22.3	114.2	0
-Hong Kong	China	2020-01-31	22.3	114.2	2
-Hong Kong	China	2020-02-01	22.3	114.2	1
-Hong Kong	China	2020-02-02	22.3	114.2	2
-Hong Kong	China	2020-02-03	22.3	114.2	0
-Hong Kong	China	2020-02-04	22.3	114.2	2
-Hong Kong	China	2020-02-05	22.3	114.2	4
-Hong Kong	China	2020-02-06	22.3	114.2	3
-Hong Kong	China	2020-02-07	22.3	114.2	1
-Hong Kong	China	2020-02-08	22.3	114.2	1
-Hong Kong	China	2020-02-09	22.3	114.2	3
-Hong Kong	China	2020-02-10	22.3	114.2	9
-Hong Kong	China	2020-02-11	22.3	114.2	11
-Hong Kong	China	2020-02-12	22.3	114.2	1
-Hong Kong	China	2020-02-13	22.3	114.2	3
-Hong Kong	China	2020-02-14	22.3	114.2	3
-Hong Kong	China	2020-02-15	22.3	114.2	0
-Hong Kong	China	2020-02-16	22.3	114.2	1
-Hong Kong	China	2020-02-17	22.3	114.2	3
-Hong Kong	China	2020-02-18	22.3	114.2	2
-Hong Kong	China	2020-02-19	22.3	114.2	1
-Hong Kong	China	2020-02-20	22.3	114.2	5
-Hong Kong	China	2020-02-21	22.3	114.2	0
-Hong Kong	China	2020-02-22	22.3	114.2	1
-Hong Kong	China	2020-02-23	22.3	114.2	5
-Hong Kong	China	2020-02-24	22.3	114.2	5
-Hong Kong	China	2020-02-25	22.3	114.2	5
-Hong Kong	China	2020-02-26	22.3	114.2	7
-Hong Kong	China	2020-02-27	22.3	114.2	1
-Hong Kong	China	2020-02-28	22.3	114.2	2
-Hong Kong	China	2020-02-29	22.3	114.2	1
-Hong Kong	China	2020-03-01	22.3	114.2	1
-Hong Kong	China	2020-03-02	22.3	114.2	4
-Hong Kong	China	2020-03-03	22.3	114.2	0
-Hong Kong	China	2020-03-04	22.3	114.2	5
-Hong Kong	China	2020-03-05	22.3	114.2	0
-Hong Kong	China	2020-03-06	22.3	114.2	2
-Hong Kong	China	2020-03-07	22.3	114.2	1
-Hong Kong	China	2020-03-08	22.3	114.2	6
-Hong Kong	China	2020-03-09	22.3	114.2	1
-Hong Kong	China	2020-03-10	22.3	114.2	5
-Hong Kong	China	2020-03-11	22.3	114.2	6
-Hong Kong	China	2020-03-12	22.3	114.2	3
-Hong Kong	China	2020-03-13	22.3	114.2	5
-Hong Kong	China	2020-03-14	22.3	114.2	6
-Hong Kong	China	2020-03-15	22.3	114.2	5
-Hong Kong	China	2020-03-16	22.3	114.2	10
-Hong Kong	China	2020-03-17	22.3	114.2	7
+Hong Kong	Hong Kong	2020-01-22	22.3	114.2	0
+Hong Kong	Hong Kong	2020-01-23	22.3	114.2	2
+Hong Kong	Hong Kong	2020-01-24	22.3	114.2	0
+Hong Kong	Hong Kong	2020-01-25	22.3	114.2	3
+Hong Kong	Hong Kong	2020-01-26	22.3	114.2	3
+Hong Kong	Hong Kong	2020-01-27	22.3	114.2	0
+Hong Kong	Hong Kong	2020-01-28	22.3	114.2	0
+Hong Kong	Hong Kong	2020-01-29	22.3	114.2	2
+Hong Kong	Hong Kong	2020-01-30	22.3	114.2	0
+Hong Kong	Hong Kong	2020-01-31	22.3	114.2	2
+Hong Kong	Hong Kong	2020-02-01	22.3	114.2	1
+Hong Kong	Hong Kong	2020-02-02	22.3	114.2	2
+Hong Kong	Hong Kong	2020-02-03	22.3	114.2	0
+Hong Kong	Hong Kong	2020-02-04	22.3	114.2	2
+Hong Kong	Hong Kong	2020-02-05	22.3	114.2	4
+Hong Kong	Hong Kong	2020-02-06	22.3	114.2	3
+Hong Kong	Hong Kong	2020-02-07	22.3	114.2	1
+Hong Kong	Hong Kong	2020-02-08	22.3	114.2	1
+Hong Kong	Hong Kong	2020-02-09	22.3	114.2	3
+Hong Kong	Hong Kong	2020-02-10	22.3	114.2	9
+Hong Kong	Hong Kong	2020-02-11	22.3	114.2	11
+Hong Kong	Hong Kong	2020-02-12	22.3	114.2	1
+Hong Kong	Hong Kong	2020-02-13	22.3	114.2	3
+Hong Kong	Hong Kong	2020-02-14	22.3	114.2	3
+Hong Kong	Hong Kong	2020-02-15	22.3	114.2	0
+Hong Kong	Hong Kong	2020-02-16	22.3	114.2	1
+Hong Kong	Hong Kong	2020-02-17	22.3	114.2	3
+Hong Kong	Hong Kong	2020-02-18	22.3	114.2	2
+Hong Kong	Hong Kong	2020-02-19	22.3	114.2	1
+Hong Kong	Hong Kong	2020-02-20	22.3	114.2	5
+Hong Kong	Hong Kong	2020-02-21	22.3	114.2	0
+Hong Kong	Hong Kong	2020-02-22	22.3	114.2	1
+Hong Kong	Hong Kong	2020-02-23	22.3	114.2	5
+Hong Kong	Hong Kong	2020-02-24	22.3	114.2	5
+Hong Kong	Hong Kong	2020-02-25	22.3	114.2	5
+Hong Kong	Hong Kong	2020-02-26	22.3	114.2	7
+Hong Kong	Hong Kong	2020-02-27	22.3	114.2	1
+Hong Kong	Hong Kong	2020-02-28	22.3	114.2	2
+Hong Kong	Hong Kong	2020-02-29	22.3	114.2	1
+Hong Kong	Hong Kong	2020-03-01	22.3	114.2	1
+Hong Kong	Hong Kong	2020-03-02	22.3	114.2	4
+Hong Kong	Hong Kong	2020-03-03	22.3	114.2	0
+Hong Kong	Hong Kong	2020-03-04	22.3	114.2	5
+Hong Kong	Hong Kong	2020-03-05	22.3	114.2	0
+Hong Kong	Hong Kong	2020-03-06	22.3	114.2	2
+Hong Kong	Hong Kong	2020-03-07	22.3	114.2	1
+Hong Kong	Hong Kong	2020-03-08	22.3	114.2	6
+Hong Kong	Hong Kong	2020-03-09	22.3	114.2	1
+Hong Kong	Hong Kong	2020-03-10	22.3	114.2	5
+Hong Kong	Hong Kong	2020-03-11	22.3	114.2	6
+Hong Kong	Hong Kong	2020-03-12	22.3	114.2	3
+Hong Kong	Hong Kong	2020-03-13	22.3	114.2	5
+Hong Kong	Hong Kong	2020-03-14	22.3	114.2	6
+Hong Kong	Hong Kong	2020-03-15	22.3	114.2	5
+Hong Kong	Hong Kong	2020-03-16	22.3	114.2	10
+Hong Kong	Hong Kong	2020-03-17	22.3	114.2	7
 Honolulu County, HI	US	2020-01-22	21.307	-157.8584	0
 Honolulu County, HI	US	2020-01-23	21.307	-157.8584	0
 Honolulu County, HI	US	2020-01-24	21.307	-157.8584	0
@@ -6602,7 +6602,8 @@ Humboldt County, CA	US	2020-03-14	40.745	-123.8695	0
 Humboldt County, CA	US	2020-03-15	40.745	-123.8695	0
 Humboldt County, CA	US	2020-03-16	40.745	-123.8695	0
 Humboldt County, CA	US	2020-03-17	40.745	-123.8695	0
-Hunan	China	2020-01-22	27.6104	111.7088	4
+Hunan	China	2020-01-21	27.61041	111.7088	1
+Hunan	China	2020-01-22	27.6104	111.7088	3
 Hunan	China	2020-01-23	27.6104	111.7088	5
 Hunan	China	2020-01-24	27.6104	111.7088	15
 Hunan	China	2020-01-25	27.6104	111.7088	19
@@ -6658,7 +6659,6 @@ Hunan	China	2020-03-14	27.6104	111.7088	0
 Hunan	China	2020-03-15	27.6104	111.7088	0
 Hunan	China	2020-03-16	27.6104	111.7088	0
 Hunan	China	2020-03-17	27.6104	111.7088	0
-Hunan	Mainland China	2020-01-21	27.61041	111.7088	1
 Idaho	US	2020-01-22	44.2405	-114.4788	0
 Idaho	US	2020-01-23	44.2405	-114.4788	0
 Idaho	US	2020-01-24	44.2405	-114.4788	0
@@ -7331,7 +7331,8 @@ Jiangsu	China	2020-03-14	32.9711	119.455	0
 Jiangsu	China	2020-03-15	32.9711	119.455	0
 Jiangsu	China	2020-03-16	32.9711	119.455	0
 Jiangsu	China	2020-03-17	32.9711	119.455	0
-Jiangxi	China	2020-01-22	27.614	115.7221	2
+Jiangxi	China	2020-01-21	27.61401	115.7221	2
+Jiangxi	China	2020-01-22	27.614	115.7221	0
 Jiangxi	China	2020-01-23	27.614	115.7221	5
 Jiangxi	China	2020-01-24	27.614	115.7221	11
 Jiangxi	China	2020-01-25	27.614	115.7221	0
@@ -7387,7 +7388,6 @@ Jiangxi	China	2020-03-14	27.614	115.7221	0
 Jiangxi	China	2020-03-15	27.614	115.7221	0
 Jiangxi	China	2020-03-16	27.614	115.7221	0
 Jiangxi	China	2020-03-17	27.614	115.7221	0
-Jiangxi	Mainland China	2020-01-21	27.61401	115.7221	2
 Jilin	China	2020-01-22	43.6661	126.1923	0
 Jilin	China	2020-01-23	43.6661	126.1923	1
 Jilin	China	2020-01-24	43.6661	126.1923	2
@@ -14164,7 +14164,8 @@ Shaanxi	China	2020-03-14	35.1917	108.8701	0
 Shaanxi	China	2020-03-15	35.1917	108.8701	0
 Shaanxi	China	2020-03-16	35.1917	108.8701	0
 Shaanxi	China	2020-03-17	35.1917	108.8701	1
-Shandong	China	2020-01-22	36.3427	118.1498	2
+Shandong	China	2020-01-21	36.34377	118.1529	1
+Shandong	China	2020-01-22	36.3427	118.1498	1
 Shandong	China	2020-01-23	36.3427	118.1498	4
 Shandong	China	2020-01-24	36.3427	118.1498	9
 Shandong	China	2020-01-25	36.3427	118.1498	12
@@ -14220,8 +14221,9 @@ Shandong	China	2020-03-14	36.3427	118.1498	0
 Shandong	China	2020-03-15	36.3427	118.1498	0
 Shandong	China	2020-03-16	36.3427	118.1498	0
 Shandong	China	2020-03-17	36.3427	118.1498	1
-Shandong	Mainland China	2020-01-21	36.34377	118.1529	1
-Shanghai	China	2020-01-22	31.202	121.4491	9
+Shanghai	China	2020-01-20	31.20327	121.4554	1
+Shanghai	China	2020-01-21	31.20327	121.4554	1
+Shanghai	China	2020-01-22	31.202	121.4491	7
 Shanghai	China	2020-01-23	31.202	121.4491	7
 Shanghai	China	2020-01-24	31.202	121.4491	4
 Shanghai	China	2020-01-25	31.202	121.4491	13
@@ -14277,8 +14279,6 @@ Shanghai	China	2020-03-14	31.202	121.4491	7
 Shanghai	China	2020-03-15	31.202	121.4491	0
 Shanghai	China	2020-03-16	31.202	121.4491	2
 Shanghai	China	2020-03-17	31.202	121.4491	3
-Shanghai	Mainland China	2020-01-20	31.20327	121.4554	1
-Shanghai	Mainland China	2020-01-21	31.20327	121.4554	1
 Shanxi	China	2020-01-22	37.5777	112.2922	1
 Shanxi	China	2020-01-23	37.5777	112.2922	0
 Shanxi	China	2020-01-24	37.5777	112.2922	0
@@ -14447,7 +14447,8 @@ Shelby County, TN	US	2020-03-14	35.1269	-89.9253	0
 Shelby County, TN	US	2020-03-15	35.1269	-89.9253	0
 Shelby County, TN	US	2020-03-16	35.1269	-89.9253	0
 Shelby County, TN	US	2020-03-17	35.1269	-89.9253	0
-Sichuan	China	2020-01-22	30.6171	102.7103	5
+Sichuan	China	2020-01-21	30.61714	102.7103	1
+Sichuan	China	2020-01-22	30.6171	102.7103	4
 Sichuan	China	2020-01-23	30.6171	102.7103	3
 Sichuan	China	2020-01-24	30.6171	102.7103	7
 Sichuan	China	2020-01-25	30.6171	102.7103	13
@@ -14503,7 +14504,6 @@ Sichuan	China	2020-03-14	30.6171	102.7103	0
 Sichuan	China	2020-03-15	30.6171	102.7103	0
 Sichuan	China	2020-03-16	30.6171	102.7103	0
 Sichuan	China	2020-03-17	30.6171	102.7103	1
-Sichuan	Mainland China	2020-01-21	30.61714	102.7103	1
 Skagit, WA	US	2020-01-22	48.4242	-121.7114	0
 Skagit, WA	US	2020-01-23	48.4242	-121.7114	0
 Skagit, WA	US	2020-01-24	48.4242	-121.7114	0
@@ -15905,7 +15905,8 @@ Thurston, WA	US	2020-03-14	46.8646	-122.7696	0
 Thurston, WA	US	2020-03-15	46.8646	-122.7696	0
 Thurston, WA	US	2020-03-16	46.8646	-122.7696	0
 Thurston, WA	US	2020-03-17	46.8646	-122.7696	0
-Tianjin	China	2020-01-22	39.3054	117.323	4
+Tianjin	China	2020-01-21	39.29362	117.333	2
+Tianjin	China	2020-01-22	39.3054	117.323	2
 Tianjin	China	2020-01-23	39.3054	117.323	0
 Tianjin	China	2020-01-24	39.3054	117.323	4
 Tianjin	China	2020-01-25	39.3054	117.323	2
@@ -15961,7 +15962,6 @@ Tianjin	China	2020-03-14	39.3054	117.323	0
 Tianjin	China	2020-03-15	39.3054	117.323	0
 Tianjin	China	2020-03-16	39.3054	117.323	0
 Tianjin	China	2020-03-17	39.3054	117.323	0
-Tianjin	Mainland China	2020-01-21	39.29362	117.333	2
 Tibet	China	2020-01-22	31.6927	88.0924	0
 Tibet	China	2020-01-23	31.6927	88.0924	0
 Tibet	China	2020-01-24	31.6927	88.0924	0
@@ -17698,7 +17698,8 @@ Yolo County, CA	US	2020-03-14	38.7646	-121.9018	0
 Yolo County, CA	US	2020-03-15	38.7646	-121.9018	0
 Yolo County, CA	US	2020-03-16	38.7646	-121.9018	0
 Yolo County, CA	US	2020-03-17	38.7646	-121.9018	0
-Yunnan	China	2020-01-22	24.974	101.487	1
+Yunnan	China	2020-01-21	24.97411	101.4868	1
+Yunnan	China	2020-01-22	24.974	101.487	0
 Yunnan	China	2020-01-23	24.974	101.487	1
 Yunnan	China	2020-01-24	24.974	101.487	3
 Yunnan	China	2020-01-25	24.974	101.487	6
@@ -17754,8 +17755,8 @@ Yunnan	China	2020-03-14	24.974	101.487	0
 Yunnan	China	2020-03-15	24.974	101.487	0
 Yunnan	China	2020-03-16	24.974	101.487	2
 Yunnan	China	2020-03-17	24.974	101.487	0
-Yunnan	Mainland China	2020-01-21	24.97411	101.4868	1
-Zhejiang	China	2020-01-22	29.1832	120.0934	10
+Zhejiang	China	2020-01-21	29.18251	120.0985	5
+Zhejiang	China	2020-01-22	29.1832	120.0934	5
 Zhejiang	China	2020-01-23	29.1832	120.0934	17
 Zhejiang	China	2020-01-24	29.1832	120.0934	16
 Zhejiang	China	2020-01-25	29.1832	120.0934	19
@@ -17811,7 +17812,6 @@ Zhejiang	China	2020-03-14	29.1832	120.0934	12
 Zhejiang	China	2020-03-15	29.1832	120.0934	4
 Zhejiang	China	2020-03-16	29.1832	120.0934	0
 Zhejiang	China	2020-03-17	29.1832	120.0934	1
-Zhejiang	Mainland China	2020-01-21	29.18251	120.0985	5
 NA	Afghanistan	2020-01-22	33	65	0
 NA	Afghanistan	2020-01-23	33	65	0
 NA	Afghanistan	2020-01-24	33	65	0
@@ -19380,118 +19380,6 @@ NA	Colombia	2020-03-14	4.5709	-74.2973	9
 NA	Colombia	2020-03-15	4.5709	-74.2973	12
 NA	Colombia	2020-03-16	4.5709	-74.2973	20
 NA	Colombia	2020-03-17	4.5709	-74.2973	11
-NA	Congo (Brazzaville)	2020-01-22	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-01-23	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-01-24	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-01-25	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-01-26	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-01-27	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-01-28	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-01-29	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-01-30	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-01-31	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-01	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-02	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-03	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-04	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-05	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-06	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-07	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-08	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-09	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-10	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-11	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-12	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-13	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-14	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-15	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-16	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-17	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-18	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-19	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-20	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-21	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-22	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-23	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-24	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-25	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-26	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-27	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-28	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-02-29	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-01	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-02	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-03	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-04	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-05	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-06	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-07	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-08	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-09	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-10	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-11	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-12	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-13	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-14	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-15	-4.0383	21.7587	1
-NA	Congo (Brazzaville)	2020-03-16	-4.0383	21.7587	0
-NA	Congo (Brazzaville)	2020-03-17	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-01-22	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-01-23	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-01-24	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-01-25	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-01-26	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-01-27	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-01-28	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-01-29	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-01-30	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-01-31	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-01	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-02	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-03	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-04	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-05	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-06	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-07	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-08	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-09	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-10	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-11	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-12	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-13	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-14	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-15	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-16	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-17	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-18	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-19	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-20	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-21	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-22	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-23	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-24	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-25	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-26	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-27	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-28	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-02-29	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-01	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-02	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-03	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-04	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-05	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-06	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-07	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-08	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-09	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-10	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-11	-4.0383	21.7587	1
-NA	Congo (Kinshasa)	2020-03-12	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-13	-4.0383	21.7587	1
-NA	Congo (Kinshasa)	2020-03-14	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-15	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-16	-4.0383	21.7587	0
-NA	Congo (Kinshasa)	2020-03-17	-4.0383	21.7587	1
 NA	Costa Rica	2020-01-22	9.7489	-83.7534	0
 NA	Costa Rica	2020-01-23	9.7489	-83.7534	0
 NA	Costa Rica	2020-01-24	9.7489	-83.7534	0
@@ -19828,6 +19716,62 @@ NA	Czechia	2020-03-14	49.8175	15.473	48
 NA	Czechia	2020-03-15	49.8175	15.473	64
 NA	Czechia	2020-03-16	49.8175	15.473	45
 NA	Czechia	2020-03-17	49.8175	15.473	98
+NA	Democratic Republic of the Congo	2020-01-22	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-01-23	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-01-24	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-01-25	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-01-26	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-01-27	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-01-28	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-01-29	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-01-30	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-01-31	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-01	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-02	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-03	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-04	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-05	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-06	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-07	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-08	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-09	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-10	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-11	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-12	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-13	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-14	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-15	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-16	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-17	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-18	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-19	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-20	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-21	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-22	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-23	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-24	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-25	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-26	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-27	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-28	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-02-29	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-01	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-02	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-03	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-04	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-05	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-06	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-07	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-08	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-09	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-10	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-11	-4.0383	21.7587	1
+NA	Democratic Republic of the Congo	2020-03-12	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-13	-4.0383	21.7587	1
+NA	Democratic Republic of the Congo	2020-03-14	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-15	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-16	-4.0383	21.7587	0
+NA	Democratic Republic of the Congo	2020-03-17	-4.0383	21.7587	1
 NA	Dominican Republic	2020-01-22	18.7357	-70.1627	0
 NA	Dominican Republic	2020-01-23	18.7357	-70.1627	0
 NA	Dominican Republic	2020-01-24	18.7357	-70.1627	0
@@ -23750,61 +23694,117 @@ NA	Qatar	2020-03-14	25.3548	51.1839	17
 NA	Qatar	2020-03-15	25.3548	51.1839	64
 NA	Qatar	2020-03-16	25.3548	51.1839	38
 NA	Qatar	2020-03-17	25.3548	51.1839	0
+NA	Republic of the Congo	2020-01-22	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-01-22	-1.44	15.556	0
+NA	Republic of the Congo	2020-01-23	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-01-23	-1.44	15.556	0
+NA	Republic of the Congo	2020-01-24	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-01-24	-1.44	15.556	0
+NA	Republic of the Congo	2020-01-25	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-01-25	-1.44	15.556	0
+NA	Republic of the Congo	2020-01-26	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-01-26	-1.44	15.556	0
+NA	Republic of the Congo	2020-01-27	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-01-27	-1.44	15.556	0
+NA	Republic of the Congo	2020-01-28	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-01-28	-1.44	15.556	0
+NA	Republic of the Congo	2020-01-29	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-01-29	-1.44	15.556	0
+NA	Republic of the Congo	2020-01-30	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-01-30	-1.44	15.556	0
+NA	Republic of the Congo	2020-01-31	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-01-31	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-01	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-01	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-02	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-02	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-03	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-03	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-04	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-04	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-05	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-05	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-06	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-06	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-07	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-07	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-08	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-08	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-09	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-09	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-10	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-10	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-11	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-11	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-12	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-12	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-13	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-13	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-14	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-14	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-15	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-15	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-16	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-16	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-17	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-17	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-18	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-18	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-19	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-19	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-20	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-20	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-21	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-21	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-22	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-22	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-23	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-23	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-24	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-24	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-25	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-25	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-26	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-26	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-27	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-27	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-28	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-28	-1.44	15.556	0
+NA	Republic of the Congo	2020-02-29	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-02-29	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-01	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-01	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-02	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-02	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-03	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-03	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-04	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-04	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-05	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-05	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-06	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-06	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-07	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-07	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-08	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-08	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-09	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-09	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-10	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-10	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-11	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-11	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-12	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-12	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-13	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-13	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-14	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-14	-1.44	15.556	0
-NA	Republic of the Congo	2020-03-15	-1.44	15.556	0
-NA	Republic of the Congo	2020-03-16	-1.44	15.556	1
+NA	Republic of the Congo	2020-03-15	-4.0383	21.7587	1
+NA	Republic of the Congo	2020-03-15	-1.44	15.556	-1
+NA	Republic of the Congo	2020-03-16	-4.0383	21.7587	1
+NA	Republic of the Congo	2020-03-16	-1.44	15.556	0
+NA	Republic of the Congo	2020-03-17	-4.0383	21.7587	0
 NA	Republic of the Congo	2020-03-17	-1.44	15.556	0
 NA	Romania	2020-01-22	45.9432	24.9668	0
 NA	Romania	2020-01-23	45.9432	24.9668	0
