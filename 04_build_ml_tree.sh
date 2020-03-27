@@ -1,11 +1,14 @@
 #!/bin/bash
-mkdir -p tree/
-input=$(ls msa/msa_muscle_* | tail -n 1)
+
+treedir=$1
+msadir=${treedir/tree/msa}
+mkdir -p $treedir
+input=$(ls ${msadir}/msa_muscle_* | tail -n 1)
 msa=$(basename $input)
 msa=${msa/msa_muscle_/iqtree_}
 treeprefix=${msa/.fasta/}
   
-if [ ! -f tree/${treeprefix}* ]
+if [ ! -f ${treedir}/${treeprefix}* ]
 then
-  iqtree -nt AUTO -s $input -pre tree/$treeprefix -b 500 -bnni -czb
+  iqtree -nt AUTO -s $input -pre ${treedir}/$treeprefix -b 500 -bnni -czb
 fi

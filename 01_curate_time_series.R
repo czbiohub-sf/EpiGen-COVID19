@@ -52,7 +52,11 @@ cumulative_cases <-
     }
     return (x)
   }) %>%
-  ungroup()
+  ungroup() %>%
+  mutate(country=gsub("Mainland ", "", country)) %>% # change in nomenclature in the CSSE dataset
+  mutate(country=gsub("Congo (Brazzaville)", "Republic of the Congo", country, fixed=TRUE)) %>%
+  mutate(country=gsub("Congo (Kinshasa)", "Democratic Republic of the Congo", country, fixed=TRUE))
+cumulative_cases$country[which(cumulative_cases$province=="Hong Kong")] <- "Hong Kong"
 write_tsv(cumulative_cases, file.path(data_dir, "timeseries_cumulative_cases.tsv"))
 
 
