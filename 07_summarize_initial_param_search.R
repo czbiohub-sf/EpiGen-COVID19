@@ -4,6 +4,7 @@ library(tidyr)
 library(lubridate)
 library(magrittr)
 library(ggplot2)
+library(parallel)
 
 epigen_mcmc_dir <- "epigenmcmc_results"
 
@@ -11,16 +12,17 @@ results_dir <- list.files(epigen_mcmc_dir, "covid19_", full.names=TRUE) %>%
   sort(., decreasing=TRUE) %>%
   `[`(1)
 
-for (x in c("logfile", "traj")) {
-  paste("scp", 
-        file.path("lucy@lrrr:/mnt/data_lg/lucymli/EpiGen-COVID19", results_dir, paste0("*", x, "*")),
-        results_dir) %>%
-    system()
-}
+# for (x in c("logfile", "traj")) {
+#   paste("scp", 
+#         file.path("lucy@lrrr:/mnt/data_lg/lucymli/EpiGen-COVID19", results_dir, paste0("*", x, "*")),
+#         results_dir) %>%
+#     system()
+# }
 
 logfilenames <- list.files(results_dir, "logfile", full.names=TRUE)
-logfiles <- lapply(logfilenames, read_tsv, comment="#") %>%
-  mclapply(filter, posterior > -1e100, mc.cores=detectCores()) %>%
+logfiles_raw <- lapply(logfilenames, read_tsv, comment="#") %>%
+  mclapply(filter, posterior > -1e100, mc.cores=detectCores()) 
+logfiles <- logfiles_raw %>%
   mcmapply(function(x, y) {
     x <- filter(x, posterior > -1e100)
     if (nrow(x)==0) return (x)
@@ -122,7 +124,20 @@ inference_commands <- apply(top_params, 1, function (row_x) {
                            params_file=file.path(results_dir, paste0(prefix, "_params.txt")))
 })
 
-mapply(paste, program_binary, inference_commands) %>%
+c(grep('hubei_both_1_', inference_commands, value=TRUE),
+  grep('china_both_1_', inference_commands, value=TRUE),
+  grep('global_both_1_', inference_commands, value=TRUE),
+  grep('hubei_epi_', inference_commands, value=TRUE),
+  grep('china_epi_', inference_commands, value=TRUE),
+  grep('global_epi_', inference_commands, value=TRUE),
+  grep('hubei_gen_1_', inference_commands, value=TRUE),
+  grep('china_gen_1_', inference_commands, value=TRUE),
+  grep('global_gen_1_', inference_commands, value=TRUE),
+  grep('hubei_', inference_commands, value=TRUE),
+  grep('china_', inference_commands, value=TRUE),
+  grep('global_', inference_commands, value=TRUE)) %>%
+  `[`(., !duplicated(.)) %>%
+  mapply(paste, program_binary, .) %>%
   cat(file=file.path(results_dir, "inference_commands"), sep="\n")
 
 # save output -------------------------------------------------------------
