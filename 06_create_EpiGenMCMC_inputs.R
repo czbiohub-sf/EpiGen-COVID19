@@ -86,16 +86,13 @@ input_data <- lapply(names(inferred_dates), function (location) {
     x <- inferred_dates[[location]]
     tr <- skylines$trees[[i]]
     tr <- keep.tip(tr, tip_select[[location]])
-    days_to_deduct <- round(sum(coalescent.intervals.datedPhylo(tr)$interval.length[1:5])*365)
-    truncate_at_date <- strsplit(tr$tip.label, "_") %>% sapply(tail, 1) %>% as.Date() %>% max() %>% `-`(days_to_deduct)
-    truncate_at_date <- min(max_date, truncate_at_date)
     y <- get_data(epi=x, phy=tr, dt=dt)
-    difference_epi <- (as.Date(date_decimal(max(y$epi$time)))-truncate_at_date)/365/(dt)
+    difference_epi <- (as.Date(date_decimal(max(y$epi$time)))-max_date)/365/dt
     selection <- 1:(nrow(y$epi)-difference_epi)
     y$epi <- y$epi[selection, ]
     y$gen <- y$gen[selection]
     y
-  }, mc.cores=min(length(selected_trees, detectCores())))
+  }, mc.cores=min(length(selected_trees), detectCores()))
 }) %>% 
   setNames(names(inferred_dates))
 
@@ -164,7 +161,7 @@ generate_init_values <- function (change_points, change_point_dates) {
 
 init_param_values <- lapply(change_points, function (x) generate_init_values(x, change_point_dates))
 
-mcmc_steps <- 100000
+mcmc_steps <- 1000
 nparticles <- 5000
 log_every <- 1
 pfilter_every <- round(2/(dt*365))
