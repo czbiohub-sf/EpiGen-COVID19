@@ -12,13 +12,6 @@ results_dir <- list.files(epigen_mcmc_dir, "covid19_", full.names=TRUE) %>%
   sort(., decreasing=TRUE) %>%
   `[`(1)
 
-# for (x in c("logfile", "traj")) {
-#   paste("scp", 
-#         file.path("lucy@lrrr:/mnt/data_lg/lucymli/EpiGen-COVID19", results_dir, paste0("*", x, "*")),
-#         results_dir) %>%
-#     system()
-# }
-
 logfilenames <- list.files(results_dir, "logfile", full.names=TRUE)
 logfiles_raw <- lapply(logfilenames, read_tsv, comment="#") %>%
   mclapply(filter, posterior > -1e100, mc.cores=detectCores()) 
