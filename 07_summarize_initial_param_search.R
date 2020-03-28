@@ -42,7 +42,7 @@ load(paste0("06_create_EpiGenMCMC_inputs_",
             analysis_id,
             ".RData"))
 
-nparticles <- 10500
+nparticles <- 5000
 mcmc_steps <- 100000
 log_every <- 100
 pfilter_every <- round(2/365/dt)
@@ -91,6 +91,7 @@ inference_commands <- apply(top_params, 1, function (row_x) {
   }
   param_values_to_change <- row_x[seq(which(names(row_x)=="prior")+1, which(names(row_x)=="run")-1)] %>%
     unlist()
+  if (which_lik==2) param_values_to_change <- param_values_to_change[grep("reporting", names(param_values_to_change), invert=TRUE)]
   init_param_values[[epi_data_set]][match(names(param_values_to_change), param_names)] <- 
     as.numeric(param_values_to_change)
   param_list <- create_params_list(
@@ -114,7 +115,7 @@ inference_commands <- apply(top_params, 1, function (row_x) {
                            mcmc_options_file=file.path(results_dir, paste0(prefix, "_mcmc_options.txt")),
                            initial_states_file=file.path(results_dir, paste0(prefix, "_init_states.txt")),
                            data_file = file.path(results_dir, prefix),
-                           params_file=file.path(results_dir, paste0(prefix, "_params.txt")))
+                           params_file = file.path(results_dir, paste0(prefix, "_params.txt")))
 })
 
 c(grep('hubei_both_1_', inference_commands, value=TRUE),
