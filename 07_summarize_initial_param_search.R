@@ -13,11 +13,9 @@ results_dir <- list.files(epigen_mcmc_dir, "covid19_", full.names=TRUE) %>%
   `[`(1)
 
 logfilenames <- list.files(results_dir, "logfile", full.names=TRUE)
-logfiles_raw <- lapply(logfilenames, read_tsv, comment="#") %>%
-  mclapply(filter, posterior > -1e100, mc.cores=detectCores()) 
+logfiles_raw <- mclapply(logfilenames, read_tsv, comment="#", mc.cores=detectCores())
 logfiles <- logfiles_raw %>%
   mcmapply(function(x, y) {
-    x <- filter(x, posterior > -1e100)
     if (nrow(x)==0) return (x)
     x <- slice(x, tail(which.max(posterior), 1))
     parts <- basename(y) %>% strsplit("_") %>% `[[`(1)
@@ -28,6 +26,7 @@ logfiles <- logfiles_raw %>%
     return (x)
   }, ., as.list(logfilenames), SIMPLIFY=FALSE, mc.cores=detectCores()) %>%
   bind_rows()
+logfiles$start_date <- do.call(c, lapply(input_data, function (x) as.Date(date_decimal(x[[1]]$epi[1, 1]))))[logfiles$country]-logfiles$time_before_data*dt*365
 
 top_params <- logfiles %>%
   group_by(country, analysis, tree) %>%
