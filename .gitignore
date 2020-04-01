@@ -4,9 +4,10 @@ packrat/src
 .Rproj.user
 *.RData
 .Rhistory
-data/sequences/GISAID
+data/sequences/gisaid_cov2020_sequences.fasta
 data/time_series/CSSE
 exploratory
 msa
 tree
-epigenmcmc_results
+epigenmcmc_results*
+data/time_series/summary*
