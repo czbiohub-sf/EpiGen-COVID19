@@ -28,7 +28,7 @@ seq_by_country <- split(seq_by_country, names(seq_by_country)) %>% sapply(sum) %
 countries_to_model <- c("Switzerland", "Austria", "Italy", "Japan", "Belgium", 
                         "France", "Iceland", "Netherlands", "United Kingdom")
 provinces_to_model <- c("Hubei", "Guangdong", "Shanghai", "Ontario", "Washington",
-                        "New York", "Hong Kong", "Minnesota")
+                        "New York", "Hong Kong", "Minnesota", "California")
 
 
 
