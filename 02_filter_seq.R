@@ -3,21 +3,16 @@
 library(ape)
 library(magrittr)
 library(readxl)
+library(parallel)
+
+load("01_curate_time_series.RData")
 
 data_dir <- "data/sequences"
 
 # read in GISAID fastas and metadata
 fastas <- read.dna(file.path(data_dir, "gisaid_cov2020_sequences.fasta"), "fasta")
 fasta_ids <- strsplit(names(fastas), "|", fixed=TRUE) %>% sapply(`[`, 2)
-metadata <- read_xls(file.path(data_dir, "gisaid_cov2020_acknowledgement_table.xls"), skip=2) %>%
-  slice(-1) %>%
-  filter(`Accession ID` %in% fasta_ids) %>%
-  mutate(Location=gsub("Congo / Kinshasa", "Democratic Republic of the Congo / Kinshasa", Location, fixed=TRUE)) %>%
-  mutate(Location=gsub("Czech Republic", "Czechia", Location, fixed=TRUE)) %>%
-  mutate(Location=gsub("USA", "US", Location, fixed=TRUE))
-fasta_countries <- strsplit(metadata$Location, "/") %>%
-  sapply(`[`, 2) %>%
-  str_trim()
+
 
 # read in outgroup fasta
 outgroup_id <- "MG772933.1"
@@ -32,49 +27,38 @@ class(output_fasta) <- "DNAbin"
 epi_id <- fasta_ids[ambiguous_prop<=.1] %>% basename() %>% gsub(".fasta", "", .) %>% c(., outgroup_id)
 names(output_fasta) <- epi_id
 
+# split sequences by location
+output_fasta_provinces <- filter(seq_metadata, division_exposure %in% provinces_to_model) %>%
+  split(., .$division_exposure) %>%
+  lapply(function (x) output_fasta[names(output_fasta) %in% x$gisaid_epi_isl])
+
+output_fasta_countries <- with(seq_metadata, coalesce(country_exposure, country)) %>%
+  split(seq_metadata, .) %>%
+  lapply(function (x) output_fasta[names(output_fasta) %in% x$gisaid_epi_isl]) %>%
+  `[`(., names(.) %in% countries_to_model)
+
+output_fasta_location <- c(output_fasta_provinces, output_fasta_countries)
+
 # output files
-if (!dir.exists("msa")) {
-  dir.create("msa")
-}
+
 time_str <- Sys.time() %>% as.character() %>% gsub("[^[:alnum:]]", "", .)
 
-existing_msa <- list.files("msa", "msa_muscle_", full.names=TRUE)
-if (length(existing_msa)>0) {
-  # if there is already an existing MSA, only output sequences that have not already been processed
-  processed_seq <- tail(existing_msa, 1) %>% read.dna("fasta") %>% rownames()
-  output_fasta <- output_fasta[!(names(output_fasta) %in% processed_seq)]
-}
-write.dna(output_fasta, paste0("msa/input_muscle_", time_str, ".fasta"), format="fasta", nbcol=1, colw = 80)
-
-
-# Generate country-specific alignments ------------------------------------
-fastas_by_country <- split(epi_id, fasta_countries[match(epi_id, fasta_ids)]) %>%
-  lapply(function (x) {
-    if (length(x)<20) return (NULL)
-    output_fasta <- output_fasta[which(names(output_fasta) %in% c(x, outgroup_id))]
-  }) %>%
-  `[`(., sapply(., length)>0)
-
-output_seq_by_country <- names(fastas_by_country) %>% 
-  mclapply(function (x) {
-    country_name <- x %>%
-      tolower() %>%
-      gsub(" ", "", ., fixed=TRUE)
-    outdir <- file.path("msa", country_name)
-    if (!dir.exists(outdir)) {
-      dir.create(outdir)
-    }
-    existing_msa <- list.files(outdir, "msa_muscle_", full.names=TRUE)
-    if (length(existing_msa)>0) {
-      # if there is already an existing MSA, only output sequences that have not already been processed
-      processed_seq <- tail(existing_msa, 1) %>% read.dna("fasta") %>% rownames()
-      fastas_by_country[[x]] <- fastas_by_country[[x]][!(names(fastas_by_country[[country_name]]) %in% processed_seq)]
-    }
-    write.dna(fastas_by_country[[x]], 
-              file.path(outdir, paste0("input_muscle_", time_str, ".fasta")), format="fasta", 
-              nbcol=1, 
-              colw=80)
-  }, mc.cores=min(8, length(fastas_by_country)))
+mclapply(names(output_fasta_location), function (loc_name) {
+  output_fasta <- output_fasta_location[[loc_name]]
+  loc_name %<>% gsub(" ", "", .) %>% tolower()
+  msa_dir <- file.path("msa", loc_name)
+  if (!dir.exists(msa_dir)) {
+    dir.create(msa_dir)
+  }
+  existing_msa <- list.files(msa_dir, "msa_mafft_", full.names=TRUE)
+  if (length(existing_msa)>0) {
+    # if there is already an existing MSA, only output sequences that have not already been processed
+    processed_seq <- tail(existing_msa, 1) %>% read.dna("fasta") %>% rownames()
+    output_fasta <- output_fasta[!(names(output_fasta) %in% processed_seq)]
+  }
+  write.dna(output_fasta, file.path(msa_dir, paste0("input_mafft_", time_str, ".fasta")),
+            format="fasta", nbcol=1, colw = 80)
+}, mc.cores=detectCores())
 
 
 save.image(paste0("02_filter_seq_", time_str, ".RData"))
