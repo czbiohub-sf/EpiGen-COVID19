@@ -83,7 +83,7 @@ find msa -maxdepth 1 -mindepth 1 -type d | parallel -j 8 ./03_multi_sequence_ali
 
 ### 4\. Create a maximum-likelihood phylogeny using `iqtree`
 
-Input: msa/{region}/msa\_{analysisid}.fasta
+Input: msa/{region}/msa\_mafft\_{analysisid}.fasta
 
 Output:
 tree/iqtree\_{analysisid}.{bionj|boottrees|ckp.gz|contree|iqtree|log|mldist|model.gz|treefile}
