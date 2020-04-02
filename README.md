@@ -89,8 +89,7 @@ Output:
 tree/iqtree\_{analysisid}.{bionj|boottrees|ckp.gz|contree|iqtree|log|mldist|model.gz|treefile}
 
 ``` bash
-./04_build_ml_tree.sh tree
-for x in msa/*/; do ./04_build_ml_tree.sh ${x/msa/tree}; done
+find msa -maxdepth 1 -mindepth 1 -type d | sed s/msa/tree/ | parallel -j ./04_build_ml_tree.sh {}
 ```
 
 ### 5\. Obtain a posterior distribution of phylogenies using a Bayesian MCMC approach (`MrBayes`)
