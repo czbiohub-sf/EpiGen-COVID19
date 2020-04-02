@@ -20,7 +20,9 @@ dependencies:
   - openjdk=8.0.152
   - openmpi=4.0.2
   - openssl=1.1.1
+  - pip
   - readline=8.0
   - wget=1.20.1
   - zlib=1.2.11
-
+  - pip:
+    - timetree
