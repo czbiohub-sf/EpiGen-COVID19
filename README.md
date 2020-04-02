@@ -31,7 +31,8 @@ page](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data)
 
 Input: data from Johns Hopkins GitHub repo.
 
-Output: data/time\_series/CSSE/\*.csv
+Output: data/time\_series/CSSE/\*.csv,
+data/sequences/gisaid\_metadata.tsv
 
 ``` bash
 ./00_download_data.sh
@@ -41,13 +42,13 @@ Output: data/time\_series/CSSE/\*.csv
 
 Input: data from Johns Hopkins GitHub repo at
 data/time\_series/CSSE/\*.csv, early WHO sitrep
-(data/time\_series/WHO\_sitreps\_20200121-20200122.tsv), and data from
-[Li et al. (2020)
-NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316)
-(data/time\_series/li2020nejm\_wuhan\_incidence.tsv).
+(data/time\_series/WHO\_sitreps\_20200121-20200122.tsv), data from [Li
+et al. (2020) NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316)
+(data/time\_series/li2020nejm\_wuhan\_incidence.tsv),
+data/sequences/gisaid\_metadata.tsv
 
 Output:
-data/timeseries/summary\_{country}*timeseries*{cumulative|new\_cases}.tsv,
+data/timeseries/summary\_{region}*timeseries*{cumulative|new\_cases}.tsv,
 data/timeseries/timeseries\_new\_cases.tsv,
 data/timeseries/timeseries\_cumulative\_cases.tsv
 
@@ -58,10 +59,10 @@ Rscript 01_curate_time_series.R
 ### 2\. Rename sequences to include dates of collection
 
 Input: data/sequences/gisaid\_cov2020\_sequences.fasta,
-data/sequences/gisaid\_cov2020\_acknowledgement\_table.xls
+data/sequences/gisaid\_metadata.tsv
 
-Output: msa/input\_muscle\_{analysisid}.fasta,
-msa/{country}/input\_muscle\_{analysisid}.fasta
+Output: msa/{region}/input\_mafft\_{analysisid}.fasta,
+msa/{region}/input\_mafft\_{analysisid}.fasta
 
 {analysisid} refers to the date of the last data pull.
 
@@ -69,22 +70,20 @@ msa/{country}/input\_muscle\_{analysisid}.fasta
 Rscript 02_filter_seq.R
 ```
 
-### 3\. Align sequences against each other using `muscle`
+### 3\. Align sequences against each other using `MAFFT`
 
-Input: msa/input\_muscle\_{analysisid}.fasta,
-msa/{country}/input\_muscle\_{analysisid}.fasta
+Input: msa/{region}/input\_mafft\_{analysisid}.fasta
 
-Output: msa/msa\_{analysisid}.fasta,
-msa/{country}/msa\_{analysisid}.fasta
+Output:
+msa/{region}/msa\_{analysisid}.fasta
 
 ``` bash
-./03_multi_sequence_alignment.sh msa
-for x in msa/*/; do ./03_multi_sequence_alignment.sh $x; done
+find msa -maxdepth 1 -mindepth 1 -type d | parallel -j 8 ./03_multi_sequence_alignment.sh {}
 ```
 
 ### 4\. Create a maximum-likelihood phylogeny using `iqtree`
 
-Input: msa/msa\_{analysisid}.fasta
+Input: msa/{region}/msa\_{analysisid}.fasta
 
 Output:
 tree/iqtree\_{analysisid}.{bionj|boottrees|ckp.gz|contree|iqtree|log|mldist|model.gz|treefile}

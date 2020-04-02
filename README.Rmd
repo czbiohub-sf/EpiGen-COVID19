@@ -24,7 +24,7 @@ Time series data are from Johns Hopkins [github page](https://github.com/CSSEGIS
 
 Input: data from Johns Hopkins GitHub repo.
 
-Output: data/time_series/CSSE/*.csv
+Output: data/time_series/CSSE/*.csv, data/sequences/gisaid_metadata.tsv
 
 ```{bash eval=FALSE, echo=TRUE}
 ./00_download_data.sh
@@ -32,9 +32,9 @@ Output: data/time_series/CSSE/*.csv
 
 ### 1. Clean and transform time series data
 
-Input: data from Johns Hopkins GitHub repo at data/time_series/CSSE/*.csv, early WHO sitrep (data/time_series/WHO_sitreps_20200121-20200122.tsv), and data from [Li et al. (2020) NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316) (data/time_series/li2020nejm_wuhan_incidence.tsv).
+Input: data from Johns Hopkins GitHub repo at data/time_series/CSSE/*.csv, early WHO sitrep (data/time_series/WHO_sitreps_20200121-20200122.tsv), data from [Li et al. (2020) NEJM](https://www.nejm.org/doi/full/10.1056/NEJMoa2001316) (data/time_series/li2020nejm_wuhan_incidence.tsv), data/sequences/gisaid_metadata.tsv
 
-Output: data/timeseries/summary_{country}_timeseries_{cumulative|new_cases}.tsv, data/timeseries/timeseries_new_cases.tsv, data/timeseries/timeseries_cumulative_cases.tsv
+Output: data/timeseries/summary_{region}_timeseries_{cumulative|new_cases}.tsv, data/timeseries/timeseries_new_cases.tsv, data/timeseries/timeseries_cumulative_cases.tsv
 
 ```{bash eval=FALSE, echo=TRUE}
 Rscript 01_curate_time_series.R
@@ -42,9 +42,9 @@ Rscript 01_curate_time_series.R
 
 ### 2. Rename sequences to include dates of collection
 
-Input: data/sequences/gisaid_cov2020_sequences.fasta, data/sequences/gisaid_cov2020_acknowledgement_table.xls
+Input: data/sequences/gisaid_cov2020_sequences.fasta, data/sequences/gisaid_metadata.tsv
 
-Output: msa/input_muscle_{analysisid}.fasta, msa/{country}/input_muscle_{analysisid}.fasta
+Output: msa/{region}/input_mafft_{analysisid}.fasta, msa/{region}/input_mafft_{analysisid}.fasta
 
 {analysisid} refers to the date of the last data pull.
 
@@ -52,20 +52,19 @@ Output: msa/input_muscle_{analysisid}.fasta, msa/{country}/input_muscle_{analysi
 Rscript 02_filter_seq.R
 ```
 
-### 3. Align sequences against each other using `muscle`
+### 3. Align sequences against each other using `MAFFT`
 
-Input: msa/input_muscle_{analysisid}.fasta, msa/{country}/input_muscle_{analysisid}.fasta
+Input: msa/{region}/input_mafft_{analysisid}.fasta
 
-Output: msa/msa_{analysisid}.fasta, msa/{country}/msa_{analysisid}.fasta
+Output: msa/{region}/msa_{analysisid}.fasta
 
 ```{bash, eval=FALSE, echo=TRUE}
-./03_multi_sequence_alignment.sh msa
-for x in msa/*/; do ./03_multi_sequence_alignment.sh $x; done
+find msa -maxdepth 1 -mindepth 1 -type d | parallel -j 8 ./03_multi_sequence_alignment.sh {}
 ```
 
 ### 4. Create a maximum-likelihood phylogeny using `iqtree`
 
-Input: msa/msa_{analysisid}.fasta
+Input: msa/{region}/msa_{analysisid}.fasta
 
 Output: tree/iqtree_{analysisid}.{bionj|boottrees|ckp.gz|contree|iqtree|log|mldist|model.gz|treefile}
 
