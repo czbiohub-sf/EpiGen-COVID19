@@ -15,7 +15,7 @@ dependencies:
   - libtool=2.4.6
   - mpi=1.0
   - mrbayes=3.2.7
-  - muscle=3.8.1551
+  - mafft=7.455
   - ncurses=6.1
   - openjdk=8.0.152
   - openmpi=4.0.2
