@@ -32,7 +32,8 @@ seq_metadata <- filter(seq_metadata, host=="Human")
 # split sequences by location
 output_fasta_provinces <- filter(seq_metadata, division_exposure %in% provinces_to_model) %>%
   split(., .$division_exposure) %>%
-  lapply(function (x) filter(output_fasta[names(output_fasta) %in% x$gisaid_epi_isl]))
+  lapply(function (x) output_fasta[names(output_fasta) %in% x$gisaid_epi_isl]) %>%
+  `[`(., names(.) %in% provinces_to_model)
 
 output_fasta_countries <- with(seq_metadata, coalesce(country_exposure, country)) %>%
   split(seq_metadata, .) %>%
