@@ -16,4 +16,4 @@ echo -e "name\tdate" > $datefile
 grep '>' $aln | sed "s/>//" | xargs -I{} grep {} data/sequences/gisaid_metadata.tsv | awk -v OFS='\t' '{print $3,$5}' >> $datefile
 
 mkdir -p $outdir
-treetime --aln $aln --tree $treefile --dates $datefile --outdir $outdir --reroot least-squares --clock-filter 3 --tip-slack 3 --confidence
+treetime --aln $aln --tree $treefile --dates $datefile --outdir $outdir --reroot least-squares --clock-filter 3 --tip-slack 3 --confidence --clock-rate 0.0008 --clock-std-dev 0.0005
