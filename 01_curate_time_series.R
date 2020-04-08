@@ -46,6 +46,8 @@ csse_confirmed_us <- read_csv(file.path(data_dir, "CSSE", "time_series_covid19_c
                names_to="date", values_to="cumulative_cases") %>%
   mutate(date=as.Date(date, "%m/%d/%y")) %>%
   rename(province=`Province_State`, country=`Country_Region`, lat=Lat, long=Long_) %>%
+  group_by(province, country, date) %>%
+  group_modify(function (x, ...) x[1, ] %>% mutate(cumulative_cases=sum(x$cumulative_cases))) %>%
   `[`(., , names(csse_confirmed_original))
 
 csse_confirmed <- csse_confirmed_original %>% bind_rows(csse_confirmed_original, csse_confirmed_us)
@@ -163,9 +165,9 @@ country_specific_new_cases <- new_cases %>%
 
 province_specific_new_cases <- new_cases %>%
   filter(province %in% provinces_to_model) %>%
-  split(., .$country) %>%
+  split(., .$province) %>%
   lapply(function (x) {
-    province_name <- x$country[1] %>% tolower() %>% gsub(" ", "", ., fixed = TRUE)
+    province_name <- x$province[1] %>% tolower() %>% gsub(" ", "", ., fixed = TRUE)
     output_df <- group_by(x, date) %>%
       summarize(new_cases=sum(new_cases))
     write_tsv(output_df, file.path(data_dir, paste0("summary_", province_name, "_timeseries_new_cases.tsv")))
