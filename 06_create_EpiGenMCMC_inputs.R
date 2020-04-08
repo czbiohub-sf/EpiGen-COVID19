@@ -6,6 +6,7 @@ library(lubridate)
 library(ape)
 library(parallel)
 library(stringr)
+library(ggplot2)
 library(readxl)
 
 options(scipen=999)
@@ -16,12 +17,12 @@ tree_dir <- "tree"
 msa_dir <- "msa"
 epigen_mcmc_dir <- "epigenmcmc_results"
 
-mcmc_suffix <- list.files(msa_dir, "msa_muscle") %>% 
+mcmc_suffix <- list.files(msa_dir, "msa_mafft", recursive=TRUE) %>% 
   sub('\\.fasta$', '', .) %>% 
   strsplit("_") %>% 
   sapply(tail, 1) %>% 
   sort(decreasing=TRUE) %>% 
-  `[`(2)
+  `[`(1)
 
 infer_dates_from_timeseries <- function (full_timeseries, lognormal_mean, lognormal_sd) {
   apply(full_timeseries, 1, function (x) {
@@ -33,85 +34,111 @@ infer_dates_from_timeseries <- function (full_timeseries, lognormal_mean, lognor
     do.call(what=c)
 }
 
+new_env <- new.env()
+load(paste0("02_filter_seq_", mcmc_suffix, ".RData"), new_env)
 
 # Read in phylogenies -----------------------------------------------------
-skylines <- EpiGenR::Phylos2Skyline(grep(mcmc_suffix, list.files(tree_dir, "[.]t$", full.names=TRUE), value=TRUE), nex=TRUE, 
-                                    param.filenames=grep(mcmc_suffix, list.files(tree_dir, "[.]p$", full.names=TRUE), value=TRUE),
-                                    burninfrac=.4, max.trees=1000, skyline.time.steps=100)
-most_recent_tipdate <- strsplit(skylines$trees[[1]]$tip.label, "_") %>% 
-  lapply(tail, 1) %>% 
-  lapply(as.Date) %>% 
-  do.call(what=c) %>% 
-  max()
-selected_trees <- round(seq(1, round(length(skylines$trees)/2), length.out=10))
 
-metadata <- read_xls(list.files(seq_dir, "acknowledgement_table", full.names = TRUE), skip=2)
-tip_labels <- sub("(.*)_.*", "\\1", skylines$tree[[1]]$tip.label)
-tip_labels_locations <- slice(metadata, match(tip_labels, `Accession ID`))$Location
-tip_select <- lapply(c("hubei", "china", "global"), function (x) {
-  if (x=="hubei") return (grep("hubei", tip_labels_locations, ignore.case=TRUE))
-  if (x=="china") return (grep("china", tip_labels_locations, ignore.case=TRUE))
-  return (1:length(tip_labels_locations))
-}) %>%
-  setNames(c("hubei", "china", "global"))
+timetree_files <- list.files(tree_dir, "timetree.nexus", recursive=TRUE, full.names=TRUE)
+tip_dates_files <- file.path(dirname(timetree_files), "dates.tsv")
+trs <- mapply(function (x, y) {
+  tr <- read.nexus(x)
+  node_dates <- read_tsv(y, comment="#", col_names=c("node", "date", "date_median", "date_lower", "date_upper")) %>%
+    filter(as.character(date)!="--")
+  tr <- keep.tip(tr, which(tr$tip.label %in% node_dates$node))
 
-# Read in time series data ------------------------------------------------
-timeseries <- read_tsv(file.path(ts_dir, "summary_global_timeseries_new_cases.tsv")) %>%
-  filter(new_cases>0)
-timeseries_china <- read_tsv(file.path(ts_dir, "summary_china_timeseries_new_cases.tsv")) %>%
-  filter(new_cases>0)
-timeseries_hubei <- read_tsv(file.path(ts_dir, "timeseries_new_cases.tsv")) %>%
-  filter(new_cases>0, province=="Hubei") %>%
-  select(date, new_cases)
+  tr$tip.label %<>% paste(node_dates$date[match(., node_dates$node)], sep="_")
+  tr
+}, timetree_files, tip_dates_files, SIMPLIFY=FALSE) %>%
+  setNames(., strsplit(names(.), "/") %>% sapply(`[`, 2))
+
+# Visually check trees and skylines
+# Exclude because there is no dominant lineage and the TMRCA is too far back: Ontario
+# Exclude because of insufficient time-series data: Austria, Belgium
+# Check TMRCA (should be <0.5 years)
+# lapply(skylines, `[[`, "time") %>% sapply(max)
+# Select dominant lineage: California, France, Guangdong, Hong Kong, Hubei, Italy, 
+# Japan, Shanghai
+
+select_nodes <- c("california"="NODE_0000002",
+                  "france"="NODE_0000017",
+                  "guangdong"="NODE_0000012",
+                  "hongkong"="NODE_0000001",
+                  "hubei"="NODE_0000005",
+                  "italy"="NODE_0000008",
+                  "japan"="NODE_0000005",
+                  "shanghai"="NODE_0000001"
+                  )
+
+selected_trs <- trs[!(names(trs) %in% c("austria", "belgium", "ontario"))] 
+selected_trs %<>%
+  mapply(function (x, y) {
+    if (x %in% names(select_nodes)) y <- extract.clade(y, select_nodes[x])
+    y <- multi2di(y)
+    y$edge.length[y$edge.length==0] <- 1e-8
+    y
+  }, as.list(names(.)), ., SIMPLIFY=FALSE) %>%
+  setNames(names(selected_trs))
+
+skylines <- lapply(selected_trs, function (x) {
+  class(x) <- "datedPhylo"
+  sky <- skyline.datedPhylo(x)
+  curr_date <- strsplit(x$tip.label, "_") %>% sapply(tail, 1) %>% as.Date() %>% max()
+  sky$date <- curr_date - sky$time*365
+  sky
+})
+
+
+# Epi data ----------------------------------------------------------------
+
+# Restrict California time series to Northern California as that is where most
+# of the sequences are from
+
+timeseries_filenames <- file.path(ts_dir, paste0("summary_", names(selected_trs), "_timeseries_new_cases.tsv"))
+timeseries <- timeseries_filenames %>% 
+  lapply(read_tsv) %>%
+  lapply(filter, new_cases>0) %>%
+  setNames(., names(selected_trs))
+
+skyline_df <- mapply(function (x, y) data.frame(date=x$date, n=x$population.size, location=y), 
+                     skylines, as.list(names(skylines)), SIMPLIFY=FALSE) %>%
+  bind_rows()
+
+ggplot(bind_rows(mutate(skyline_df, data="gen") %>% mutate(n=n*2.5*(1+1/0.5)/(5/365)/5), 
+                 timeseries%>%mapply(mutate, ., location=as.list(names(.)), data="epi", SIMPLIFY=FALSE)%>%bind_rows()%>%rename("n"="new_cases")%>%mutate(n=n*10))) +
+  geom_step(aes(x=date, y=n, color=data)) +
+  facet_wrap(~location, ncol=1, scales="free_y")
+
+gen_data_end_dates <- skyline_df %>% arrange(date) %>% group_by(location) %>% summarize(date=date[which(n>(n*0.8))%>%tail(1)])
+
 
 # Based on https://www.medrxiv.org/content/10.1101/2020.03.08.20032946v1.full.pdf
 incub_pars <- EpiGenR::get_lognormal_params(5.5/365, 2.1/365)
 
 shape_param <- incub_pars[1]
 scale_param <- incub_pars[2]
+
 set.seed(2342342)
-inferred_dates <- list(global=infer_dates_from_timeseries(left_join(timeseries, timeseries_china, by="date", suffix=c("", "_china")) %>% mutate(new_cases=new_cases-new_cases_china) %>% select(-new_cases_china) %>% filter(new_cases>0), shape_param, scale_param),
-                       china=infer_dates_from_timeseries(left_join(timeseries_china, timeseries_hubei, by="date", suffix=c("", "_hubei")) %>% mutate(new_cases=new_cases-new_cases_hubei) %>% select(-new_cases_hubei) %>% filter(new_cases>0), shape_param, scale_param),
-                       hubei=infer_dates_from_timeseries(timeseries_hubei, shape_param, scale_param))
-inferred_dates$china %<>% c(inferred_dates$hubei)
-inferred_dates$global %<>% c(inferred_dates$china)
+inferred_dates <- lapply(timeseries, infer_dates_from_timeseries, shape_param, scale_param)
 
 # Create input data -------------------------------------------------------
 
 dt <- (1/4)/365
-max_date <- as.Date("2020-01-31")
 
-input_data <- lapply(names(inferred_dates), function (location) {
-  mclapply(selected_trees, function (i) {
-    x <- inferred_dates[[location]]
-    tr <- skylines$trees[[i]]
-    tr <- keep.tip(tr, tip_select[[location]])
-    y <- get_data(epi=x, phy=tr, dt=dt)
-    difference_epi <- (as.Date(date_decimal(max(y$epi$time)))-max_date)/365/dt
-    selection <- 1:(nrow(y$epi)-difference_epi)
-    y$epi <- y$epi[selection, ]
-    y$gen <- y$gen[selection]
-    y
-  }, mc.cores=min(length(selected_trees), detectCores()))
-}) %>% 
-  setNames(names(inferred_dates))
-
-change_point_dates <- seq(from=max_date-7*7, by="1 week", length.out=7)
+input_data <- mapply(get_data, inferred_dates, selected_trs, dt=dt, SIMPLIFY=FALSE)
+input_data %<>% 
+  mapply(function (x, y) {
+    first_date <- min(filter(x$epi, incidence>0)$time)-14/365
+    last_date <- decimal_date(filter(gen_data_end_dates, location==y)$date)
+    start_i <- which(x$epi$time>=first_date) %>% min()
+    end_i <- which(x$epi$time<=last_date) %>% max()
+    x$epi <- x$epi[start_i:end_i, ]
+    x$gen <- x$gen[start_i:end_i]
+    x
+  }, ., as.list(names(.)), SIMPLIFY=FALSE)
 
 change_points <- lapply(input_data, function (x) {
-  # c("2020-01-03", # NHC notified WHO and relevant countries of outbreak
-  #   "2020-01-11", # PCR testing provided to Wuhan - increased specificity of testing; increase in travel due to Chinese New Year
-  #   "2020-01-23", # Start of Wuhan quarantine
-  #   "2020-02-03", # End of 2-week mandatory quaranting across China
-  #   "2020-02-10", # Weekly transmission and reporting rate estimation during February
-  #   "2020-02-17",
-  #   "2020-02-24") %>%
-  change_point_dates %>%
-  as.Date() %>%
-  decimal_date() %>%
-  `-`(x[[1]]$epi[1, 1]) %>% 
-  `/`(dt) %>%
-  round()
+  round((seq(min(x$epi$time), max(x$epi$time), by=7/365)-min(x$epi$time))/dt)[-1]
 })
 
 
@@ -131,35 +158,7 @@ gen_time_pars <- optim(c(2, 0.01), fn=function (pars) {
 generation_time_alpha <- gen_time_pars$par[2] # parameters for weibull are swapped in GSL library compared to R
 generation_time_scale <- gen_time_pars$par[1]
 
-param_reps <- 100
 
-params_to_estimate <- c(paste0("R", 0:length(change_point_dates)), "CV", paste0("reporting", 0:length(change_point_dates)), "time_before_data")
-transformation <- c(rep(NA, length(change_point_dates)+1), "log", rep(NA, length(change_point_dates)+1), NA)
-priors <- c(rep("uniform", length(change_point_dates)+2), rep("beta", length(change_point_dates)+1), "uniform")
-prior_params <- c(replicate(length(change_point_dates)+1, c(0.1, 6), simplify=FALSE),
-                  list(c(.1, 2)), 
-                  replicate(length(change_point_dates)+1, c(1, 1), simplify=FALSE),
-                  list(c(1, 360)))
-proposal_params <- c(replicate(length(change_point_dates)+1, c(0.1, 0.1, 6), simplify=FALSE), 
-                     list(c(1, .1, 42)), 
-                     replicate(length(change_point_dates)+1, c(.05, 0.01, 0.99), simplify=FALSE),
-                     list(c(8, 1, 360)))
-param_names <- c(paste0("R", 0:length(change_point_dates)), "CV", paste0("RT", 0:(length(change_point_dates)-1)), paste0("reporting", 0:length(change_point_dates)), paste0("reportingT", 0:(length(change_point_dates)-1)), "gtalpha", "gtscale", "N0", "time_before_data")
-
-
-generate_init_values <- function (change_points, change_point_dates) {
-  c(sapply(rnorm(length(change_point_dates)+1, 3, .5), max, 0.1), 
-    10^(runif(1, .1, 2)), 
-    change_points, 
-    sapply(seq(0.2, 0.1, length.out=length(change_point_dates)+1), function (x) rbeta(1, 2, (1-x)/x*2)),
-    change_points, 
-    generation_time_alpha,
-    generation_time_scale,
-    1,
-    runif(1, 28, 28*4))
-}
-
-init_param_values <- lapply(change_points, function (x) generate_init_values(x, change_point_dates))
 
 mcmc_steps <- 1000
 nparticles <- 5000
@@ -167,22 +166,40 @@ log_every <- 1
 pfilter_every <- round(2/(dt*365))
 num_threads <- 15
 
-# create c++ commands -----------------------------------------------------
+generate_init_values <- function (change_points) {
+  c(sapply(rnorm(length(change_points)+1, 3, .5), max, 0.1), 
+    10^(runif(1, .1, 1.5)), 
+    change_points, 
+    rbeta(length(change_points)+1, 1, 2),
+    change_points, 
+    generation_time_alpha,
+    generation_time_scale,
+    rnorm(1, 10, .5),
+    round(10/365/dt))
+}
+
+replicates <- 10
+
 set.seed(2342353)
-commands <- lapply(1:100, function (run_i) {
-  print (paste0("run ", run_i))
-  expand.grid(1, names(input_data), 1) %>% 
-  rbind(., expand.grid(c(0, 2), names(input_data), seq(selected_trees))) %>%
-    apply(1, list) %>% 
-    unlist(recursive=FALSE) %>%
-    mclapply(function (row_x) {
-      which_lik <- as.numeric(row_x[1])
-      epi_data_set <- as.character(row_x[2])
-      which_tree <- as.numeric(row_x[3])
+init_param_values <- lapply(names(input_data), function (loc_name) {
+  change_point_dates <- change_points[[loc_name]]
+  init_param_values <- replicate(n=replicates, generate_init_values(change_point_dates))
+}) %>%
+  setNames(names(input_data))
+
+
+
+# create c++ commands -----------------------------------------------------
+commands <- mclapply(names(init_param_values), function (loc_name) {
+  lapply(0:2, function (which_lik) {
+    lapply(1:replicates, function (rep_i) {
       which_lik_str <- c("both", "epi", "gen")[which_lik+1]
-      prefix <- paste(epi_data_set, which_lik_str, selected_trees[which_tree], paste0("run", run_i), sep="_")
+      prefix <- paste(loc_name, which_lik_str, rep_i, sep="_")
       id <- paste0("covid19_", mcmc_suffix)
-      dir_id <- file.path(epigen_mcmc_dir, id)
+      dir_id <- file.path(epigen_mcmc_dir, loc_name, id)
+      if (!(dir.exists(dir_id))) {
+        dir.create(dir_id, recursive=TRUE)
+      }
       mcmc_list <- create_mcmc_options(
         particles=nparticles, iterations=mcmc_steps, log_every=log_every, 
         pfilter_every=pfilter_every, 
@@ -191,22 +208,27 @@ commands <- lapply(1:100, function (run_i) {
         log_filename=file.path(dir_id, paste0(prefix, "_logfile.txt")), 
         traj_filename=file.path(dir_id, paste0(prefix, "_trajfile.txt"))
       )
-      if (!(dir.exists(dir_id))) {
-        dir.create(dir_id, recursive=TRUE)
-      }
       if (which_lik==0) {
-        data_in <- input_data[[epi_data_set]][[which_tree]]
+        data_in <- input_data[[loc_name]]
       } else if (which_lik==1) {
-        data_in <- input_data[[epi_data_set]][[which_tree]]$epi %>%
-          slice(., which(incidence>0)[1]:nrow(.))
-        deselected <- nrow(input_data[[epi_data_set]][[which_tree]]$epi)-nrow(data_in)
-        change_points[[epi_data_set]] %<>% `-` (deselected)
+        data_in <- input_data[[loc_name]]$epi
       } else {
-        deselected <- input_data[[epi_data_set]][[which_tree]]$gen %>% 
-          lapply(`[[`, "binomial") %>% sapply(sum) %>% `>`(0) %>% which() %>% `[`(1) %>% `-`(1)
-        change_points[[epi_data_set]] %<>% `-` (length(deselected))
-        data_in <- input_data[[epi_data_set]][[which_tree]]$gen[-1:-deselected]
+        data_in <- input_data[[loc_name]]$gen
       }
+      init_param_values <- init_param_values[[loc_name]][, rep_i]
+      change_point_dates <- change_points[[loc_name]]
+      params_to_estimate <- c(paste0("R", 0:length(change_point_dates)), "CV", paste0("reporting", 0:length(change_point_dates)), "N0")
+      transformation <- c(rep(NA, length(change_point_dates)+1), "log", rep(NA, length(change_point_dates)+1), NA)
+      priors <- c(rep("uniform", length(change_point_dates)+2), rep("beta", length(change_point_dates)+1), "uniform")
+      prior_params <- c(replicate(length(change_point_dates)+1, c(0.1, 6), simplify=FALSE),
+                        list(c(.1, 2)), 
+                        replicate(length(change_point_dates)+1, c(1, 1), simplify=FALSE),
+                        list(c(1, 200)))
+      proposal_params <- c(replicate(length(change_point_dates)+1, c(0.1, 0.1, 6), simplify=FALSE), 
+                           list(c(1, .1, 42)), 
+                           replicate(length(change_point_dates)+1, c(.05, 0.01, 0.99), simplify=FALSE),
+                           list(c(8, 1, 200)))
+      param_names <- c(paste0("R", 0:length(change_point_dates)), "CV", paste0("RT", 0:(length(change_point_dates)-1)), paste0("reporting", 0:length(change_point_dates)), paste0("reportingT", 0:(length(change_point_dates)-1)), "gtalpha", "gtscale", "N0", "time_before_data")
       if (which_lik==2) {
         params_to_remove <- grep("reporting", params_to_estimate)
         params_to_estimate <- params_to_estimate[-params_to_remove]
@@ -215,7 +237,6 @@ commands <- lapply(1:100, function (run_i) {
         prior_params <- prior_params[-params_to_remove]
         proposal_params <- proposal_params[-params_to_remove]
       }
-      init_param_values <- generate_init_values(change_points[[epi_data_set]], change_point_dates)
       param_list <- create_params_list(
         param_names=param_names,
         init_param_values=init_param_values,
@@ -233,18 +254,22 @@ commands <- lapply(1:100, function (run_i) {
                                dt=dt, 
                                params=param_list,
                                mcmc_options=mcmc_list, 
-                               initial_states=c(1, 0),
+                               initial_states=c(init_param_values[param_names=="N0"], 0),
                                mcmc_options_file=file.path(dir_id, paste0(prefix, "_mcmc_options.txt")),
                                initial_states_file=file.path(dir_id, paste0(prefix, "_init_states.txt")),
                                data_file = file.path(dir_id, prefix),
                                params_file=file.path(dir_id, paste0(prefix, "_params.txt")))
-    }, mc.cores=detectCores())
-})
+    })
+  })
+}, 
+mc.cores=detectCores())
   
 
 program_binary <- "/home/lucy/EpiGenMCMC/src/covid19branching"
-mapply(paste, program_binary, commands) %>%
-  cat(file=file.path(epigen_mcmc_dir, paste0("covid19_", mcmc_suffix), "commands"), sep="\n")
+mapply(paste, program_binary, unlist(commands)) %>% 
+  unname() %>% 
+  sample(length(.)) %>%
+  cat(file=file.path(epigen_mcmc_dir, paste0("covid19_", mcmc_suffix, "_commands")), sep="\n")
 
 
 
