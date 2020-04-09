@@ -34,8 +34,6 @@ infer_dates_from_timeseries <- function (full_timeseries, lognormal_mean, lognor
     do.call(what=c)
 }
 
-new_env <- new.env()
-load(paste0("02_filter_seq_", mcmc_suffix, ".RData"), new_env)
 
 # Read in phylogenies -----------------------------------------------------
 
