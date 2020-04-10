@@ -7,6 +7,7 @@ channels:
 dependencies:
   - beagle-lib=3.1.2
   - ca-certificates=2020.1.1
+  - gsl
   - iqtree=1.6.12
   - libcxx
   - libcxxabi
