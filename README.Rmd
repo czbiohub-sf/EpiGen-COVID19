@@ -72,73 +72,66 @@ Output: tree/iqtree_{analysisid}.{bionj|boottrees|ckp.gz|contree|iqtree|log|mldi
 find msa -maxdepth 1 -mindepth 1 -type d | sed "s/msa/tree/" | parallel -j 8 ./04_build_ml_tree.sh {}
 ```
 
-### 5. Obtain a posterior distribution of phylogenies using a Bayesian MCMC approach (`MrBayes`)
+### 5. Treetime
 
-The maximum likelihood tree is used to exclude sequences that are low quality.
+Compute dates of branching events using TreeTime
 
-Input: msa/msa_{analysisid}.fasta, tree/iqtree_{analysisid}.treefile
+Input: tree/{region}/iqtree_{analysisid}.treefile
 
-Output: tree/mb_input_{analysisid}.nex, tree/mb_input_{analysisid}.fasta 
+Output: tree/{region}/iqtree_{analysisid}_dates.tsv, tree/{region}/treetime_{analysisid}/{ancestral_sequences.fasta|dates.tsv|divergence_tree.nexus|divergence_tree.nexus|molecular_clock.txt|root_to_tip_regression.pdf|sequence_evolution_model.txt|timetree.nexus|timetree.pdf}
 
-```{bash}
-Rscript 05a_create_mrbayes_input_file.R
+```{bash, eval=FALSE, echo=TRUE}
+ls tree/*/*treefile | xargs -I{} dirname {} | parallel ./05_treetime.sh {}
 ```
 
-Input: tree/mb_input_{analysisid}.nex
 
-Output: tree/mb_input_{analysisid}.{run1|run2}.p, tree/mb_input_{analysisid}.{run1|run2}.t
 
-```{bash}
-./05b_mrbayes.sh
-```
 
 ### 6. Initial parameter tuning for EpiGenMCMC
 
+Tips with divergence more than expected for the sampling time were excluded.
+
 Generate a grid of parameter combinations to determine which starting parameters to use for the EpiGenMCMC algorithm.
 
-In total, 100 different parameter combinations for 63 sets of data are tested.
+In total, 100 different parameter combinations are tested for each country, using just the time series data, using just the phylogenetic data, and using both time series and phylogenetic data.
 
-Using just the time series data, EpiGenMCMC estimates parameter values for Hubei data, China data, and Global data.
+EpiGenMCMC estimates parameter values for each parameter combination and for each of the 3 time series dataset.
 
-Using just the phylogenetic data, EpiGenMCMC estimates parameter values for each of 10 sampled trees from tree/mb_input_{analysisid}.t files, subsetting each tree for Hubei, China, and Global.
-
-Using a both time series and phylogenetic data, EpiGenMCMC estimates parameter values for each of the 10 sampled trees from tree/mb_input_{analysisid}.t files, and for each of the 3 time series dataset.
-
-Input: tree/mb_input_{analysisid}.{run1|run2}.p, tree/mb_input_{analysisid}.{run1|run2}.t, data/time_series/timeseries_new_cases.tsv, data/sequences/gisaid_cov2020_acknowledgement_table.xls
+Input: tree/{region}/treetime_{analysisid}/{timetree.nexus|dates.tsv}, data/timeseries/summary_{region}_timeseries_new_cases.tsv,
 
 Output: 
-- epigenmcmc_results/covid19_{analysisid}/commands - this file contains all the bash commands for running EpiGenMCMC
+- epigenmcmc_results/covid19_{analysisid}_commands - this file contains all the bash commands for running EpiGenMCMC
 
 For each analysis, the R Script generates these files:
-- prefix: epigenmcmc_results/covid19_*/{hubei|china|global}_{both|epi|gen}_{treeid}_{runid}_
+- prefix: epigenmcmc_results/{region}/covid19_*/{region}_{both|epi|gen}_{runid}_
 - suffix: epi_data.txt, gen_data.txt, init_states.txt, mcmc_options.txt, params.txt
 
-```{bash}
+```{bash, eval=FALSE}
 Rscript 06_create_EpiGenMCMC_inputs.R
 ```
 
-Input: epigenmcmc_results/covid19_{analysisid}/commands
-Output: epigenmcmc/covid19_{analysisid}/*{logfile|trajfile}.txt
+Input: epigenmcmc_results/covid19_{analysisid}_commands
+Output: epigenmcmc/{region}/covid19_{analysisid}/*logfile.txt
 
-```{bash}
+```{bash, eval=FALSE}
 ./epigenmcmc_results/covid19_{analysisid}/commands
 ```
 
 ### 7. Use initial parameter search to generate input files for model fitting
 
-For each of the 63 analyses, use the initial grid search to set the input parameter values.
+Use the initial grid search to set the input parameter values.
 
-Input: epigenmcmc/covid19_{analysisid}/*{logfile}.txt
-Output: epigenmcmc/covid19_{analysisid}/inference_commands, epigenmcmc/covid19_{analysisid}/inference_*.txt
+Input: epigenmcmc/{region}/covid19_{analysisid}/*{logfile}.txt
+Output: epigenmcmc/{region}/covid19_{analysisid}/inference_commands, epigenmcmc/{region}/covid19_{analysisid}/inference_*.txt
 
-```{bash}
+```{bash, eval=FALSE}
 Rscript 07_summarize_initial_param_search.R
 ```
 
-Input: epigenmcmc_results/covid19_{analysisid}/inference_commands
-Output: epigenmcmc/covid19_{analysisid}/inference*{logfile|trajfile}.txt
+Input: epigenmcmc/{region}/covid19_{analysisid}/inference_commands
+Output: epigenmcmc/{region}/covid19_{analysisid}/inference_*_{logfile|trajfile}.txt
 
-```{bash}
+```{bash, eval=FALSE}
 ./epigenmcmc/covid19_{analysisid}/inference_commands
 ```
 
