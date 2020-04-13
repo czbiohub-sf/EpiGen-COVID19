@@ -1,3 +1,4 @@
+library(EpiGenR)
 library(dplyr)
 library(readr)
 library(tidyr)

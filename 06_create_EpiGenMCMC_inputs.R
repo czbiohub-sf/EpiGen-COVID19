@@ -269,7 +269,19 @@ mapply(paste, program_binary, unlist(commands)) %>%
   sample(length(.)) %>%
   cat(file=file.path(epigen_mcmc_dir, paste0("covid19_", mcmc_suffix, "_commands")), sep="\n")
 
-
+if (FALSE) {
+  # EC2
+  program_binary <- "/home/ec2-user/EpiGenMCMC/src/covid19branching"
+  s3_upload <- strsplit(unlist(commands), " ") %>% mapply(grep, list("params"), ., value=TRUE) %>% gsub("params", "logfile", .) %>% paste0("; aws s3 cp ", ., " s3://czb-covid19/", .)
+  commands_str <- mapply(paste, program_binary, unlist(commands), s3_upload) %>%
+    unname()
+  commands_str <- c(grep("_both_", commands_str, value=TRUE), grep("_both", commands_str, value=TRUE, invert=TRUE))
+  array_size <- 100
+  array_indices <- rep(1:array_size, ceiling(length(commands_str)/array_size))[1:length(commands_str)]
+  split(commands_str, array_indices) %>% mapply(function (x, y) {
+    cat(y, file=file.path(epigen_mcmc_dir, paste0("covid19_", mcmc_suffix, "_commands_", x)), sep="\n")
+  }, as.list(1:array_size), .)
+}
 
 
 # save output -------------------------------------------------------------
