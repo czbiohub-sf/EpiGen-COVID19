@@ -11,3 +11,4 @@ msa
 tree
 epigenmcmc_results*
 data/time_series/summary*
+documents/*notes*
