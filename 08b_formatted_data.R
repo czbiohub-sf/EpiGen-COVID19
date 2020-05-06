@@ -52,7 +52,7 @@ seq_table <- new_env$trs %>%
   lapply(mutate, included_in_analysis=ifelse(gisaid_epi_isl %in% unlist(included_seq), "yes", "no")) %>%
   mapply(mutate, ., analysis_location=as.list(names(.)), SIMPLIFY=FALSE) %>%
   bind_rows() %>%
-  select(gisaid_epi_isl, analysis_location, included_in_analysis, strain, date, country, division, country_exposure, division_exposure, length, age, sex, originating_lab, submitting_lab, authors, date_submitted) %>% 
+  select(gisaid_epi_isl, analysis_location, included_in_analysis, date) %>% 
   filter(analysis_location %in% filter(ess_values_table, ess_both > 150)$location)
 
 seq_table %>%
