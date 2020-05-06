@@ -219,11 +219,11 @@ commands <- mclapply(names(init_param_values), function (loc_name) {
       transformation <- c(rep(NA, length(change_point_dates)+1), "log", rep(NA, length(change_point_dates)+1), NA)
       priors <- c(rep("uniform", length(change_point_dates)+2), rep("beta", length(change_point_dates)+1), "uniform")
       prior_params <- c(replicate(length(change_point_dates)+1, c(0.1, 6), simplify=FALSE),
-                        list(c(.1, 2)), 
+                        list(c(.1, 4.6)), 
                         replicate(length(change_point_dates)+1, c(1, 1), simplify=FALSE),
                         list(c(1, 200)))
       proposal_params <- c(replicate(length(change_point_dates)+1, c(0.1, 0.1, 6), simplify=FALSE), 
-                           list(c(1, .1, 42)), 
+                           list(c(1, .1, 4.6)), 
                            replicate(length(change_point_dates)+1, c(.05, 0.01, 0.99), simplify=FALSE),
                            list(c(8, 1, 200)))
       param_names <- c(paste0("R", 0:length(change_point_dates)), "CV", paste0("RT", 0:(length(change_point_dates)-1)), paste0("reporting", 0:length(change_point_dates)), paste0("reportingT", 0:(length(change_point_dates)-1)), "gtalpha", "gtscale", "N0", "time_before_data")
