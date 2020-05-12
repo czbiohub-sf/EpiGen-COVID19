@@ -1,6 +1,10 @@
 Estimating coronavirus infections using phylogenies and time series data
 ================
 
+Preprint out on MedRxiv: [Using viral genomics to estimate undetected
+infections and extent of superspreading events for
+COVID-19](https://www.medrxiv.org/content/10.1101/2020.05.05.20092098v1).
+
 ## Highlights
 
   - The number of missing infectious is an important parameter to
@@ -13,6 +17,13 @@ Estimating coronavirus infections using phylogenies and time series data
     phylogenies provide can fill in this knowledge gap because viruses
     continue to evolve as they spread through asymptomatic human
     populations.
+
+## EpiGenMCMC program
+
+Inference uses the [EpiGenMCMC](https://github.com/lucymli/EpiGenMCMC)
+program. See also [Li et al.
+(2017)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5850343/#) for more
+details.
 
 ## Data
 
