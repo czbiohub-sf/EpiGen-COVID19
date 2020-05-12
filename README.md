@@ -162,4 +162,20 @@ epigenmcmc/{region}/covid19\_{analysisid}/inference\_\*\_{logfile|trajfile}.txt
 ./epigenmcmc/covid19_{analysisid}/inference_commands
 ```
 
-### 8\. \[To be written\] visualize and summarize results
+### 8\. Visualize and summarize results
+
+Summarize MCMC results.
+
+Input:
+epigenmcmc/{region}/covid19\_{analysisid}/inference\_\*\_{logfile|trajfile}.txt
+Output: epigenmcmc/{figures|tables|files}
+
+``` bash
+Rscript 08_sumarize_results.R
+```
+
+### 9\. Simulation results
+
+``` bash
+Rscript 09_params_to_simulate.R
+```

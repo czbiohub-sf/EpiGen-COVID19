@@ -464,7 +464,7 @@ get_subset_inc <- function (x) {
     rownames_to_column("date") %>%
     mutate(date=as.Date(date, "%m/%d/%Y")) %>%
     mutate(incidence=c(incidence[1], abs(diff(incidence)))) %>% 
-    infer_dates_from_timeseries(., new_env$shape_param, new_env$scale_param) %>%
+    new_env$infer_dates_from_timeseries(., new_env$shape_param, new_env$scale_param) %>%
     table() %>%
     data.frame() %>%
     setNames(c("date", "data")) %>%
@@ -670,7 +670,7 @@ deaths_in_locations <- missed_infections_table$both$Location %>%
       mutate(date=as.Date(date, "%m/%d/%y")) %>%
       select(`Province/State`, `Country/Region`, date, deaths)
     select(outdf, date, deaths) %>%
-      infer_dates_from_timeseries(., new_env$shape_param, new_env$scale_param) %>%
+      new_env$infer_dates_from_timeseries(., new_env$shape_param, new_env$scale_param) %>%
       `-`(5) %>%#mutate(death_prob=deaths/median)
       table() %>%
       data.frame(.) %>% setNames(c("date", "deaths")) %>%
@@ -742,6 +742,7 @@ new_env$input_data %>%
 
 # save --------------------------------------------------------------------
 
-save_objects_to_file()
+save(list=ls()[!(ls() %in% c("new_env", "logfiles_raw", "logfiles_combined", "trajectories", "mcmc_convergence_plot"))],
+     file=paste0("08_summarize_results_", analysis_id, ".RData"))
 
 
